@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD20401B21D344C60070D561 /* IQKeyBoardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD20401A21D344C50070D561 /* IQKeyBoardManager.m */; };
+		FD20403C21D3456E0070D561 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FD20402221D3456E0070D561 /* IQToolbar.m */; };
+		FD20403D21D3456E0070D561 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD20402421D3456E0070D561 /* IQTitleBarButtonItem.m */; };
+		FD20403E21D3456E0070D561 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD20402521D3456E0070D561 /* IQBarButtonItem.m */; };
+		FD20403F21D3456E0070D561 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FD20402621D3456E0070D561 /* IQUIView+IQKeyboardToolbar.m */; };
+		FD20404021D3456E0070D561 /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD20402721D3456E0070D561 /* IQPreviousNextView.m */; };
+		FD20404121D3456E0070D561 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD20402C21D3456E0070D561 /* IQTextView.m */; };
+		FD20404221D3456E0070D561 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FD20402E21D3456E0070D561 /* IQKeyboardReturnKeyHandler.m */; };
+		FD20404321D3456E0070D561 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = FD20403021D3456E0070D561 /* IQNSArray+Sort.m */; };
+		FD20404421D3456E0070D561 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD20403221D3456E0070D561 /* IQUITextFieldView+Additions.m */; };
+		FD20404521D3456E0070D561 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD20403321D3456E0070D561 /* IQUIScrollView+Additions.m */; };
+		FD20404621D3456E0070D561 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD20403421D3456E0070D561 /* IQUIView+Hierarchy.m */; };
+		FD20404721D3456E0070D561 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD20403821D3456E0070D561 /* IQUIViewController+Additions.m */; };
+		FD20404821D3456E0070D561 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD20403B21D3456E0070D561 /* IQKeyboardManager.bundle */; };
+		FD2E0B5821D4799A004E6A71 /* DPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2E0B5621D4799A004E6A71 /* DPButton.m */; };
+		FD3A507C217815A500E17385 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A507B217815A500E17385 /* AppDelegate.m */; };
+		FD3A507F217815A500E17385 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A507E217815A500E17385 /* ViewController.m */; };
+		FD3A5082217815A500E17385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3A5080217815A500E17385 /* Main.storyboard */; };
+		FD3A5084217815A700E17385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3A5083217815A700E17385 /* Assets.xcassets */; };
+		FD3A5087217815A700E17385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3A5085217815A700E17385 /* LaunchScreen.storyboard */; };
+		FD3A508A217815A700E17385 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A5089217815A700E17385 /* main.m */; };
+		FD3A5094217815A700E17385 /* DPWidgetSumDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A5093217815A700E17385 /* DPWidgetSumDemoTests.m */; };
+		FD3A509F217815A700E17385 /* DPWidgetSumDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A509E217815A700E17385 /* DPWidgetSumDemoUITests.m */; };
+		FD3A50B0217816F100E17385 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3A50AD217816F100E17385 /* 1@2x.png */; };
+		FD3A50B1217816F100E17385 /* Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3A50AE217816F100E17385 /* Launch.png */; };
+		FD3A50B2217816F100E17385 /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3A50AF217816F100E17385 /* 2@2x.png */; };
+		FD3A50BA2178326B00E17385 /* CustomImageTextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A50B82178326B00E17385 /* CustomImageTextButton.m */; };
+		FDAF96B321D4AF9100411DE1 /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDAF96B221D4AF9100411DE1 /* 3@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD3A5090217815A700E17385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD3A506F217815A500E17385 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD3A5076217815A500E17385;
+			remoteInfo = DPWidgetSumDemo;
+		};
+		FD3A509B217815A700E17385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD3A506F217815A500E17385 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD3A5076217815A500E17385;
+			remoteInfo = DPWidgetSumDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD20401921D344C50070D561 /* IQKeyBoardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyBoardManager.h; sourceTree = "<group>"; };
+		FD20401A21D344C50070D561 /* IQKeyBoardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyBoardManager.m; sourceTree = "<group>"; };
+		FD20401D21D3456D0070D561 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		FD20401E21D3456D0070D561 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		FD20401F21D3456D0070D561 /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IQKeyboardReturnKeyHandler.h; path = DPWidgetSumDemo/IQKeyboardManager/IQKeyboardReturnKeyHandler.h; sourceTree = SOURCE_ROOT; };
+		FD20402121D3456E0070D561 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		FD20402221D3456E0070D561 /* IQToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQToolbar.m; sourceTree = "<group>"; };
+		FD20402321D3456E0070D561 /* IQPreviousNextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQPreviousNextView.h; sourceTree = "<group>"; };
+		FD20402421D3456E0070D561 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		FD20402521D3456E0070D561 /* IQBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQBarButtonItem.m; sourceTree = "<group>"; };
+		FD20402621D3456E0070D561 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		FD20402721D3456E0070D561 /* IQPreviousNextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQPreviousNextView.m; sourceTree = "<group>"; };
+		FD20402821D3456E0070D561 /* IQToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQToolbar.h; sourceTree = "<group>"; };
+		FD20402921D3456E0070D561 /* IQBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQBarButtonItem.h; sourceTree = "<group>"; };
+		FD20402A21D3456E0070D561 /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		FD20402C21D3456E0070D561 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
+		FD20402D21D3456E0070D561 /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
+		FD20402E21D3456E0070D561 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardReturnKeyHandler.m; path = DPWidgetSumDemo/IQKeyboardManager/IQKeyboardReturnKeyHandler.m; sourceTree = SOURCE_ROOT; };
+		FD20403021D3456E0070D561 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		FD20403121D3456E0070D561 /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		FD20403221D3456E0070D561 /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		FD20403321D3456E0070D561 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
+		FD20403421D3456E0070D561 /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		FD20403521D3456E0070D561 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		FD20403621D3456E0070D561 /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
+		FD20403721D3456E0070D561 /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		FD20403821D3456E0070D561 /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		FD20403921D3456E0070D561 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		FD20403B21D3456E0070D561 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		FD2E0B5621D4799A004E6A71 /* DPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPButton.m; sourceTree = "<group>"; };
+		FD2E0B5721D4799A004E6A71 /* DPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPButton.h; sourceTree = "<group>"; };
+		FD3A5077217815A500E17385 /* DPWidgetSumDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPWidgetSumDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3A507A217815A500E17385 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD3A507B217815A500E17385 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD3A507D217815A500E17385 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD3A507E217815A500E17385 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD3A5081217815A500E17385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD3A5083217815A700E17385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD3A5086217815A700E17385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD3A5088217815A700E17385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3A5089217815A700E17385 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD3A508F217815A700E17385 /* DPWidgetSumDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPWidgetSumDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3A5093217815A700E17385 /* DPWidgetSumDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPWidgetSumDemoTests.m; sourceTree = "<group>"; };
+		FD3A5095217815A700E17385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3A509A217815A700E17385 /* DPWidgetSumDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPWidgetSumDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3A509E217815A700E17385 /* DPWidgetSumDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPWidgetSumDemoUITests.m; sourceTree = "<group>"; };
+		FD3A50A0217815A700E17385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3A50AD217816F100E17385 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
+		FD3A50AE217816F100E17385 /* Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch.png; sourceTree = "<group>"; };
+		FD3A50AF217816F100E17385 /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2@2x.png"; sourceTree = "<group>"; };
+		FD3A50B82178326B00E17385 /* CustomImageTextButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageTextButton.m; sourceTree = "<group>"; };
+		FD3A50B92178326B00E17385 /* CustomImageTextButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImageTextButton.h; sourceTree = "<group>"; };
+		FDAF96B221D4AF9100411DE1 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD3A5074217815A500E17385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A508C217815A700E17385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A5097217815A700E17385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD20401821D344C50070D561 /* IQKeyBoardManager */ = {
+			isa = PBXGroup;
+			children = (
+				FD20402F21D3456E0070D561 /* Categories */,
+				FD20401C21D3456D0070D561 /* Constants */,
+				FD20401F21D3456D0070D561 /* IQKeyboardReturnKeyHandler.h */,
+				FD20402E21D3456E0070D561 /* IQKeyboardReturnKeyHandler.m */,
+				FD20402B21D3456E0070D561 /* IQTextView */,
+				FD20402021D3456E0070D561 /* IQToolbar */,
+				FD20403A21D3456E0070D561 /* Resources */,
+				FD20401921D344C50070D561 /* IQKeyBoardManager.h */,
+				FD20401A21D344C50070D561 /* IQKeyBoardManager.m */,
+			);
+			path = IQKeyBoardManager;
+			sourceTree = "<group>";
+		};
+		FD20401C21D3456D0070D561 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FD20401D21D3456D0070D561 /* IQKeyboardManagerConstantsInternal.h */,
+				FD20401E21D3456D0070D561 /* IQKeyboardManagerConstants.h */,
+			);
+			name = Constants;
+			path = DPWidgetSumDemo/IQKeyboardManager/Constants;
+			sourceTree = SOURCE_ROOT;
+		};
+		FD20402021D3456E0070D561 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				FD20402121D3456E0070D561 /* IQUIView+IQKeyboardToolbar.h */,
+				FD20402221D3456E0070D561 /* IQToolbar.m */,
+				FD20402321D3456E0070D561 /* IQPreviousNextView.h */,
+				FD20402421D3456E0070D561 /* IQTitleBarButtonItem.m */,
+				FD20402521D3456E0070D561 /* IQBarButtonItem.m */,
+				FD20402621D3456E0070D561 /* IQUIView+IQKeyboardToolbar.m */,
+				FD20402721D3456E0070D561 /* IQPreviousNextView.m */,
+				FD20402821D3456E0070D561 /* IQToolbar.h */,
+				FD20402921D3456E0070D561 /* IQBarButtonItem.h */,
+				FD20402A21D3456E0070D561 /* IQTitleBarButtonItem.h */,
+			);
+			name = IQToolbar;
+			path = DPWidgetSumDemo/IQKeyboardManager/IQToolbar;
+			sourceTree = SOURCE_ROOT;
+		};
+		FD20402B21D3456E0070D561 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				FD20402C21D3456E0070D561 /* IQTextView.m */,
+				FD20402D21D3456E0070D561 /* IQTextView.h */,
+			);
+			name = IQTextView;
+			path = DPWidgetSumDemo/IQKeyboardManager/IQTextView;
+			sourceTree = SOURCE_ROOT;
+		};
+		FD20402F21D3456E0070D561 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FD20403021D3456E0070D561 /* IQNSArray+Sort.m */,
+				FD20403121D3456E0070D561 /* IQUIViewController+Additions.h */,
+				FD20403221D3456E0070D561 /* IQUITextFieldView+Additions.m */,
+				FD20403321D3456E0070D561 /* IQUIScrollView+Additions.m */,
+				FD20403421D3456E0070D561 /* IQUIView+Hierarchy.m */,
+				FD20403521D3456E0070D561 /* IQNSArray+Sort.h */,
+				FD20403621D3456E0070D561 /* IQUIScrollView+Additions.h */,
+				FD20403721D3456E0070D561 /* IQUITextFieldView+Additions.h */,
+				FD20403821D3456E0070D561 /* IQUIViewController+Additions.m */,
+				FD20403921D3456E0070D561 /* IQUIView+Hierarchy.h */,
+			);
+			name = Categories;
+			path = DPWidgetSumDemo/IQKeyboardManager/Categories;
+			sourceTree = SOURCE_ROOT;
+		};
+		FD20403A21D3456E0070D561 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD20403B21D3456E0070D561 /* IQKeyboardManager.bundle */,
+			);
+			name = Resources;
+			path = DPWidgetSumDemo/IQKeyboardManager/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		FD3A506E217815A500E17385 = {
+			isa = PBXGroup;
+			children = (
+				FD3A5079217815A500E17385 /* DPWidgetSumDemo */,
+				FD3A5092217815A700E17385 /* DPWidgetSumDemoTests */,
+				FD3A509D217815A700E17385 /* DPWidgetSumDemoUITests */,
+				FD3A5078217815A500E17385 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD3A5078217815A500E17385 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A5077217815A500E17385 /* DPWidgetSumDemo.app */,
+				FD3A508F217815A700E17385 /* DPWidgetSumDemoTests.xctest */,
+				FD3A509A217815A700E17385 /* DPWidgetSumDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD3A5079217815A500E17385 /* DPWidgetSumDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FD20401821D344C50070D561 /* IQKeyBoardManager */,
+				FD3A50B72178326B00E17385 /* DPWidgetSum_SDK */,
+				FD3A50AC217816F100E17385 /* Resources */,
+				FD3A507A217815A500E17385 /* AppDelegate.h */,
+				FD3A507B217815A500E17385 /* AppDelegate.m */,
+				FD3A507D217815A500E17385 /* ViewController.h */,
+				FD3A507E217815A500E17385 /* ViewController.m */,
+				FD3A5080217815A500E17385 /* Main.storyboard */,
+				FD3A5083217815A700E17385 /* Assets.xcassets */,
+				FD3A5085217815A700E17385 /* LaunchScreen.storyboard */,
+				FD3A5088217815A700E17385 /* Info.plist */,
+				FD3A5089217815A700E17385 /* main.m */,
+			);
+			path = DPWidgetSumDemo;
+			sourceTree = "<group>";
+		};
+		FD3A5092217815A700E17385 /* DPWidgetSumDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A5093217815A700E17385 /* DPWidgetSumDemoTests.m */,
+				FD3A5095217815A700E17385 /* Info.plist */,
+			);
+			path = DPWidgetSumDemoTests;
+			sourceTree = "<group>";
+		};
+		FD3A509D217815A700E17385 /* DPWidgetSumDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A509E217815A700E17385 /* DPWidgetSumDemoUITests.m */,
+				FD3A50A0217815A700E17385 /* Info.plist */,
+			);
+			path = DPWidgetSumDemoUITests;
+			sourceTree = "<group>";
+		};
+		FD3A50AC217816F100E17385 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FDAF96B221D4AF9100411DE1 /* 3@2x.png */,
+				FD3A50AD217816F100E17385 /* 1@2x.png */,
+				FD3A50AF217816F100E17385 /* 2@2x.png */,
+				FD3A50AE217816F100E17385 /* Launch.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD3A50B72178326B00E17385 /* DPWidgetSum_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				FD2E0B5721D4799A004E6A71 /* DPButton.h */,
+				FD2E0B5621D4799A004E6A71 /* DPButton.m */,
+				FD3A50B92178326B00E17385 /* CustomImageTextButton.h */,
+				FD3A50B82178326B00E17385 /* CustomImageTextButton.m */,
+			);
+			name = DPWidgetSum_SDK;
+			path = ../../DPWidgetSum_SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD3A5076217815A500E17385 /* DPWidgetSumDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3A50A3217815A700E17385 /* Build configuration list for PBXNativeTarget "DPWidgetSumDemo" */;
+			buildPhases = (
+				FD3A5073217815A500E17385 /* Sources */,
+				FD3A5074217815A500E17385 /* Frameworks */,
+				FD3A5075217815A500E17385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DPWidgetSumDemo;
+			productName = DPWidgetSumDemo;
+			productReference = FD3A5077217815A500E17385 /* DPWidgetSumDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD3A508E217815A700E17385 /* DPWidgetSumDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3A50A6217815A700E17385 /* Build configuration list for PBXNativeTarget "DPWidgetSumDemoTests" */;
+			buildPhases = (
+				FD3A508B217815A700E17385 /* Sources */,
+				FD3A508C217815A700E17385 /* Frameworks */,
+				FD3A508D217815A700E17385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD3A5091217815A700E17385 /* PBXTargetDependency */,
+			);
+			name = DPWidgetSumDemoTests;
+			productName = DPWidgetSumDemoTests;
+			productReference = FD3A508F217815A700E17385 /* DPWidgetSumDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD3A5099217815A700E17385 /* DPWidgetSumDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3A50A9217815A700E17385 /* Build configuration list for PBXNativeTarget "DPWidgetSumDemoUITests" */;
+			buildPhases = (
+				FD3A5096217815A700E17385 /* Sources */,
+				FD3A5097217815A700E17385 /* Frameworks */,
+				FD3A5098217815A700E17385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD3A509C217815A700E17385 /* PBXTargetDependency */,
+			);
+			name = DPWidgetSumDemoUITests;
+			productName = DPWidgetSumDemoUITests;
+			productReference = FD3A509A217815A700E17385 /* DPWidgetSumDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD3A506F217815A500E17385 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "yupeng xia";
+				TargetAttributes = {
+					FD3A5076217815A500E17385 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					FD3A508E217815A700E17385 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = FD3A5076217815A500E17385;
+					};
+					FD3A5099217815A700E17385 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = FD3A5076217815A500E17385;
+					};
+				};
+			};
+			buildConfigurationList = FD3A5072217815A500E17385 /* Build configuration list for PBXProject "DPWidgetSumDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD3A506E217815A500E17385;
+			productRefGroup = FD3A5078217815A500E17385 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD3A5076217815A500E17385 /* DPWidgetSumDemo */,
+				FD3A508E217815A700E17385 /* DPWidgetSumDemoTests */,
+				FD3A5099217815A700E17385 /* DPWidgetSumDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD3A5075217815A500E17385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAF96B321D4AF9100411DE1 /* 3@2x.png in Resources */,
+				FD3A5087217815A700E17385 /* LaunchScreen.storyboard in Resources */,
+				FD3A5084217815A700E17385 /* Assets.xcassets in Resources */,
+				FD3A50B0217816F100E17385 /* 1@2x.png in Resources */,
+				FD3A5082217815A500E17385 /* Main.storyboard in Resources */,
+				FD20404821D3456E0070D561 /* IQKeyboardManager.bundle in Resources */,
+				FD3A50B2217816F100E17385 /* 2@2x.png in Resources */,
+				FD3A50B1217816F100E17385 /* Launch.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A508D217815A700E17385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A5098217815A700E17385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD3A5073217815A500E17385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3A507F217815A500E17385 /* ViewController.m in Sources */,
+				FD20404521D3456E0070D561 /* IQUIScrollView+Additions.m in Sources */,
+				FD20404221D3456E0070D561 /* IQKeyboardReturnKeyHandler.m in Sources */,
+				FD20403D21D3456E0070D561 /* IQTitleBarButtonItem.m in Sources */,
+				FD20404321D3456E0070D561 /* IQNSArray+Sort.m in Sources */,
+				FD20404421D3456E0070D561 /* IQUITextFieldView+Additions.m in Sources */,
+				FD3A50BA2178326B00E17385 /* CustomImageTextButton.m in Sources */,
+				FD20401B21D344C60070D561 /* IQKeyBoardManager.m in Sources */,
+				FD3A508A217815A700E17385 /* main.m in Sources */,
+				FD3A507C217815A500E17385 /* AppDelegate.m in Sources */,
+				FD20403E21D3456E0070D561 /* IQBarButtonItem.m in Sources */,
+				FD20403F21D3456E0070D561 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				FD20404721D3456E0070D561 /* IQUIViewController+Additions.m in Sources */,
+				FD20404621D3456E0070D561 /* IQUIView+Hierarchy.m in Sources */,
+				FD20404021D3456E0070D561 /* IQPreviousNextView.m in Sources */,
+				FD20404121D3456E0070D561 /* IQTextView.m in Sources */,
+				FD20403C21D3456E0070D561 /* IQToolbar.m in Sources */,
+				FD2E0B5821D4799A004E6A71 /* DPButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A508B217815A700E17385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3A5094217815A700E17385 /* DPWidgetSumDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A5096217815A700E17385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3A509F217815A700E17385 /* DPWidgetSumDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD3A5091217815A700E17385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD3A5076217815A500E17385 /* DPWidgetSumDemo */;
+			targetProxy = FD3A5090217815A700E17385 /* PBXContainerItemProxy */;
+		};
+		FD3A509C217815A700E17385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD3A5076217815A500E17385 /* DPWidgetSumDemo */;
+			targetProxy = FD3A509B217815A700E17385 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD3A5080217815A500E17385 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD3A5081217815A500E17385 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD3A5085217815A700E17385 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD3A5086217815A700E17385 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD3A50A1217815A700E17385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD3A50A2217815A700E17385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD3A50A4217815A700E17385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99C8L96EFT;
+				INFOPLIST_FILE = DPWidgetSumDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.DPWidgetSumDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "";
+			};
+			name = Debug;
+		};
+		FD3A50A5217815A700E17385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99C8L96EFT;
+				INFOPLIST_FILE = DPWidgetSumDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.DPWidgetSumDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "";
+			};
+			name = Release;
+		};
+		FD3A50A7217815A700E17385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99C8L96EFT;
+				INFOPLIST_FILE = DPWidgetSumDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.DPWidgetSumDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DPWidgetSumDemo.app/DPWidgetSumDemo";
+			};
+			name = Debug;
+		};
+		FD3A50A8217815A700E17385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99C8L96EFT;
+				INFOPLIST_FILE = DPWidgetSumDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.DPWidgetSumDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DPWidgetSumDemo.app/DPWidgetSumDemo";
+			};
+			name = Release;
+		};
+		FD3A50AA217815A700E17385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99C8L96EFT;
+				INFOPLIST_FILE = DPWidgetSumDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.DPWidgetSumDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DPWidgetSumDemo;
+			};
+			name = Debug;
+		};
+		FD3A50AB217815A700E17385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99C8L96EFT;
+				INFOPLIST_FILE = DPWidgetSumDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.DPWidgetSumDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DPWidgetSumDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD3A5072217815A500E17385 /* Build configuration list for PBXProject "DPWidgetSumDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3A50A1217815A700E17385 /* Debug */,
+				FD3A50A2217815A700E17385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD3A50A3217815A700E17385 /* Build configuration list for PBXNativeTarget "DPWidgetSumDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3A50A4217815A700E17385 /* Debug */,
+				FD3A50A5217815A700E17385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD3A50A6217815A700E17385 /* Build configuration list for PBXNativeTarget "DPWidgetSumDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3A50A7217815A700E17385 /* Debug */,
+				FD3A50A8217815A700E17385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD3A50A9217815A700E17385 /* Build configuration list for PBXNativeTarget "DPWidgetSumDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3A50AA217815A700E17385 /* Debug */,
+				FD3A50AB217815A700E17385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD3A506F217815A500E17385 /* Project object */;
+}
