@@ -1,31 +1,31 @@
 //
-//  MLeakedObjectProxy.m
-//  MLeaksFinder
+//  DPLeakedObjectProxy.m
+//  DPLeaksFinder
 //
 //  Created by 夏玉鹏 on 20/04/02.
 //  Copyright © 2020 夏玉鹏. All rights reserved.
 //
 
-#import "MLeakedObjectProxy.h"
-#import "MLeaksFinder.h"
-#import "MLeaksMessenger.h"
+#import "DPLeakedObjectProxy.h"
+#import "DPLeaksFinder.h"
+#import "DPLeaksMessenger.h"
 #import "NSObject+MemoryLeak.h"
 #import <objc/runtime.h>
 #import <UIKit/UIKit.h>
 
-#if _INTERNAL_MLF_RC_ENABLED
+#if _INTERNAL_DPLF_RC_ENABLED
 #import <FBRetainCycleDetector/FBRetainCycleDetector.h>
 #endif
 
 static NSMutableSet *leakedObjectPtrs;
 
-@interface MLeakedObjectProxy ()<UIAlertViewDelegate>
+@interface DPLeakedObjectProxy ()<UIAlertViewDelegate>
 @property (nonatomic, weak) id object;
 @property (nonatomic, strong) NSNumber *objectPtr;
 @property (nonatomic, strong) NSArray *viewStack;
 @end
 
-@implementation MLeakedObjectProxy
+@implementation DPLeakedObjectProxy
 
 + (BOOL)isAnyObjectLeakedAtPtrs:(NSSet *)ptrs {
     NSAssert([NSThread isMainThread], @"Must be in main thread.");
@@ -48,7 +48,7 @@ static NSMutableSet *leakedObjectPtrs;
 + (void)addLeakedObject:(id)object {
     NSAssert([NSThread isMainThread], @"Must be in main thread.");
     
-    MLeakedObjectProxy *proxy = [[MLeakedObjectProxy alloc] init];
+    DPLeakedObjectProxy *proxy = [[DPLeakedObjectProxy alloc] init];
     proxy.object = object;
     proxy.objectPtr = @((uintptr_t)object);
     proxy.viewStack = [object viewStack];
@@ -57,13 +57,13 @@ static NSMutableSet *leakedObjectPtrs;
     
     [leakedObjectPtrs addObject:proxy.objectPtr];
     
-#if _INTERNAL_MLF_RC_ENABLED
-    [MLeaksMessenger alertWithTitle:@"Memory Leak"
+#if _INTERNAL_DPLF_RC_ENABLED
+    [DPLeaksMessenger alertWithTitle:@"Memory Leak"
                             message:[NSString stringWithFormat:@"%@", proxy.viewStack]
                            delegate:proxy
               additionalButtonTitle:@"Retain Cycle"];
 #else
-    [MLeaksMessenger alertWithTitle:@"Memory Leak"
+    [DPLeaksMessenger alertWithTitle:@"Memory Leak"
                             message:[NSString stringWithFormat:@"%@", proxy.viewStack]];
 #endif
 }
@@ -73,7 +73,7 @@ static NSMutableSet *leakedObjectPtrs;
     NSArray *viewStack = _viewStack;
     dispatch_async(dispatch_get_main_queue(), ^{
         [leakedObjectPtrs removeObject:objectPtr];
-        [MLeaksMessenger alertWithTitle:@"Object Deallocated"
+        [DPLeaksMessenger alertWithTitle:@"Object Deallocated"
                                 message:[NSString stringWithFormat:@"%@", viewStack]];
     });
 }
@@ -90,7 +90,7 @@ static NSMutableSet *leakedObjectPtrs;
         return;
     }
     
-#if _INTERNAL_MLF_RC_ENABLED
+#if _INTERNAL_DPLF_RC_ENABLED
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         FBRetainCycleDetector *detector = [FBRetainCycleDetector new];
         [detector addCandidate:self.object];
@@ -104,7 +104,7 @@ static NSMutableSet *leakedObjectPtrs;
                     NSArray *shiftedRetainCycle = [self shiftArray:retainCycle toIndex:index];
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        [MLeaksMessenger alertWithTitle:@"Retain Cycle"
+                        [DPLeaksMessenger alertWithTitle:@"Retain Cycle"
                                                 message:[NSString stringWithFormat:@"%@", shiftedRetainCycle]];
                     });
                     hasFound = YES;
@@ -119,7 +119,7 @@ static NSMutableSet *leakedObjectPtrs;
         }
         if (!hasFound) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                [MLeaksMessenger alertWithTitle:@"Retain Cycle"
+                [DPLeaksMessenger alertWithTitle:@"Retain Cycle"
                                         message:@"Fail to find a retain cycle"];
             });
         }

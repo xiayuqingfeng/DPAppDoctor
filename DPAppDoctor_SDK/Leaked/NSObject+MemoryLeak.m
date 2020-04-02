@@ -1,18 +1,18 @@
 //
 //  NSObject+MemoryLeak.m
-//  MLeaksFinder
+//  DPLeaksFinder
 //
 //  Created by 夏玉鹏 on 20/04/02.
 //  Copyright © 2020 夏玉鹏. All rights reserved.
 //
 
 #import "NSObject+MemoryLeak.h"
-#import "MLeakedObjectProxy.h"
-#import "MLeaksFinder.h"
+#import "DPLeakedObjectProxy.h"
+#import "DPLeaksFinder.h"
 #import <objc/runtime.h>
 #import <UIKit/UIKit.h>
 
-#if _INTERNAL_MLF_RC_ENABLED
+#if _INTERNAL_DPLF_RC_ENABLED
 #import <FBRetainCycleDetector/FBRetainCycleDetector.h>
 #endif
 
@@ -41,10 +41,10 @@ const void *const kLatestSenderKey = &kLatestSenderKey;
 }
 
 - (void)assertNotDealloc {
-    if ([MLeakedObjectProxy isAnyObjectLeakedAtPtrs:[self parentPtrs]]) {
+    if ([DPLeakedObjectProxy isAnyObjectLeakedAtPtrs:[self parentPtrs]]) {
         return;
     }
-    [MLeakedObjectProxy addLeakedObject:self];
+    [DPLeakedObjectProxy addLeakedObject:self];
     
     NSString *className = NSStringFromClass([self class]);
     NSLog(@"Possibly Memory Leak.\nIn case that %@ should not be dealloced, override -willDealloc in %@ by returning NO.\nView-ViewController stack: %@", className, className, [self viewStack]);
@@ -132,9 +132,9 @@ const void *const kLatestSenderKey = &kLatestSenderKey;
 }
 
 + (void)swizzleSEL:(SEL)originalSEL withSEL:(SEL)swizzledSEL {
-#if _INTERNAL_MLF_ENABLED
+#if _INTERNAL_DPLF_ENABLED
     
-#if _INTERNAL_MLF_RC_ENABLED
+#if _INTERNAL_DPLF_RC_ENABLED
     // Just find a place to set up FBRetainCycleDetector.
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

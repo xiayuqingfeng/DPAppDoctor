@@ -1,0 +1,1139 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02941F1F5BA91B5EE2DAEA0EAE8B5F28 /* FBNodeEnumerator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33A533139B35DB6467E442521E86CB42 /* FBNodeEnumerator.mm */; };
+		03AEA342BF8482A6067576E9461B2B55 /* FBBlockStrongLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FDD115DDA446B169861FD480F47B806 /* FBBlockStrongLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		05862B810862D38EE6F6D22A73A3C586 /* FBRetainCycleDetector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21CADDE0466711AAC3D1FE5122536112 /* FBRetainCycleDetector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		066F615680F8B09B7E42273A0DC6BC18 /* FBObjectiveCGraphElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EF068E66AAFD63B0201A6FB1056FA7C /* FBObjectiveCGraphElement.mm */; };
+		0E5039728F2E0E22EF738CC6295AD985 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB4F7FC49AA57561E449B0B7315348E /* fishhook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		12037CF1725DCE156F30F0F2F1B0DC99 /* FBStandardGraphEdgeFilters.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EDDBBFFD600883DD6BEC180B83FA091 /* FBStandardGraphEdgeFilters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		180B0A2700311118F337952F0C61BB89 /* Type.h in Headers */ = {isa = PBXBuildFile; fileRef = 80C1E38E4DBDDDC9FB526252BC2DA0A1 /* Type.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		18BA8DB57594BE50190BC1BBB49CCF13 /* FBObjectiveCNSCFTimer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9794F4E4FA34B3B494A59933C194C096 /* FBObjectiveCNSCFTimer.mm */; };
+		1AB5BA433F47C2F7DFB0DA0E4B929162 /* FBAssociationManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43A9C6B65C6E356F5638B2E305DCE22B /* FBAssociationManager.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1AD97D28FDE4AC7A0A28109410A56EBC /* FBRetainCycleUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2012267CD6B2E5672B645862CADA34D3 /* FBRetainCycleUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1AECCF6B5E3434FE0C303E8EDE37DE6E /* FBAssociationManager+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C28DF2D633E11788BEC694AB34CCD7 /* FBAssociationManager+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1BE446E3EAEBC93BAA70A18B97681D81 /* FBClassStrongLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF6D728D2F00070C5BC2D892752D1FB4 /* FBClassStrongLayout.mm */; };
+		2215270E543BAE806B6CB19DCC8CE8A9 /* FBObjectiveCGraphElement+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 457ADAF7A4DF42DB30109CE39F6E7408 /* FBObjectiveCGraphElement+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2502EA6AE719CDF842B94C7A211D012E /* FBObjectInStructReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAC0518D2AB0F7DDFEB94CF71BEDE9 /* FBObjectInStructReference.m */; };
+		2533D298BD148D74770EB6BE8DF833D4 /* FBStandardGraphEdgeFilters.mm in Sources */ = {isa = PBXBuildFile; fileRef = C19E54B8BCAB74714BC22F340A3E6ABD /* FBStandardGraphEdgeFilters.mm */; };
+		26CFACEC1D36DE12D8C462864AD1D4B3 /* Struct.mm in Sources */ = {isa = PBXBuildFile; fileRef = B69D56DD5EE090E592A378789DCA8876 /* Struct.mm */; };
+		2C7EAB29618D45F847ADEF4D9DE1E059 /* FBStructEncodingParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 93E58C03947ABEE26EABC8CEF9CA5272 /* FBStructEncodingParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F1C1C0B1AC28CA68EAE15A6B75C6BCF /* FBObjectiveCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A55297D38E0ED6CAC61E236EF50E75 /* FBObjectiveCObject.m */; };
+		30799A4439BAE1320EE857AA720FC608 /* FBObjectiveCGraphElement.h in Headers */ = {isa = PBXBuildFile; fileRef = E946A3AD30B47F38FD7F79D71D40E85E /* FBObjectiveCGraphElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32303EDFF7F90BA71936B7D4876D107D /* FBRetainCycleDetector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8525D2B1D385AF357F0299680A7D92 /* FBRetainCycleDetector-dummy.m */; };
+		36025E4DF6385AB0C81088DBADD65C5A /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 72782FDAA6C3D053DD411CC2351A6CEA /* fishhook.c */; };
+		368091B1382E9796F814F9AA94E87B67 /* FBObjectiveCBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C0E05AA4A284FA3F03CDC5825A332B /* FBObjectiveCBlock.m */; };
+		4C6D22C4D8E88A5E73C9195EA35FBFFE /* FBRetainCycleDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 476239CD3028E5080E9CBF28E28B20AF /* FBRetainCycleDetector.mm */; };
+		4CB2A6B3F666EFA786979EA98887C3B7 /* Pods-DPAppDoctor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E0F57442D62E3608F452C2F6640E7D /* Pods-DPAppDoctor-dummy.m */; };
+		4CDF1AF4556A90CA91E98B21160EBD0A /* FBAssociationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3D2019354223E57A2CFF53F3756D07 /* FBAssociationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		558F4F4E3DD0632771BFF4805DDBF9D2 /* FBBlockStrongRelationDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D7DC2DBD86A1F40365B15E1F26DBF4 /* FBBlockStrongRelationDetector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5AE67238AF5D3CF8193F89AB7E086F99 /* FBRetainCycleUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7702E8E89E7616C580B2DEF873731133 /* FBRetainCycleUtils.m */; };
+		7453AC1D5008C9AFC0E38935B5FEE3BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233AEAA73D843C0E91D6A0EF6C3F0E2F /* Foundation.framework */; };
+		75129AEB8DC18E52D2620FEB5BF033CD /* Pods-DPAppDoctorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4141B2BC8CE2E3D9AC5DD57505802402 /* Pods-DPAppDoctorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75F9D58A82A3A3E0EFC89A12EE4663D5 /* Pods-DPAppDoctorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 385234D2BD8292EDBE5E38BAF2738B99 /* Pods-DPAppDoctorTests-dummy.m */; };
+		76839FCC744576AAA29DF81544EBED6A /* FBObjectiveCBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB1FEA139B6BF53922EE04DF42B7906 /* FBObjectiveCBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A3162248B014EE328643A44514B7F9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233AEAA73D843C0E91D6A0EF6C3F0E2F /* Foundation.framework */; };
+		7AC5FE0CDB0290F8838E86AEB73FEA36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233AEAA73D843C0E91D6A0EF6C3F0E2F /* Foundation.framework */; };
+		7C58D67FA200741C43D009E0DB4BF6B3 /* FBNodeEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7987F0334DC4F8774C1EEC0A502C28F7 /* FBNodeEnumerator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7C8042EF770CCED632BAB9BC4277AE63 /* Pods-DPAppDoctorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DDED818E4B7E8A57091CBE9336A7B0 /* Pods-DPAppDoctorUITests-dummy.m */; };
+		7FC5F9908B0E7594979CDAA2105A363C /* FBRetainCycleDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 64696672933E78A4DF27C15259FED54D /* FBRetainCycleDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FD706309F83F6E4F9BE1EEE7382F1B3 /* FBClassStrongLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AE4DA13FD2F7CAF682280EF514928963 /* FBClassStrongLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8334D788769CBF113D152842A4931174 /* FBBlockInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = B065A7518AE3914F9A55D5AD9B221AD6 /* FBBlockInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B10C53550416520FBBF779F2AFFB895 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300D7C9C38226ED88862DA2E4F6D939A /* UIKit.framework */; };
+		8D6BD2E309221C7CCB4611D997BF37B9 /* Pods-DPAppDoctorUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1954E2A50461EE2D1E574A7E8AC9ED64 /* Pods-DPAppDoctorUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9313010AE5DC332E3CA3017EE9E44BB2 /* FBObjectiveCObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B7CA47146B0B5C2FE1348ECA109B747 /* FBObjectiveCObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DD00BD79A151A579FCEC5D99F5A4AEE /* FBObjectInStructReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 814A971E9D076CED07C8222F7ED06B79 /* FBObjectInStructReference.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B2CB175D3DC7B677A3D656B16AD05628 /* FBBlockStrongRelationDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0586FD3CE991943B25C24C38C5424D /* FBBlockStrongRelationDetector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5FCA4DC324620C49C3FE922A8F0E7F4 /* FBObjectReference.h in Headers */ = {isa = PBXBuildFile; fileRef = A183DD49345A9F96AE7AD0199B4B2B24 /* FBObjectReference.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C15340A32401EA5D3C1338AB9FB61037 /* FBStructEncodingParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3EDD730A87836538FF72E774EF210F75 /* FBStructEncodingParser.mm */; };
+		C7ADFDA9B467ECFFD5D73FBD6341524B /* FBObjectGraphConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD95F0613B17F7268F8CF0E54B39B55 /* FBObjectGraphConfiguration.m */; };
+		C8088B34D49B56988BEF7C56CF2640F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0099C32CD052D2679865CAE3EEEEAB2 /* CoreGraphics.framework */; };
+		CD1102716B84D22BA94C3FE0D88EAAC0 /* Struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 97054E9D133FFAECC73EF317D4514C71 /* Struct.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D6A22E795F23EF35E9D018DC5ACC60B4 /* FBObjectGraphConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = CCE0A83D54CDF93B710F13EA2E1F71F4 /* FBObjectGraphConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E14FDC29A656C3981024ED2510463516 /* FBBlockStrongLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD153BA76052F53F46B15C9219EB7 /* FBBlockStrongLayout.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E48E58063073828648F6F90731E9A5FA /* Pods-DPAppDoctor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1DB6DA1E995166CEDC400C31314FF61 /* Pods-DPAppDoctor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA69C5E20E03611E3689BAB6488D3805 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233AEAA73D843C0E91D6A0EF6C3F0E2F /* Foundation.framework */; };
+		EAFC6CEB595EA175B23609243DB03574 /* FBRetainCycleDetector+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 863B70390E3489474AAA9B96FD8F666C /* FBRetainCycleDetector+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EFBF6A151203BDA29FC594F7D118D6C1 /* BaseType.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA28A4203CE4C9136161EF157EBCC68 /* BaseType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F03300D44439943FE05DF83E832670E2 /* FBClassStrongLayoutHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E6DD859FE2EB2C23E9D1A572C0BE7B /* FBClassStrongLayoutHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F19D65507547CE2DC886EC26DC6CEA3F /* FBIvarReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A6EFDAF8D6E48356120DE36B829041 /* FBIvarReference.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F209E5F73F15EB5744F2E8AAAABF06C5 /* FBObjectiveCNSCFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = A6AABAB46AC64B4A457B8E2A29491338 /* FBObjectiveCNSCFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4BDAA8AEBCC5CC81BA0A8DC57BB2A63 /* FBIvarReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4640277FF169EAA6DA3842E25E87EA /* FBIvarReference.m */; };
+		F9D8E2FBA234BC187E7160A2F42A8F74 /* FBClassStrongLayoutHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 1131F7C0EF10177C2F70F64F2B155ACF /* FBClassStrongLayoutHelpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22CB640DA32FB09C243D24E53D7C2285 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C3BDDD7A5C40C2EFB9F935FB23AC9C4;
+			remoteInfo = "Pods-DPAppDoctor";
+		};
+		7829689B5E4E9EF0B8DAF40A5454FBAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E647912D2B71D47B98C02E8E0ECA41A;
+			remoteInfo = FBRetainCycleDetector;
+		};
+		D00B74909F017DCCFD799FFCAF11B50C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C3BDDD7A5C40C2EFB9F935FB23AC9C4;
+			remoteInfo = "Pods-DPAppDoctor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		024A74D9491E9FFA991EE1E41B264CEA /* Pods-DPAppDoctorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DPAppDoctorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		07DAC0518D2AB0F7DDFEB94CF71BEDE9 /* FBObjectInStructReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBObjectInStructReference.m; path = FBRetainCycleDetector/Layout/Classes/Reference/FBObjectInStructReference.m; sourceTree = "<group>"; };
+		0EEC9DF5FF51DAEF690E7B22207D7B29 /* Pods-DPAppDoctor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DPAppDoctor.release.xcconfig"; sourceTree = "<group>"; };
+		1131F7C0EF10177C2F70F64F2B155ACF /* FBClassStrongLayoutHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBClassStrongLayoutHelpers.h; path = FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.h; sourceTree = "<group>"; };
+		1954E2A50461EE2D1E574A7E8AC9ED64 /* Pods-DPAppDoctorUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DPAppDoctorUITests-umbrella.h"; sourceTree = "<group>"; };
+		19E088530A4519125AA41C6233E3F028 /* Pods-DPAppDoctor-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DPAppDoctor-frameworks.sh"; sourceTree = "<group>"; };
+		2012267CD6B2E5672B645862CADA34D3 /* FBRetainCycleUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBRetainCycleUtils.h; path = FBRetainCycleDetector/FBRetainCycleUtils.h; sourceTree = "<group>"; };
+		21261ACF7000A96FCCE8FFCDF211AC6D /* FBRetainCycleDetector-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBRetainCycleDetector-Info.plist"; sourceTree = "<group>"; };
+		21CADDE0466711AAC3D1FE5122536112 /* FBRetainCycleDetector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBRetainCycleDetector-umbrella.h"; sourceTree = "<group>"; };
+		233AEAA73D843C0E91D6A0EF6C3F0E2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		23CEA66A7533C0AF294664B19C5557DB /* FBRetainCycleDetector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBRetainCycleDetector.modulemap; sourceTree = "<group>"; };
+		24CEED420B63EE804B6FCD22354ED7F9 /* Pods-DPAppDoctor-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DPAppDoctor-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2A1194AC019E1C497A170EE4AB725374 /* FBRetainCycleDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBRetainCycleDetector.framework; path = FBRetainCycleDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FDD115DDA446B169861FD480F47B806 /* FBBlockStrongLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBBlockStrongLayout.h; path = FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.h; sourceTree = "<group>"; };
+		300D7C9C38226ED88862DA2E4F6D939A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		33A533139B35DB6467E442521E86CB42 /* FBNodeEnumerator.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBNodeEnumerator.mm; path = FBRetainCycleDetector/Detector/FBNodeEnumerator.mm; sourceTree = "<group>"; };
+		34A55297D38E0ED6CAC61E236EF50E75 /* FBObjectiveCObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBObjectiveCObject.m; path = FBRetainCycleDetector/Graph/FBObjectiveCObject.m; sourceTree = "<group>"; };
+		385234D2BD8292EDBE5E38BAF2738B99 /* Pods-DPAppDoctorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DPAppDoctorTests-dummy.m"; sourceTree = "<group>"; };
+		3B4640277FF169EAA6DA3842E25E87EA /* FBIvarReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBIvarReference.m; path = FBRetainCycleDetector/Layout/Classes/Reference/FBIvarReference.m; sourceTree = "<group>"; };
+		3EDD730A87836538FF72E774EF210F75 /* FBStructEncodingParser.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBStructEncodingParser.mm; path = FBRetainCycleDetector/Layout/Classes/Parser/FBStructEncodingParser.mm; sourceTree = "<group>"; };
+		4141B2BC8CE2E3D9AC5DD57505802402 /* Pods-DPAppDoctorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DPAppDoctorTests-umbrella.h"; sourceTree = "<group>"; };
+		43A9C6B65C6E356F5638B2E305DCE22B /* FBAssociationManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBAssociationManager.mm; path = FBRetainCycleDetector/Associations/FBAssociationManager.mm; sourceTree = "<group>"; };
+		457ADAF7A4DF42DB30109CE39F6E7408 /* FBObjectiveCGraphElement+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBObjectiveCGraphElement+Internal.h"; path = "FBRetainCycleDetector/Graph/Internal/FBObjectiveCGraphElement+Internal.h"; sourceTree = "<group>"; };
+		476239CD3028E5080E9CBF28E28B20AF /* FBRetainCycleDetector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBRetainCycleDetector.mm; path = FBRetainCycleDetector/Detector/FBRetainCycleDetector.mm; sourceTree = "<group>"; };
+		4AA28A4203CE4C9136161EF157EBCC68 /* BaseType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseType.h; path = FBRetainCycleDetector/Layout/Classes/Parser/BaseType.h; sourceTree = "<group>"; };
+		4EF068E66AAFD63B0201A6FB1056FA7C /* FBObjectiveCGraphElement.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBObjectiveCGraphElement.mm; path = FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.mm; sourceTree = "<group>"; };
+		5054649E3B9A71AE9809F7A023D7F2D9 /* Pods-DPAppDoctorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DPAppDoctorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		50C28DF2D633E11788BEC694AB34CCD7 /* FBAssociationManager+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBAssociationManager+Internal.h"; path = "FBRetainCycleDetector/Associations/Internal/FBAssociationManager+Internal.h"; sourceTree = "<group>"; };
+		51A6EFDAF8D6E48356120DE36B829041 /* FBIvarReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBIvarReference.h; path = FBRetainCycleDetector/Layout/Classes/Reference/FBIvarReference.h; sourceTree = "<group>"; };
+		52E36F3FC883A024B9E81C200E899002 /* Pods-DPAppDoctorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DPAppDoctorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		54B6E73C43F6537309F1994358270FFB /* Pods-DPAppDoctor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DPAppDoctor.debug.xcconfig"; sourceTree = "<group>"; };
+		5B99F6713D076DF973A27A45B3C90F4A /* Pods-DPAppDoctorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DPAppDoctorTests.release.xcconfig"; sourceTree = "<group>"; };
+		5CB1FEA139B6BF53922EE04DF42B7906 /* FBObjectiveCBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectiveCBlock.h; path = FBRetainCycleDetector/Graph/FBObjectiveCBlock.h; sourceTree = "<group>"; };
+		6379F46EF9E07224B3C7116DC64C78C4 /* Pods-DPAppDoctorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DPAppDoctorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		64696672933E78A4DF27C15259FED54D /* FBRetainCycleDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBRetainCycleDetector.h; path = FBRetainCycleDetector/Detector/FBRetainCycleDetector.h; sourceTree = "<group>"; };
+		6EDDBBFFD600883DD6BEC180B83FA091 /* FBStandardGraphEdgeFilters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBStandardGraphEdgeFilters.h; path = FBRetainCycleDetector/Filtering/FBStandardGraphEdgeFilters.h; sourceTree = "<group>"; };
+		72782FDAA6C3D053DD411CC2351A6CEA /* fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		73290A59194F57C682D3FE61AA94762A /* Pods-DPAppDoctorUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DPAppDoctorUITests-Info.plist"; sourceTree = "<group>"; };
+		7702E8E89E7616C580B2DEF873731133 /* FBRetainCycleUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBRetainCycleUtils.m; path = FBRetainCycleDetector/FBRetainCycleUtils.m; sourceTree = "<group>"; };
+		7987F0334DC4F8774C1EEC0A502C28F7 /* FBNodeEnumerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNodeEnumerator.h; path = FBRetainCycleDetector/Detector/FBNodeEnumerator.h; sourceTree = "<group>"; };
+		7B4EDAC59B5B583319AD9E81FB9D2C27 /* Pods-DPAppDoctor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DPAppDoctor-Info.plist"; sourceTree = "<group>"; };
+		7B7CA47146B0B5C2FE1348ECA109B747 /* FBObjectiveCObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectiveCObject.h; path = FBRetainCycleDetector/Graph/FBObjectiveCObject.h; sourceTree = "<group>"; };
+		80B864386B1B71C9E74F49813D175BEA /* Pods_DPAppDoctor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DPAppDoctor.framework; path = "Pods-DPAppDoctor.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C1E38E4DBDDDC9FB526252BC2DA0A1 /* Type.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Type.h; path = FBRetainCycleDetector/Layout/Classes/Parser/Type.h; sourceTree = "<group>"; };
+		814A971E9D076CED07C8222F7ED06B79 /* FBObjectInStructReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectInStructReference.h; path = FBRetainCycleDetector/Layout/Classes/Reference/FBObjectInStructReference.h; sourceTree = "<group>"; };
+		863B70390E3489474AAA9B96FD8F666C /* FBRetainCycleDetector+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBRetainCycleDetector+Internal.h"; path = "FBRetainCycleDetector/Detector/FBRetainCycleDetector+Internal.h"; sourceTree = "<group>"; };
+		88D7DC2DBD86A1F40365B15E1F26DBF4 /* FBBlockStrongRelationDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBBlockStrongRelationDetector.m; path = FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.m; sourceTree = "<group>"; };
+		8B1FD153BA76052F53F46B15C9219EB7 /* FBBlockStrongLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBBlockStrongLayout.m; path = FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.m; sourceTree = "<group>"; };
+		92BF04A6F9124FCDCD88D521C00CA684 /* Pods-DPAppDoctorTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DPAppDoctorTests-Info.plist"; sourceTree = "<group>"; };
+		93E58C03947ABEE26EABC8CEF9CA5272 /* FBStructEncodingParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBStructEncodingParser.h; path = FBRetainCycleDetector/Layout/Classes/Parser/FBStructEncodingParser.h; sourceTree = "<group>"; };
+		94BAA5A745F22ECE9EA648B7ACF00CE1 /* Pods-DPAppDoctorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DPAppDoctorTests.modulemap"; sourceTree = "<group>"; };
+		97054E9D133FFAECC73EF317D4514C71 /* Struct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Struct.h; path = FBRetainCycleDetector/Layout/Classes/Parser/Struct.h; sourceTree = "<group>"; };
+		9794F4E4FA34B3B494A59933C194C096 /* FBObjectiveCNSCFTimer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBObjectiveCNSCFTimer.mm; path = FBRetainCycleDetector/Graph/Specialization/FBObjectiveCNSCFTimer.mm; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0099C32CD052D2679865CAE3EEEEAB2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		A183DD49345A9F96AE7AD0199B4B2B24 /* FBObjectReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectReference.h; path = FBRetainCycleDetector/Layout/Classes/Reference/FBObjectReference.h; sourceTree = "<group>"; };
+		A6AABAB46AC64B4A457B8E2A29491338 /* FBObjectiveCNSCFTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectiveCNSCFTimer.h; path = FBRetainCycleDetector/Graph/Specialization/FBObjectiveCNSCFTimer.h; sourceTree = "<group>"; };
+		AE4DA13FD2F7CAF682280EF514928963 /* FBClassStrongLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBClassStrongLayout.h; path = FBRetainCycleDetector/Layout/Classes/FBClassStrongLayout.h; sourceTree = "<group>"; };
+		B065A7518AE3914F9A55D5AD9B221AD6 /* FBBlockInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBBlockInterface.h; path = FBRetainCycleDetector/Layout/Blocks/FBBlockInterface.h; sourceTree = "<group>"; };
+		B1A767CB75957A810DE392DC5F3E23CD /* Pods-DPAppDoctor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DPAppDoctor.modulemap"; sourceTree = "<group>"; };
+		B3E0F57442D62E3608F452C2F6640E7D /* Pods-DPAppDoctor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DPAppDoctor-dummy.m"; sourceTree = "<group>"; };
+		B69D56DD5EE090E592A378789DCA8876 /* Struct.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = Struct.mm; path = FBRetainCycleDetector/Layout/Classes/Parser/Struct.mm; sourceTree = "<group>"; };
+		BA3D2019354223E57A2CFF53F3756D07 /* FBAssociationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAssociationManager.h; path = FBRetainCycleDetector/Associations/FBAssociationManager.h; sourceTree = "<group>"; };
+		C19E54B8BCAB74714BC22F340A3E6ABD /* FBStandardGraphEdgeFilters.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBStandardGraphEdgeFilters.mm; path = FBRetainCycleDetector/Filtering/FBStandardGraphEdgeFilters.mm; sourceTree = "<group>"; };
+		C5DDED818E4B7E8A57091CBE9336A7B0 /* Pods-DPAppDoctorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DPAppDoctorUITests-dummy.m"; sourceTree = "<group>"; };
+		C7A68992229E0F36101EE57633A98DE1 /* Pods_DPAppDoctorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DPAppDoctorUITests.framework; path = "Pods-DPAppDoctorUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE0A83D54CDF93B710F13EA2E1F71F4 /* FBObjectGraphConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectGraphConfiguration.h; path = FBRetainCycleDetector/Graph/FBObjectGraphConfiguration.h; sourceTree = "<group>"; };
+		CD8525D2B1D385AF357F0299680A7D92 /* FBRetainCycleDetector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBRetainCycleDetector-dummy.m"; sourceTree = "<group>"; };
+		CF6D728D2F00070C5BC2D892752D1FB4 /* FBClassStrongLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBClassStrongLayout.mm; path = FBRetainCycleDetector/Layout/Classes/FBClassStrongLayout.mm; sourceTree = "<group>"; };
+		D2B69CE4FBDF90C4675D5F7D1348C7E2 /* Pods-DPAppDoctorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DPAppDoctorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9C0E05AA4A284FA3F03CDC5825A332B /* FBObjectiveCBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBObjectiveCBlock.m; path = FBRetainCycleDetector/Graph/FBObjectiveCBlock.m; sourceTree = "<group>"; };
+		DBB4F7FC49AA57561E449B0B7315348E /* fishhook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		DE6BB6C3488612094C1CB2DE622B1C2D /* Pods-DPAppDoctorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DPAppDoctorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DECE4B584676CCDDB59B8D2FDDA010C5 /* Pods-DPAppDoctor-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DPAppDoctor-acknowledgements.plist"; sourceTree = "<group>"; };
+		E1DB6DA1E995166CEDC400C31314FF61 /* Pods-DPAppDoctor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DPAppDoctor-umbrella.h"; sourceTree = "<group>"; };
+		E8DAE5C7548F1809486AD9FC7FD0524F /* Pods-DPAppDoctorUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DPAppDoctorUITests.modulemap"; sourceTree = "<group>"; };
+		E946A3AD30B47F38FD7F79D71D40E85E /* FBObjectiveCGraphElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBObjectiveCGraphElement.h; path = FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.h; sourceTree = "<group>"; };
+		EC0586FD3CE991943B25C24C38C5424D /* FBBlockStrongRelationDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBBlockStrongRelationDetector.h; path = FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.h; sourceTree = "<group>"; };
+		F0E6DD859FE2EB2C23E9D1A572C0BE7B /* FBClassStrongLayoutHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBClassStrongLayoutHelpers.m; path = FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.m; sourceTree = "<group>"; };
+		FA019096C885143EAA5AC013B8CF93D2 /* FBRetainCycleDetector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBRetainCycleDetector-prefix.pch"; sourceTree = "<group>"; };
+		FA7FAE2F5E5EE6309CFF1982C15FA8BF /* FBRetainCycleDetector.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBRetainCycleDetector.xcconfig; sourceTree = "<group>"; };
+		FDD95F0613B17F7268F8CF0E54B39B55 /* FBObjectGraphConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBObjectGraphConfiguration.m; path = FBRetainCycleDetector/Graph/FBObjectGraphConfiguration.m; sourceTree = "<group>"; };
+		FE1B02675769DACE0BCA6B4061463692 /* Pods_DPAppDoctorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DPAppDoctorTests.framework; path = "Pods-DPAppDoctorTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB9D9C19ABC2E32EB055388AA3B4BB4 /* Pods-DPAppDoctorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DPAppDoctorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59074FD6C766041B01439EE6500D7781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7453AC1D5008C9AFC0E38935B5FEE3BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7163909618489D4132CDC780637979D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3162248B014EE328643A44514B7F9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB1740B8385186F332FBB345B4E2640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AC5FE0CDB0290F8838E86AEB73FEA36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F157ED567397AC6353FB263653B685C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8088B34D49B56988BEF7C56CF2640F7 /* CoreGraphics.framework in Frameworks */,
+				EA69C5E20E03611E3689BAB6488D3805 /* Foundation.framework in Frameworks */,
+				8B10C53550416520FBBF779F2AFFB895 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5246D3CB0F6FF3AC9502D9EA5C5D6540 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31F5AE8E76651644C58295F3CDF9B0F3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D811C5AE79F36DB6E195E55667E542E1 /* Pods-DPAppDoctor */,
+				78FB175BEE6005FE0AA237A275D1A066 /* Pods-DPAppDoctorTests */,
+				D89765D44EC3D4A792A5C01C4ADE5A61 /* Pods-DPAppDoctorUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		522F7BD173DE37B79ECA4E43F6B1CE9C /* FBRetainCycleDetector */ = {
+			isa = PBXGroup;
+			children = (
+				4AA28A4203CE4C9136161EF157EBCC68 /* BaseType.h */,
+				BA3D2019354223E57A2CFF53F3756D07 /* FBAssociationManager.h */,
+				43A9C6B65C6E356F5638B2E305DCE22B /* FBAssociationManager.mm */,
+				50C28DF2D633E11788BEC694AB34CCD7 /* FBAssociationManager+Internal.h */,
+				B065A7518AE3914F9A55D5AD9B221AD6 /* FBBlockInterface.h */,
+				2FDD115DDA446B169861FD480F47B806 /* FBBlockStrongLayout.h */,
+				8B1FD153BA76052F53F46B15C9219EB7 /* FBBlockStrongLayout.m */,
+				EC0586FD3CE991943B25C24C38C5424D /* FBBlockStrongRelationDetector.h */,
+				88D7DC2DBD86A1F40365B15E1F26DBF4 /* FBBlockStrongRelationDetector.m */,
+				AE4DA13FD2F7CAF682280EF514928963 /* FBClassStrongLayout.h */,
+				CF6D728D2F00070C5BC2D892752D1FB4 /* FBClassStrongLayout.mm */,
+				1131F7C0EF10177C2F70F64F2B155ACF /* FBClassStrongLayoutHelpers.h */,
+				F0E6DD859FE2EB2C23E9D1A572C0BE7B /* FBClassStrongLayoutHelpers.m */,
+				51A6EFDAF8D6E48356120DE36B829041 /* FBIvarReference.h */,
+				3B4640277FF169EAA6DA3842E25E87EA /* FBIvarReference.m */,
+				7987F0334DC4F8774C1EEC0A502C28F7 /* FBNodeEnumerator.h */,
+				33A533139B35DB6467E442521E86CB42 /* FBNodeEnumerator.mm */,
+				CCE0A83D54CDF93B710F13EA2E1F71F4 /* FBObjectGraphConfiguration.h */,
+				FDD95F0613B17F7268F8CF0E54B39B55 /* FBObjectGraphConfiguration.m */,
+				814A971E9D076CED07C8222F7ED06B79 /* FBObjectInStructReference.h */,
+				07DAC0518D2AB0F7DDFEB94CF71BEDE9 /* FBObjectInStructReference.m */,
+				5CB1FEA139B6BF53922EE04DF42B7906 /* FBObjectiveCBlock.h */,
+				D9C0E05AA4A284FA3F03CDC5825A332B /* FBObjectiveCBlock.m */,
+				E946A3AD30B47F38FD7F79D71D40E85E /* FBObjectiveCGraphElement.h */,
+				4EF068E66AAFD63B0201A6FB1056FA7C /* FBObjectiveCGraphElement.mm */,
+				457ADAF7A4DF42DB30109CE39F6E7408 /* FBObjectiveCGraphElement+Internal.h */,
+				A6AABAB46AC64B4A457B8E2A29491338 /* FBObjectiveCNSCFTimer.h */,
+				9794F4E4FA34B3B494A59933C194C096 /* FBObjectiveCNSCFTimer.mm */,
+				7B7CA47146B0B5C2FE1348ECA109B747 /* FBObjectiveCObject.h */,
+				34A55297D38E0ED6CAC61E236EF50E75 /* FBObjectiveCObject.m */,
+				A183DD49345A9F96AE7AD0199B4B2B24 /* FBObjectReference.h */,
+				64696672933E78A4DF27C15259FED54D /* FBRetainCycleDetector.h */,
+				476239CD3028E5080E9CBF28E28B20AF /* FBRetainCycleDetector.mm */,
+				863B70390E3489474AAA9B96FD8F666C /* FBRetainCycleDetector+Internal.h */,
+				2012267CD6B2E5672B645862CADA34D3 /* FBRetainCycleUtils.h */,
+				7702E8E89E7616C580B2DEF873731133 /* FBRetainCycleUtils.m */,
+				6EDDBBFFD600883DD6BEC180B83FA091 /* FBStandardGraphEdgeFilters.h */,
+				C19E54B8BCAB74714BC22F340A3E6ABD /* FBStandardGraphEdgeFilters.mm */,
+				93E58C03947ABEE26EABC8CEF9CA5272 /* FBStructEncodingParser.h */,
+				3EDD730A87836538FF72E774EF210F75 /* FBStructEncodingParser.mm */,
+				72782FDAA6C3D053DD411CC2351A6CEA /* fishhook.c */,
+				DBB4F7FC49AA57561E449B0B7315348E /* fishhook.h */,
+				97054E9D133FFAECC73EF317D4514C71 /* Struct.h */,
+				B69D56DD5EE090E592A378789DCA8876 /* Struct.mm */,
+				80C1E38E4DBDDDC9FB526252BC2DA0A1 /* Type.h */,
+				700EF150B7438B97DCB2EAD729B38174 /* Support Files */,
+			);
+			name = FBRetainCycleDetector;
+			path = FBRetainCycleDetector;
+			sourceTree = "<group>";
+		};
+		5246D3CB0F6FF3AC9502D9EA5C5D6540 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A0099C32CD052D2679865CAE3EEEEAB2 /* CoreGraphics.framework */,
+				233AEAA73D843C0E91D6A0EF6C3F0E2F /* Foundation.framework */,
+				300D7C9C38226ED88862DA2E4F6D939A /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		700EF150B7438B97DCB2EAD729B38174 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				23CEA66A7533C0AF294664B19C5557DB /* FBRetainCycleDetector.modulemap */,
+				FA7FAE2F5E5EE6309CFF1982C15FA8BF /* FBRetainCycleDetector.xcconfig */,
+				CD8525D2B1D385AF357F0299680A7D92 /* FBRetainCycleDetector-dummy.m */,
+				21261ACF7000A96FCCE8FFCDF211AC6D /* FBRetainCycleDetector-Info.plist */,
+				FA019096C885143EAA5AC013B8CF93D2 /* FBRetainCycleDetector-prefix.pch */,
+				21CADDE0466711AAC3D1FE5122536112 /* FBRetainCycleDetector-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBRetainCycleDetector";
+			sourceTree = "<group>";
+		};
+		78FB175BEE6005FE0AA237A275D1A066 /* Pods-DPAppDoctorTests */ = {
+			isa = PBXGroup;
+			children = (
+				94BAA5A745F22ECE9EA648B7ACF00CE1 /* Pods-DPAppDoctorTests.modulemap */,
+				FFB9D9C19ABC2E32EB055388AA3B4BB4 /* Pods-DPAppDoctorTests-acknowledgements.markdown */,
+				52E36F3FC883A024B9E81C200E899002 /* Pods-DPAppDoctorTests-acknowledgements.plist */,
+				385234D2BD8292EDBE5E38BAF2738B99 /* Pods-DPAppDoctorTests-dummy.m */,
+				92BF04A6F9124FCDCD88D521C00CA684 /* Pods-DPAppDoctorTests-Info.plist */,
+				4141B2BC8CE2E3D9AC5DD57505802402 /* Pods-DPAppDoctorTests-umbrella.h */,
+				D2B69CE4FBDF90C4675D5F7D1348C7E2 /* Pods-DPAppDoctorTests.debug.xcconfig */,
+				5B99F6713D076DF973A27A45B3C90F4A /* Pods-DPAppDoctorTests.release.xcconfig */,
+			);
+			name = "Pods-DPAppDoctorTests";
+			path = "Target Support Files/Pods-DPAppDoctorTests";
+			sourceTree = "<group>";
+		};
+		C9166172146DEE7281357CEE8D544EA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A1194AC019E1C497A170EE4AB725374 /* FBRetainCycleDetector.framework */,
+				80B864386B1B71C9E74F49813D175BEA /* Pods_DPAppDoctor.framework */,
+				FE1B02675769DACE0BCA6B4061463692 /* Pods_DPAppDoctorTests.framework */,
+				C7A68992229E0F36101EE57633A98DE1 /* Pods_DPAppDoctorUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				EDAB7028443AB4B46EE4D8A39AA30A62 /* Pods */,
+				C9166172146DEE7281357CEE8D544EA3 /* Products */,
+				31F5AE8E76651644C58295F3CDF9B0F3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D811C5AE79F36DB6E195E55667E542E1 /* Pods-DPAppDoctor */ = {
+			isa = PBXGroup;
+			children = (
+				B1A767CB75957A810DE392DC5F3E23CD /* Pods-DPAppDoctor.modulemap */,
+				24CEED420B63EE804B6FCD22354ED7F9 /* Pods-DPAppDoctor-acknowledgements.markdown */,
+				DECE4B584676CCDDB59B8D2FDDA010C5 /* Pods-DPAppDoctor-acknowledgements.plist */,
+				B3E0F57442D62E3608F452C2F6640E7D /* Pods-DPAppDoctor-dummy.m */,
+				19E088530A4519125AA41C6233E3F028 /* Pods-DPAppDoctor-frameworks.sh */,
+				7B4EDAC59B5B583319AD9E81FB9D2C27 /* Pods-DPAppDoctor-Info.plist */,
+				E1DB6DA1E995166CEDC400C31314FF61 /* Pods-DPAppDoctor-umbrella.h */,
+				54B6E73C43F6537309F1994358270FFB /* Pods-DPAppDoctor.debug.xcconfig */,
+				0EEC9DF5FF51DAEF690E7B22207D7B29 /* Pods-DPAppDoctor.release.xcconfig */,
+			);
+			name = "Pods-DPAppDoctor";
+			path = "Target Support Files/Pods-DPAppDoctor";
+			sourceTree = "<group>";
+		};
+		D89765D44EC3D4A792A5C01C4ADE5A61 /* Pods-DPAppDoctorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8DAE5C7548F1809486AD9FC7FD0524F /* Pods-DPAppDoctorUITests.modulemap */,
+				024A74D9491E9FFA991EE1E41B264CEA /* Pods-DPAppDoctorUITests-acknowledgements.markdown */,
+				DE6BB6C3488612094C1CB2DE622B1C2D /* Pods-DPAppDoctorUITests-acknowledgements.plist */,
+				C5DDED818E4B7E8A57091CBE9336A7B0 /* Pods-DPAppDoctorUITests-dummy.m */,
+				73290A59194F57C682D3FE61AA94762A /* Pods-DPAppDoctorUITests-Info.plist */,
+				1954E2A50461EE2D1E574A7E8AC9ED64 /* Pods-DPAppDoctorUITests-umbrella.h */,
+				6379F46EF9E07224B3C7116DC64C78C4 /* Pods-DPAppDoctorUITests.debug.xcconfig */,
+				5054649E3B9A71AE9809F7A023D7F2D9 /* Pods-DPAppDoctorUITests.release.xcconfig */,
+			);
+			name = "Pods-DPAppDoctorUITests";
+			path = "Target Support Files/Pods-DPAppDoctorUITests";
+			sourceTree = "<group>";
+		};
+		EDAB7028443AB4B46EE4D8A39AA30A62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				522F7BD173DE37B79ECA4E43F6B1CE9C /* FBRetainCycleDetector */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		216C6213F8893D453DDC712257B59AF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFBF6A151203BDA29FC594F7D118D6C1 /* BaseType.h in Headers */,
+				1AECCF6B5E3434FE0C303E8EDE37DE6E /* FBAssociationManager+Internal.h in Headers */,
+				4CDF1AF4556A90CA91E98B21160EBD0A /* FBAssociationManager.h in Headers */,
+				8334D788769CBF113D152842A4931174 /* FBBlockInterface.h in Headers */,
+				03AEA342BF8482A6067576E9461B2B55 /* FBBlockStrongLayout.h in Headers */,
+				B2CB175D3DC7B677A3D656B16AD05628 /* FBBlockStrongRelationDetector.h in Headers */,
+				7FD706309F83F6E4F9BE1EEE7382F1B3 /* FBClassStrongLayout.h in Headers */,
+				F9D8E2FBA234BC187E7160A2F42A8F74 /* FBClassStrongLayoutHelpers.h in Headers */,
+				F19D65507547CE2DC886EC26DC6CEA3F /* FBIvarReference.h in Headers */,
+				7C58D67FA200741C43D009E0DB4BF6B3 /* FBNodeEnumerator.h in Headers */,
+				D6A22E795F23EF35E9D018DC5ACC60B4 /* FBObjectGraphConfiguration.h in Headers */,
+				9DD00BD79A151A579FCEC5D99F5A4AEE /* FBObjectInStructReference.h in Headers */,
+				76839FCC744576AAA29DF81544EBED6A /* FBObjectiveCBlock.h in Headers */,
+				2215270E543BAE806B6CB19DCC8CE8A9 /* FBObjectiveCGraphElement+Internal.h in Headers */,
+				30799A4439BAE1320EE857AA720FC608 /* FBObjectiveCGraphElement.h in Headers */,
+				F209E5F73F15EB5744F2E8AAAABF06C5 /* FBObjectiveCNSCFTimer.h in Headers */,
+				9313010AE5DC332E3CA3017EE9E44BB2 /* FBObjectiveCObject.h in Headers */,
+				B5FCA4DC324620C49C3FE922A8F0E7F4 /* FBObjectReference.h in Headers */,
+				EAFC6CEB595EA175B23609243DB03574 /* FBRetainCycleDetector+Internal.h in Headers */,
+				05862B810862D38EE6F6D22A73A3C586 /* FBRetainCycleDetector-umbrella.h in Headers */,
+				7FC5F9908B0E7594979CDAA2105A363C /* FBRetainCycleDetector.h in Headers */,
+				1AD97D28FDE4AC7A0A28109410A56EBC /* FBRetainCycleUtils.h in Headers */,
+				12037CF1725DCE156F30F0F2F1B0DC99 /* FBStandardGraphEdgeFilters.h in Headers */,
+				2C7EAB29618D45F847ADEF4D9DE1E059 /* FBStructEncodingParser.h in Headers */,
+				0E5039728F2E0E22EF738CC6295AD985 /* fishhook.h in Headers */,
+				CD1102716B84D22BA94C3FE0D88EAAC0 /* Struct.h in Headers */,
+				180B0A2700311118F337952F0C61BB89 /* Type.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66E29A30C7648170FE816E3C5787CE78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48E58063073828648F6F90731E9A5FA /* Pods-DPAppDoctor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D2ED43605816A8AC0BCBBF05B6FEE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75129AEB8DC18E52D2620FEB5BF033CD /* Pods-DPAppDoctorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3CFA3949A74D154C87AE2C37D9DA975 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D6BD2E309221C7CCB4611D997BF37B9 /* Pods-DPAppDoctorUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0740BD409D38ABD6F20F556CD5F493DA /* Pods-DPAppDoctorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE03167A239D9E8EAD4B3151B80FD253 /* Build configuration list for PBXNativeTarget "Pods-DPAppDoctorUITests" */;
+			buildPhases = (
+				E3CFA3949A74D154C87AE2C37D9DA975 /* Headers */,
+				2E10E8617A3737C99CEAD548A34AEFFE /* Sources */,
+				7163909618489D4132CDC780637979D2 /* Frameworks */,
+				6079A60807B89BF703D2CC54CDC71463 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC1ECDD72E0E717FDE86D3B869F8AD3F /* PBXTargetDependency */,
+			);
+			name = "Pods-DPAppDoctorUITests";
+			productName = "Pods-DPAppDoctorUITests";
+			productReference = C7A68992229E0F36101EE57633A98DE1 /* Pods_DPAppDoctorUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0C3BDDD7A5C40C2EFB9F935FB23AC9C4 /* Pods-DPAppDoctor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E8205055E5DFE93DA40FE0A37F6548 /* Build configuration list for PBXNativeTarget "Pods-DPAppDoctor" */;
+			buildPhases = (
+				66E29A30C7648170FE816E3C5787CE78 /* Headers */,
+				C3BE1AEBABF732141DF58647D85929D5 /* Sources */,
+				ADB1740B8385186F332FBB345B4E2640 /* Frameworks */,
+				8C53F8F7F99B1763B8A7515564EF95A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21A67790B60EEC1BF5916E733D4F402E /* PBXTargetDependency */,
+			);
+			name = "Pods-DPAppDoctor";
+			productName = "Pods-DPAppDoctor";
+			productReference = 80B864386B1B71C9E74F49813D175BEA /* Pods_DPAppDoctor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0E647912D2B71D47B98C02E8E0ECA41A /* FBRetainCycleDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF19280816486D6A02354AA7AF606E9 /* Build configuration list for PBXNativeTarget "FBRetainCycleDetector" */;
+			buildPhases = (
+				216C6213F8893D453DDC712257B59AF2 /* Headers */,
+				4705C9C6DA4488C33812752FF23E976C /* Sources */,
+				F157ED567397AC6353FB263653B685C8 /* Frameworks */,
+				72BFABB31CA0F9196ADE9DC56E8A64B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBRetainCycleDetector;
+			productName = FBRetainCycleDetector;
+			productReference = 2A1194AC019E1C497A170EE4AB725374 /* FBRetainCycleDetector.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1990E2FBF32788D12C7ABE2C0EA72936 /* Pods-DPAppDoctorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A08028E6B031740D4CBDF68EB0593F8 /* Build configuration list for PBXNativeTarget "Pods-DPAppDoctorTests" */;
+			buildPhases = (
+				98D2ED43605816A8AC0BCBBF05B6FEE9 /* Headers */,
+				A07BD5ED25EAF12F2C6C607E44D5602D /* Sources */,
+				59074FD6C766041B01439EE6500D7781 /* Frameworks */,
+				B882E6A874E9A4BD6416005290642E46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C9D56A395A57BB3742E226C16346273 /* PBXTargetDependency */,
+			);
+			name = "Pods-DPAppDoctorTests";
+			productName = "Pods-DPAppDoctorTests";
+			productReference = FE1B02675769DACE0BCA6B4061463692 /* Pods_DPAppDoctorTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C9166172146DEE7281357CEE8D544EA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E647912D2B71D47B98C02E8E0ECA41A /* FBRetainCycleDetector */,
+				0C3BDDD7A5C40C2EFB9F935FB23AC9C4 /* Pods-DPAppDoctor */,
+				1990E2FBF32788D12C7ABE2C0EA72936 /* Pods-DPAppDoctorTests */,
+				0740BD409D38ABD6F20F556CD5F493DA /* Pods-DPAppDoctorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6079A60807B89BF703D2CC54CDC71463 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72BFABB31CA0F9196ADE9DC56E8A64B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C53F8F7F99B1763B8A7515564EF95A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B882E6A874E9A4BD6416005290642E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E10E8617A3737C99CEAD548A34AEFFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C8042EF770CCED632BAB9BC4277AE63 /* Pods-DPAppDoctorUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4705C9C6DA4488C33812752FF23E976C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB5BA433F47C2F7DFB0DA0E4B929162 /* FBAssociationManager.mm in Sources */,
+				E14FDC29A656C3981024ED2510463516 /* FBBlockStrongLayout.m in Sources */,
+				558F4F4E3DD0632771BFF4805DDBF9D2 /* FBBlockStrongRelationDetector.m in Sources */,
+				1BE446E3EAEBC93BAA70A18B97681D81 /* FBClassStrongLayout.mm in Sources */,
+				F03300D44439943FE05DF83E832670E2 /* FBClassStrongLayoutHelpers.m in Sources */,
+				F4BDAA8AEBCC5CC81BA0A8DC57BB2A63 /* FBIvarReference.m in Sources */,
+				02941F1F5BA91B5EE2DAEA0EAE8B5F28 /* FBNodeEnumerator.mm in Sources */,
+				C7ADFDA9B467ECFFD5D73FBD6341524B /* FBObjectGraphConfiguration.m in Sources */,
+				2502EA6AE719CDF842B94C7A211D012E /* FBObjectInStructReference.m in Sources */,
+				368091B1382E9796F814F9AA94E87B67 /* FBObjectiveCBlock.m in Sources */,
+				066F615680F8B09B7E42273A0DC6BC18 /* FBObjectiveCGraphElement.mm in Sources */,
+				18BA8DB57594BE50190BC1BBB49CCF13 /* FBObjectiveCNSCFTimer.mm in Sources */,
+				2F1C1C0B1AC28CA68EAE15A6B75C6BCF /* FBObjectiveCObject.m in Sources */,
+				32303EDFF7F90BA71936B7D4876D107D /* FBRetainCycleDetector-dummy.m in Sources */,
+				4C6D22C4D8E88A5E73C9195EA35FBFFE /* FBRetainCycleDetector.mm in Sources */,
+				5AE67238AF5D3CF8193F89AB7E086F99 /* FBRetainCycleUtils.m in Sources */,
+				2533D298BD148D74770EB6BE8DF833D4 /* FBStandardGraphEdgeFilters.mm in Sources */,
+				C15340A32401EA5D3C1338AB9FB61037 /* FBStructEncodingParser.mm in Sources */,
+				36025E4DF6385AB0C81088DBADD65C5A /* fishhook.c in Sources */,
+				26CFACEC1D36DE12D8C462864AD1D4B3 /* Struct.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07BD5ED25EAF12F2C6C607E44D5602D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F9D58A82A3A3E0EFC89A12EE4663D5 /* Pods-DPAppDoctorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3BE1AEBABF732141DF58647D85929D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB2A6B3F666EFA786979EA98887C3B7 /* Pods-DPAppDoctor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21A67790B60EEC1BF5916E733D4F402E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBRetainCycleDetector;
+			target = 0E647912D2B71D47B98C02E8E0ECA41A /* FBRetainCycleDetector */;
+			targetProxy = 7829689B5E4E9EF0B8DAF40A5454FBAC /* PBXContainerItemProxy */;
+		};
+		3C9D56A395A57BB3742E226C16346273 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DPAppDoctor";
+			target = 0C3BDDD7A5C40C2EFB9F935FB23AC9C4 /* Pods-DPAppDoctor */;
+			targetProxy = D00B74909F017DCCFD799FFCAF11B50C /* PBXContainerItemProxy */;
+		};
+		CC1ECDD72E0E717FDE86D3B869F8AD3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DPAppDoctor";
+			target = 0C3BDDD7A5C40C2EFB9F935FB23AC9C4 /* Pods-DPAppDoctor */;
+			targetProxy = 22CB640DA32FB09C243D24E53D7C2285 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		61EBE8B0DA8436AD9F698FDE87CCFB29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B99F6713D076DF973A27A45B3C90F4A /* Pods-DPAppDoctorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DPAppDoctorTests/Pods-DPAppDoctorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DPAppDoctorTests/Pods-DPAppDoctorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68383F9A42AA2564F8302956BC189B73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5054649E3B9A71AE9809F7A023D7F2D9 /* Pods-DPAppDoctorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DPAppDoctorUITests/Pods-DPAppDoctorUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DPAppDoctorUITests/Pods-DPAppDoctorUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8260DD57579A06B897CC5793EEAFE18E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B69CE4FBDF90C4675D5F7D1348C7E2 /* Pods-DPAppDoctorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DPAppDoctorTests/Pods-DPAppDoctorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DPAppDoctorTests/Pods-DPAppDoctorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		89ACC4CCAB8243B42358DBFB18952C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA7FAE2F5E5EE6309CFF1982C15FA8BF /* FBRetainCycleDetector.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector.modulemap";
+				PRODUCT_MODULE_NAME = FBRetainCycleDetector;
+				PRODUCT_NAME = FBRetainCycleDetector;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A55232D0874FC1BAA8E776ABC5868B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA7FAE2F5E5EE6309CFF1982C15FA8BF /* FBRetainCycleDetector.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector.modulemap";
+				PRODUCT_MODULE_NAME = FBRetainCycleDetector;
+				PRODUCT_NAME = FBRetainCycleDetector;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A692FCB57AA1DF036FCA941C49606A46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EEC9DF5FF51DAEF690E7B22207D7B29 /* Pods-DPAppDoctor.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DPAppDoctor/Pods-DPAppDoctor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DPAppDoctor/Pods-DPAppDoctor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1CA1379DE3EA544958A7C437362AC6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6379F46EF9E07224B3C7116DC64C78C4 /* Pods-DPAppDoctorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DPAppDoctorUITests/Pods-DPAppDoctorUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DPAppDoctorUITests/Pods-DPAppDoctorUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C439815A845F79CD4B5ED3D48046AC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B6E73C43F6537309F1994358270FFB /* Pods-DPAppDoctor.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DPAppDoctor/Pods-DPAppDoctor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DPAppDoctor/Pods-DPAppDoctor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02E8205055E5DFE93DA40FE0A37F6548 /* Build configuration list for PBXNativeTarget "Pods-DPAppDoctor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C439815A845F79CD4B5ED3D48046AC61 /* Debug */,
+				A692FCB57AA1DF036FCA941C49606A46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A08028E6B031740D4CBDF68EB0593F8 /* Build configuration list for PBXNativeTarget "Pods-DPAppDoctorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8260DD57579A06B897CC5793EEAFE18E /* Debug */,
+				61EBE8B0DA8436AD9F698FDE87CCFB29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF19280816486D6A02354AA7AF606E9 /* Build configuration list for PBXNativeTarget "FBRetainCycleDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A55232D0874FC1BAA8E776ABC5868B0 /* Debug */,
+				89ACC4CCAB8243B42358DBFB18952C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE03167A239D9E8EAD4B3151B80FD253 /* Build configuration list for PBXNativeTarget "Pods-DPAppDoctorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1CA1379DE3EA544958A7C437362AC6F /* Debug */,
+				68383F9A42AA2564F8302956BC189B73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

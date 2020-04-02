@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01288423ED7C1197A1391E70 /* Pods_DPAppDoctor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686B1EA3FDC48E99470D190E /* Pods_DPAppDoctor.framework */; };
+		28BDAC40DD6608A25548AFD7 /* Pods_DPAppDoctorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12076195A923920AE7643892 /* Pods_DPAppDoctorTests.framework */; };
+		387CFEC125B084B9F29123C6 /* Pods_DPAppDoctorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595BE23A0488BA2F689518D2 /* Pods_DPAppDoctorUITests.framework */; };
 		FD3A507C217815A500E17385 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A507B217815A500E17385 /* AppDelegate.m */; };
 		FD3A507F217815A500E17385 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A507E217815A500E17385 /* ViewController.m */; };
 		FD3A5082217815A500E17385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3A5080217815A500E17385 /* Main.storyboard */; };
@@ -20,15 +23,17 @@
 		FD3A50B2217816F100E17385 /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3A50AF217816F100E17385 /* 2@2x.png */; };
 		FD539E70243585AC0085AAA7 /* UIPageViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E59243585AB0085AAA7 /* UIPageViewController+MemoryLeak.m */; };
 		FD539E71243585AC0085AAA7 /* UIView+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E5C243585AB0085AAA7 /* UIView+MemoryLeak.m */; };
-		FD539E72243585AC0085AAA7 /* MLeakedObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E5D243585AB0085AAA7 /* MLeakedObjectProxy.m */; };
+		FD539E72243585AC0085AAA7 /* DPLeakedObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E5D243585AB0085AAA7 /* DPLeakedObjectProxy.m */; };
 		FD539E73243585AC0085AAA7 /* UIApplication+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E5F243585AB0085AAA7 /* UIApplication+MemoryLeak.m */; };
 		FD539E74243585AC0085AAA7 /* UIViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E60243585AB0085AAA7 /* UIViewController+MemoryLeak.m */; };
 		FD539E75243585AC0085AAA7 /* NSObject+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E61243585AB0085AAA7 /* NSObject+MemoryLeak.m */; };
 		FD539E76243585AC0085AAA7 /* UITabBarController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E63243585AB0085AAA7 /* UITabBarController+MemoryLeak.m */; };
-		FD539E77243585AC0085AAA7 /* MLeaksMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E67243585AB0085AAA7 /* MLeaksMessenger.m */; };
+		FD539E77243585AC0085AAA7 /* DPLeaksMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E67243585AB0085AAA7 /* DPLeaksMessenger.m */; };
 		FD539E78243585AC0085AAA7 /* UISplitViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E68243585AC0085AAA7 /* UISplitViewController+MemoryLeak.m */; };
 		FD539E79243585AC0085AAA7 /* UITouch+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E69243585AC0085AAA7 /* UITouch+MemoryLeak.m */; };
 		FD539E7A243585AC0085AAA7 /* UINavigationController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E6A243585AC0085AAA7 /* UINavigationController+MemoryLeak.m */; };
+		FD539E7E24358A2F0085AAA7 /* LeakedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E7C24358A2E0085AAA7 /* LeakedViewController.m */; };
+		FD539E8124359FA10085AAA7 /* DPAppDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E8024359FA10085AAA7 /* DPAppDoctor.m */; };
 		FDAF96B321D4AF9100411DE1 /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDAF96B221D4AF9100411DE1 /* 3@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +55,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CC87BF9DC034EBD2EA18E04 /* Pods-DPAppDoctorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPAppDoctorTests.debug.xcconfig"; path = "Target Support Files/Pods-DPAppDoctorTests/Pods-DPAppDoctorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		12076195A923920AE7643892 /* Pods_DPAppDoctorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPAppDoctorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12579F1D81EB1DD14225877D /* Pods-DPAppDoctorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPAppDoctorUITests.release.xcconfig"; path = "Target Support Files/Pods-DPAppDoctorUITests/Pods-DPAppDoctorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		49FBA3E7545AEFD2C1CD548F /* Pods-DPAppDoctorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPAppDoctorUITests.debug.xcconfig"; path = "Target Support Files/Pods-DPAppDoctorUITests/Pods-DPAppDoctorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		595BE23A0488BA2F689518D2 /* Pods_DPAppDoctorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPAppDoctorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C07125FD77D3D424A9E2B65 /* Pods-DPAppDoctor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPAppDoctor.debug.xcconfig"; path = "Target Support Files/Pods-DPAppDoctor/Pods-DPAppDoctor.debug.xcconfig"; sourceTree = "<group>"; };
+		686B1EA3FDC48E99470D190E /* Pods_DPAppDoctor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPAppDoctor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74EC040E74972BAF3ACBC39E /* Pods-DPAppDoctorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPAppDoctorTests.release.xcconfig"; path = "Target Support Files/Pods-DPAppDoctorTests/Pods-DPAppDoctorTests.release.xcconfig"; sourceTree = "<group>"; };
+		EEE2C6182DA2DBD0C4B022EC /* Pods-DPAppDoctor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPAppDoctor.release.xcconfig"; path = "Target Support Files/Pods-DPAppDoctor/Pods-DPAppDoctor.release.xcconfig"; sourceTree = "<group>"; };
 		FD3A5077217815A500E17385 /* DPAppDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPAppDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3A507A217815A500E17385 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD3A507B217815A500E17385 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,20 +84,20 @@
 		FD3A50AE217816F100E17385 /* Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch.png; sourceTree = "<group>"; };
 		FD3A50AF217816F100E17385 /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2@2x.png"; sourceTree = "<group>"; };
 		FD539E59243585AB0085AAA7 /* UIPageViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageViewController+MemoryLeak.m"; sourceTree = "<group>"; };
-		FD539E5A243585AB0085AAA7 /* MLeaksMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeaksMessenger.h; sourceTree = "<group>"; };
+		FD539E5A243585AB0085AAA7 /* DPLeaksMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeaksMessenger.h; sourceTree = "<group>"; };
 		FD539E5B243585AB0085AAA7 /* UIViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MemoryLeak.h"; sourceTree = "<group>"; };
 		FD539E5C243585AB0085AAA7 /* UIView+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MemoryLeak.m"; sourceTree = "<group>"; };
-		FD539E5D243585AB0085AAA7 /* MLeakedObjectProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLeakedObjectProxy.m; sourceTree = "<group>"; };
-		FD539E5E243585AB0085AAA7 /* MLeakedObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeakedObjectProxy.h; sourceTree = "<group>"; };
+		FD539E5D243585AB0085AAA7 /* DPLeakedObjectProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLeakedObjectProxy.m; sourceTree = "<group>"; };
+		FD539E5E243585AB0085AAA7 /* DPLeakedObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeakedObjectProxy.h; sourceTree = "<group>"; };
 		FD539E5F243585AB0085AAA7 /* UIApplication+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+MemoryLeak.m"; sourceTree = "<group>"; };
 		FD539E60243585AB0085AAA7 /* UIViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MemoryLeak.m"; sourceTree = "<group>"; };
 		FD539E61243585AB0085AAA7 /* NSObject+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MemoryLeak.m"; sourceTree = "<group>"; };
 		FD539E62243585AB0085AAA7 /* UISplitViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+MemoryLeak.h"; sourceTree = "<group>"; };
 		FD539E63243585AB0085AAA7 /* UITabBarController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+MemoryLeak.m"; sourceTree = "<group>"; };
-		FD539E64243585AB0085AAA7 /* MLeaksFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeaksFinder.h; sourceTree = "<group>"; };
+		FD539E64243585AB0085AAA7 /* DPLeaksFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeaksFinder.h; sourceTree = "<group>"; };
 		FD539E65243585AB0085AAA7 /* UIPageViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageViewController+MemoryLeak.h"; sourceTree = "<group>"; };
 		FD539E66243585AB0085AAA7 /* NSObject+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MemoryLeak.h"; sourceTree = "<group>"; };
-		FD539E67243585AB0085AAA7 /* MLeaksMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLeaksMessenger.m; sourceTree = "<group>"; };
+		FD539E67243585AB0085AAA7 /* DPLeaksMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLeaksMessenger.m; sourceTree = "<group>"; };
 		FD539E68243585AC0085AAA7 /* UISplitViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+MemoryLeak.m"; sourceTree = "<group>"; };
 		FD539E69243585AC0085AAA7 /* UITouch+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+MemoryLeak.m"; sourceTree = "<group>"; };
 		FD539E6A243585AC0085AAA7 /* UINavigationController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+MemoryLeak.m"; sourceTree = "<group>"; };
@@ -92,6 +106,10 @@
 		FD539E6D243585AC0085AAA7 /* UITabBarController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+MemoryLeak.h"; sourceTree = "<group>"; };
 		FD539E6E243585AC0085AAA7 /* UINavigationController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MemoryLeak.h"; sourceTree = "<group>"; };
 		FD539E6F243585AC0085AAA7 /* UIView+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MemoryLeak.h"; sourceTree = "<group>"; };
+		FD539E7C24358A2E0085AAA7 /* LeakedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeakedViewController.m; path = DPAppDoctorDemo/LeakedViewController.m; sourceTree = SOURCE_ROOT; };
+		FD539E7D24358A2E0085AAA7 /* LeakedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeakedViewController.h; path = DPAppDoctorDemo/LeakedViewController.h; sourceTree = SOURCE_ROOT; };
+		FD539E7F24359FA10085AAA7 /* DPAppDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAppDoctor.h; sourceTree = "<group>"; };
+		FD539E8024359FA10085AAA7 /* DPAppDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAppDoctor.m; sourceTree = "<group>"; };
 		FDAF96B221D4AF9100411DE1 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01288423ED7C1197A1391E70 /* Pods_DPAppDoctor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28BDAC40DD6608A25548AFD7 /* Pods_DPAppDoctorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,12 +134,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				387CFEC125B084B9F29123C6 /* Pods_DPAppDoctorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2220ACE9A85E119A9F3C4236 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C07125FD77D3D424A9E2B65 /* Pods-DPAppDoctor.debug.xcconfig */,
+				EEE2C6182DA2DBD0C4B022EC /* Pods-DPAppDoctor.release.xcconfig */,
+				0CC87BF9DC034EBD2EA18E04 /* Pods-DPAppDoctorTests.debug.xcconfig */,
+				74EC040E74972BAF3ACBC39E /* Pods-DPAppDoctorTests.release.xcconfig */,
+				49FBA3E7545AEFD2C1CD548F /* Pods-DPAppDoctorUITests.debug.xcconfig */,
+				12579F1D81EB1DD14225877D /* Pods-DPAppDoctorUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		55DD6E569340DA1D3902F203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				686B1EA3FDC48E99470D190E /* Pods_DPAppDoctor.framework */,
+				12076195A923920AE7643892 /* Pods_DPAppDoctorTests.framework */,
+				595BE23A0488BA2F689518D2 /* Pods_DPAppDoctorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FD3A506E217815A500E17385 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +171,8 @@
 				FD3A5092217815A700E17385 /* DPAppDoctorDemoTests */,
 				FD3A509D217815A700E17385 /* DPAppDoctorDemoUITests */,
 				FD3A5078217815A500E17385 /* Products */,
+				2220ACE9A85E119A9F3C4236 /* Pods */,
+				55DD6E569340DA1D3902F203 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +195,8 @@
 				FD3A507B217815A500E17385 /* AppDelegate.m */,
 				FD3A507D217815A500E17385 /* ViewController.h */,
 				FD3A507E217815A500E17385 /* ViewController.m */,
+				FD539E7D24358A2E0085AAA7 /* LeakedViewController.h */,
+				FD539E7C24358A2E0085AAA7 /* LeakedViewController.m */,
 				FD3A5080217815A500E17385 /* Main.storyboard */,
 				FD3A5083217815A700E17385 /* Assets.xcassets */,
 				FD3A5085217815A700E17385 /* LaunchScreen.storyboard */,
@@ -190,6 +238,8 @@
 		FD3A50B72178326B00E17385 /* DPAppDoctor_SDK */ = {
 			isa = PBXGroup;
 			children = (
+				FD539E7F24359FA10085AAA7 /* DPAppDoctor.h */,
+				FD539E8024359FA10085AAA7 /* DPAppDoctor.m */,
 				FD539E7B243589680085AAA7 /* Leaked */,
 			);
 			name = DPAppDoctor_SDK;
@@ -199,11 +249,11 @@
 		FD539E7B243589680085AAA7 /* Leaked */ = {
 			isa = PBXGroup;
 			children = (
-				FD539E5E243585AB0085AAA7 /* MLeakedObjectProxy.h */,
-				FD539E5D243585AB0085AAA7 /* MLeakedObjectProxy.m */,
-				FD539E64243585AB0085AAA7 /* MLeaksFinder.h */,
-				FD539E5A243585AB0085AAA7 /* MLeaksMessenger.h */,
-				FD539E67243585AB0085AAA7 /* MLeaksMessenger.m */,
+				FD539E5E243585AB0085AAA7 /* DPLeakedObjectProxy.h */,
+				FD539E5D243585AB0085AAA7 /* DPLeakedObjectProxy.m */,
+				FD539E64243585AB0085AAA7 /* DPLeaksFinder.h */,
+				FD539E5A243585AB0085AAA7 /* DPLeaksMessenger.h */,
+				FD539E67243585AB0085AAA7 /* DPLeaksMessenger.m */,
 				FD539E66243585AB0085AAA7 /* NSObject+MemoryLeak.h */,
 				FD539E61243585AB0085AAA7 /* NSObject+MemoryLeak.m */,
 				FD539E6B243585AC0085AAA7 /* UIApplication+MemoryLeak.h */,
@@ -233,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD3A50A3217815A700E17385 /* Build configuration list for PBXNativeTarget "DPAppDoctor" */;
 			buildPhases = (
+				CB5FEE7EDE14B22ECFDB17C1 /* [CP] Check Pods Manifest.lock */,
 				FD3A5073217815A500E17385 /* Sources */,
 				FD3A5074217815A500E17385 /* Frameworks */,
 				FD3A5075217815A500E17385 /* Resources */,
+				298A6945285DBD846FA5988F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +302,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD3A50A6217815A700E17385 /* Build configuration list for PBXNativeTarget "DPAppDoctorTests" */;
 			buildPhases = (
+				865A58C7B50B102C2401849A /* [CP] Check Pods Manifest.lock */,
 				FD3A508B217815A700E17385 /* Sources */,
 				FD3A508C217815A700E17385 /* Frameworks */,
 				FD3A508D217815A700E17385 /* Resources */,
@@ -268,6 +321,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD3A50A9217815A700E17385 /* Build configuration list for PBXNativeTarget "DPAppDoctorUITests" */;
 			buildPhases = (
+				A8E1ADBCE92AD6DAADEE4D4E /* [CP] Check Pods Manifest.lock */,
 				FD3A5096217815A700E17385 /* Sources */,
 				FD3A5097217815A700E17385 /* Frameworks */,
 				FD3A5098217815A700E17385 /* Resources */,
@@ -355,6 +409,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		298A6945285DBD846FA5988F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DPAppDoctor/Pods-DPAppDoctor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DPAppDoctor/Pods-DPAppDoctor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DPAppDoctor/Pods-DPAppDoctor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		865A58C7B50B102C2401849A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DPAppDoctorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8E1ADBCE92AD6DAADEE4D4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DPAppDoctorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB5FEE7EDE14B22ECFDB17C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DPAppDoctor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD3A5073217815A500E17385 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -366,14 +506,16 @@
 				FD3A507F217815A500E17385 /* ViewController.m in Sources */,
 				FD539E78243585AC0085AAA7 /* UISplitViewController+MemoryLeak.m in Sources */,
 				FD539E70243585AC0085AAA7 /* UIPageViewController+MemoryLeak.m in Sources */,
-				FD539E72243585AC0085AAA7 /* MLeakedObjectProxy.m in Sources */,
+				FD539E72243585AC0085AAA7 /* DPLeakedObjectProxy.m in Sources */,
+				FD539E7E24358A2F0085AAA7 /* LeakedViewController.m in Sources */,
 				FD3A508A217815A700E17385 /* main.m in Sources */,
 				FD539E73243585AC0085AAA7 /* UIApplication+MemoryLeak.m in Sources */,
 				FD539E79243585AC0085AAA7 /* UITouch+MemoryLeak.m in Sources */,
 				FD539E74243585AC0085AAA7 /* UIViewController+MemoryLeak.m in Sources */,
-				FD539E77243585AC0085AAA7 /* MLeaksMessenger.m in Sources */,
+				FD539E77243585AC0085AAA7 /* DPLeaksMessenger.m in Sources */,
 				FD3A507C217815A500E17385 /* AppDelegate.m in Sources */,
 				FD539E76243585AC0085AAA7 /* UITabBarController+MemoryLeak.m in Sources */,
+				FD539E8124359FA10085AAA7 /* DPAppDoctor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +682,7 @@
 		};
 		FD3A50A4217815A700E17385 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C07125FD77D3D424A9E2B65 /* Pods-DPAppDoctor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
@@ -551,6 +694,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = test.DPAppDoctorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -560,6 +704,7 @@
 		};
 		FD3A50A5217815A700E17385 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE2C6182DA2DBD0C4B022EC /* Pods-DPAppDoctor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
@@ -571,6 +716,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = test.DPAppDoctorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -580,6 +726,7 @@
 		};
 		FD3A50A7217815A700E17385 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CC87BF9DC034EBD2EA18E04 /* Pods-DPAppDoctorTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -599,6 +746,7 @@
 		};
 		FD3A50A8217815A700E17385 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74EC040E74972BAF3ACBC39E /* Pods-DPAppDoctorTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -618,6 +766,7 @@
 		};
 		FD3A50AA217815A700E17385 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49FBA3E7545AEFD2C1CD548F /* Pods-DPAppDoctorUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99C8L96EFT;
@@ -636,6 +785,7 @@
 		};
 		FD3A50AB217815A700E17385 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12579F1D81EB1DD14225877D /* Pods-DPAppDoctorUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99C8L96EFT;

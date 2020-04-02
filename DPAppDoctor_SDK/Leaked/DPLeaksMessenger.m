@@ -1,28 +1,25 @@
 //
-//  MLeaksMessenger.m
-//  MLeaksFinder
+//  DPLeaksMessenger.m
+//  DPLeaksFinder
 //
 //  Created by 夏玉鹏 on 20/04/02.
 //  Copyright © 2020 夏玉鹏. All rights reserved.
 //
 
-#import "MLeaksMessenger.h"
+#import "DPLeaksMessenger.h"
+#import "DPAppDoctor.h"
 
 static __weak UIAlertView *alertView;
 
-@implementation MLeaksMessenger
+@implementation DPLeaksMessenger
 
 + (void)alertWithTitle:(NSString *)title message:(NSString *)message {
     [self alertWithTitle:title message:message delegate:nil additionalButtonTitle:nil];
 }
 
-+ (void)alertWithTitle:(NSString *)title
-               message:(NSString *)message
-              delegate:(id<UIAlertViewDelegate>)delegate
- additionalButtonTitle:(NSString *)additionalButtonTitle {
++ (void)alertWithTitle:(NSString *)title message:(NSString *)message delegate:(id<UIAlertViewDelegate>)delegate additionalButtonTitle:(NSString *)additionalButtonTitle {
   
-    BOOL debugValue = [[NSUserDefaults standardUserDefaults] boolForKey:@"zcwDebugValueUserDefaults"];
-    if (debugValue == NO) {
+    if ([DPAppDoctor shareInstance].isLeaked == NO) {
         return;
     }
     
@@ -34,8 +31,6 @@ static __weak UIAlertView *alertView;
                                                   otherButtonTitles:additionalButtonTitle, nil];
     [alertViewTemp show];
     alertView = alertViewTemp;
-    
-    NSLog(@"%@: %@", title, message);
 }
 
 @end

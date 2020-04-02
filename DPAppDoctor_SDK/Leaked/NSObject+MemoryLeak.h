@@ -1,6 +1,6 @@
 //
 //  NSObject+MemoryLeak.h
-//  MLeaksFinder
+//  DPLeaksFinder
 //
 //  Created by 夏玉鹏 on 20/04/02.
 //  Copyright © 2020 夏玉鹏. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define MLCheck(TARGET) [self willReleaseObject:(TARGET) relationship:@#TARGET];
+#define DPLCheck(TARGET) [self willReleaseObject:(TARGET) relationship:@#TARGET];
 
 @interface NSObject (MemoryLeak)
 
