@@ -190,6 +190,15 @@
 		FD3A50B72178326B00E17385 /* DPAppDoctor_SDK */ = {
 			isa = PBXGroup;
 			children = (
+				FD539E7B243589680085AAA7 /* Leaked */,
+			);
+			name = DPAppDoctor_SDK;
+			path = ../../DPAppDoctor_SDK;
+			sourceTree = "<group>";
+		};
+		FD539E7B243589680085AAA7 /* Leaked */ = {
+			isa = PBXGroup;
+			children = (
 				FD539E5E243585AB0085AAA7 /* MLeakedObjectProxy.h */,
 				FD539E5D243585AB0085AAA7 /* MLeakedObjectProxy.m */,
 				FD539E64243585AB0085AAA7 /* MLeaksFinder.h */,
@@ -214,8 +223,7 @@
 				FD539E5B243585AB0085AAA7 /* UIViewController+MemoryLeak.h */,
 				FD539E60243585AB0085AAA7 /* UIViewController+MemoryLeak.m */,
 			);
-			name = DPAppDoctor_SDK;
-			path = ../../DPAppDoctor_SDK;
+			path = Leaked;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
