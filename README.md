@@ -1,5 +1,5 @@
 <p align="center" >
-<img src="header.png" title="DPWidgetSum logo" float=left>
+<img src="header.png" title="DPAppDoctor logo" float=left>
 </p>
 
 ## Features
@@ -15,17 +15,17 @@
 
 ## Getting Started
 - Read this Readme doc
-- Read the [How to use section](https://github.com/xiayuqingfeng/DPWidgetSum#how-to-use)
-- Read the [documentation @ CocoaDocs](https://cocoapods.org/pods/DPWidgetSum)
-- Try the example by downloading the project from Github or even easier using CocoaPods try `pod try DPWidgetSum`
-- Get to the [installation steps](https://github.com/rs/DPWidgetSum#installation)
+- Read the [How to use section](https://github.com/xiayuqingfeng/DPAppDoctor#how-to-use)
+- Read the [documentation @ CocoaDocs](https://cocoapods.org/pods/DPAppDoctor)
+- Try the example by downloading the project from Github or even easier using CocoaPods try `pod try DPAppDoctor`
+- Get to the [installation steps](https://github.com/rs/DPAppDoctor#installation)
 
 ## Who Uses It
-- Find out [who uses DPWidgetSum](https://github.com/xiayuqingfeng/DPWidgetSum/wiki/Who-Uses-DPWidgetSum) and add your app to the list.
+- Find out [who uses DPAppDoctor](https://github.com/xiayuqingfeng/DPAppDoctor/wiki/Who-Uses-DPAppDoctor) and add your app to the list.
 
 ## Communication
-- If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/DPWidgetSum). (Tag 'DPWidgetSum')
-- If you'd like to **ask a general question**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/DPWidgetSum).
+- If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/DPAppDoctor). (Tag 'DPAppDoctor')
+- If you'd like to **ask a general question**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/DPAppDoctor).
 - If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
 - If you **want to contribute**, submit a pull request.
@@ -102,7 +102,7 @@ Objective-C:
 Installation
 ------------
 
-There are three ways to use DPWidgetSum in your project:
+There are three ways to use DPAppDoctor in your project:
 - using CocoaPods
 - using Carthage
 - by cloning the project into your repository
@@ -114,7 +114,7 @@ There are three ways to use DPWidgetSum in your project:
 #### Podfile
 ```
 platform :ios, '7.0'
-pod 'DPWidgetSum', '~> 1.0.5'
+pod 'DPAppDoctor', '~> 1.0.5'
 ```
 
 If you are using Swift, be sure to add `use_frameworks!` and set your target to iOS 8+:
@@ -131,9 +131,9 @@ community can help you solve it.
 - [PingshengZhao(赵坪生)](https://github.com/PingshengZhao)
 
 ## Licenses
-All source code is licensed under the [MIT License](https://github.com/xiayuqingfeng/DPWidgetSum/blob/master/LICENSE).
+All source code is licensed under the [MIT License](https://github.com/xiayuqingfeng/DPAppDoctor/blob/master/LICENSE).
 
 ## Pictures show
 <p align="center" >
-<img src="DP_Gitf_0.gif" title="DPWidgetSum sequence diagram">
+<img src="DP_Gitf_0.gif" title="DPAppDoctor sequence diagram">
 </p>

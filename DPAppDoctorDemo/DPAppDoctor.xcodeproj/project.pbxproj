@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD3A507C217815A500E17385 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A507B217815A500E17385 /* AppDelegate.m */; };
+		FD3A507F217815A500E17385 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A507E217815A500E17385 /* ViewController.m */; };
+		FD3A5082217815A500E17385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3A5080217815A500E17385 /* Main.storyboard */; };
+		FD3A5084217815A700E17385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3A5083217815A700E17385 /* Assets.xcassets */; };
+		FD3A5087217815A700E17385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3A5085217815A700E17385 /* LaunchScreen.storyboard */; };
+		FD3A508A217815A700E17385 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A5089217815A700E17385 /* main.m */; };
+		FD3A5094217815A700E17385 /* DPAppDoctorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A5093217815A700E17385 /* DPAppDoctorDemoTests.m */; };
+		FD3A509F217815A700E17385 /* DPAppDoctorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A509E217815A700E17385 /* DPAppDoctorDemoUITests.m */; };
+		FD3A50B0217816F100E17385 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3A50AD217816F100E17385 /* 1@2x.png */; };
+		FD3A50B1217816F100E17385 /* Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3A50AE217816F100E17385 /* Launch.png */; };
+		FD3A50B2217816F100E17385 /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3A50AF217816F100E17385 /* 2@2x.png */; };
+		FD539E70243585AC0085AAA7 /* UIPageViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E59243585AB0085AAA7 /* UIPageViewController+MemoryLeak.m */; };
+		FD539E71243585AC0085AAA7 /* UIView+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E5C243585AB0085AAA7 /* UIView+MemoryLeak.m */; };
+		FD539E72243585AC0085AAA7 /* MLeakedObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E5D243585AB0085AAA7 /* MLeakedObjectProxy.m */; };
+		FD539E73243585AC0085AAA7 /* UIApplication+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E5F243585AB0085AAA7 /* UIApplication+MemoryLeak.m */; };
+		FD539E74243585AC0085AAA7 /* UIViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E60243585AB0085AAA7 /* UIViewController+MemoryLeak.m */; };
+		FD539E75243585AC0085AAA7 /* NSObject+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E61243585AB0085AAA7 /* NSObject+MemoryLeak.m */; };
+		FD539E76243585AC0085AAA7 /* UITabBarController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E63243585AB0085AAA7 /* UITabBarController+MemoryLeak.m */; };
+		FD539E77243585AC0085AAA7 /* MLeaksMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E67243585AB0085AAA7 /* MLeaksMessenger.m */; };
+		FD539E78243585AC0085AAA7 /* UISplitViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E68243585AC0085AAA7 /* UISplitViewController+MemoryLeak.m */; };
+		FD539E79243585AC0085AAA7 /* UITouch+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E69243585AC0085AAA7 /* UITouch+MemoryLeak.m */; };
+		FD539E7A243585AC0085AAA7 /* UINavigationController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E6A243585AC0085AAA7 /* UINavigationController+MemoryLeak.m */; };
+		FDAF96B321D4AF9100411DE1 /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDAF96B221D4AF9100411DE1 /* 3@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD3A5090217815A700E17385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD3A506F217815A500E17385 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD3A5076217815A500E17385;
+			remoteInfo = DPAppDoctorDemo;
+		};
+		FD3A509B217815A700E17385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD3A506F217815A500E17385 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD3A5076217815A500E17385;
+			remoteInfo = DPAppDoctorDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD3A5077217815A500E17385 /* DPAppDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPAppDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3A507A217815A500E17385 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD3A507B217815A500E17385 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD3A507D217815A500E17385 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD3A507E217815A500E17385 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD3A5081217815A500E17385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD3A5083217815A700E17385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD3A5086217815A700E17385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD3A5088217815A700E17385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3A5089217815A700E17385 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD3A508F217815A700E17385 /* DPAppDoctorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPAppDoctorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3A5093217815A700E17385 /* DPAppDoctorDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPAppDoctorDemoTests.m; sourceTree = "<group>"; };
+		FD3A5095217815A700E17385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3A509A217815A700E17385 /* DPAppDoctorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPAppDoctorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3A509E217815A700E17385 /* DPAppDoctorDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPAppDoctorDemoUITests.m; sourceTree = "<group>"; };
+		FD3A50A0217815A700E17385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3A50AD217816F100E17385 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
+		FD3A50AE217816F100E17385 /* Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch.png; sourceTree = "<group>"; };
+		FD3A50AF217816F100E17385 /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2@2x.png"; sourceTree = "<group>"; };
+		FD539E59243585AB0085AAA7 /* UIPageViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		FD539E5A243585AB0085AAA7 /* MLeaksMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeaksMessenger.h; sourceTree = "<group>"; };
+		FD539E5B243585AB0085AAA7 /* UIViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		FD539E5C243585AB0085AAA7 /* UIView+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MemoryLeak.m"; sourceTree = "<group>"; };
+		FD539E5D243585AB0085AAA7 /* MLeakedObjectProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLeakedObjectProxy.m; sourceTree = "<group>"; };
+		FD539E5E243585AB0085AAA7 /* MLeakedObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeakedObjectProxy.h; sourceTree = "<group>"; };
+		FD539E5F243585AB0085AAA7 /* UIApplication+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+MemoryLeak.m"; sourceTree = "<group>"; };
+		FD539E60243585AB0085AAA7 /* UIViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		FD539E61243585AB0085AAA7 /* NSObject+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MemoryLeak.m"; sourceTree = "<group>"; };
+		FD539E62243585AB0085AAA7 /* UISplitViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		FD539E63243585AB0085AAA7 /* UITabBarController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+MemoryLeak.m"; sourceTree = "<group>"; };
+		FD539E64243585AB0085AAA7 /* MLeaksFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeaksFinder.h; sourceTree = "<group>"; };
+		FD539E65243585AB0085AAA7 /* UIPageViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		FD539E66243585AB0085AAA7 /* NSObject+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MemoryLeak.h"; sourceTree = "<group>"; };
+		FD539E67243585AB0085AAA7 /* MLeaksMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLeaksMessenger.m; sourceTree = "<group>"; };
+		FD539E68243585AC0085AAA7 /* UISplitViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		FD539E69243585AC0085AAA7 /* UITouch+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+MemoryLeak.m"; sourceTree = "<group>"; };
+		FD539E6A243585AC0085AAA7 /* UINavigationController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+MemoryLeak.m"; sourceTree = "<group>"; };
+		FD539E6B243585AC0085AAA7 /* UIApplication+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+MemoryLeak.h"; sourceTree = "<group>"; };
+		FD539E6C243585AC0085AAA7 /* UITouch+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+MemoryLeak.h"; sourceTree = "<group>"; };
+		FD539E6D243585AC0085AAA7 /* UITabBarController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+MemoryLeak.h"; sourceTree = "<group>"; };
+		FD539E6E243585AC0085AAA7 /* UINavigationController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MemoryLeak.h"; sourceTree = "<group>"; };
+		FD539E6F243585AC0085AAA7 /* UIView+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MemoryLeak.h"; sourceTree = "<group>"; };
+		FDAF96B221D4AF9100411DE1 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD3A5074217815A500E17385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A508C217815A700E17385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A5097217815A700E17385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD3A506E217815A500E17385 = {
+			isa = PBXGroup;
+			children = (
+				FD3A5079217815A500E17385 /* DPAppDoctorDemo */,
+				FD3A5092217815A700E17385 /* DPAppDoctorDemoTests */,
+				FD3A509D217815A700E17385 /* DPAppDoctorDemoUITests */,
+				FD3A5078217815A500E17385 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD3A5078217815A500E17385 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A5077217815A500E17385 /* DPAppDoctor.app */,
+				FD3A508F217815A700E17385 /* DPAppDoctorTests.xctest */,
+				FD3A509A217815A700E17385 /* DPAppDoctorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD3A5079217815A500E17385 /* DPAppDoctorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A50B72178326B00E17385 /* DPAppDoctor_SDK */,
+				FD3A50AC217816F100E17385 /* Resources */,
+				FD3A507A217815A500E17385 /* AppDelegate.h */,
+				FD3A507B217815A500E17385 /* AppDelegate.m */,
+				FD3A507D217815A500E17385 /* ViewController.h */,
+				FD3A507E217815A500E17385 /* ViewController.m */,
+				FD3A5080217815A500E17385 /* Main.storyboard */,
+				FD3A5083217815A700E17385 /* Assets.xcassets */,
+				FD3A5085217815A700E17385 /* LaunchScreen.storyboard */,
+				FD3A5088217815A700E17385 /* Info.plist */,
+				FD3A5089217815A700E17385 /* main.m */,
+			);
+			path = DPAppDoctorDemo;
+			sourceTree = "<group>";
+		};
+		FD3A5092217815A700E17385 /* DPAppDoctorDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A5093217815A700E17385 /* DPAppDoctorDemoTests.m */,
+				FD3A5095217815A700E17385 /* Info.plist */,
+			);
+			path = DPAppDoctorDemoTests;
+			sourceTree = "<group>";
+		};
+		FD3A509D217815A700E17385 /* DPAppDoctorDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A509E217815A700E17385 /* DPAppDoctorDemoUITests.m */,
+				FD3A50A0217815A700E17385 /* Info.plist */,
+			);
+			path = DPAppDoctorDemoUITests;
+			sourceTree = "<group>";
+		};
+		FD3A50AC217816F100E17385 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FDAF96B221D4AF9100411DE1 /* 3@2x.png */,
+				FD3A50AD217816F100E17385 /* 1@2x.png */,
+				FD3A50AF217816F100E17385 /* 2@2x.png */,
+				FD3A50AE217816F100E17385 /* Launch.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD3A50B72178326B00E17385 /* DPAppDoctor_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				FD539E5E243585AB0085AAA7 /* MLeakedObjectProxy.h */,
+				FD539E5D243585AB0085AAA7 /* MLeakedObjectProxy.m */,
+				FD539E64243585AB0085AAA7 /* MLeaksFinder.h */,
+				FD539E5A243585AB0085AAA7 /* MLeaksMessenger.h */,
+				FD539E67243585AB0085AAA7 /* MLeaksMessenger.m */,
+				FD539E66243585AB0085AAA7 /* NSObject+MemoryLeak.h */,
+				FD539E61243585AB0085AAA7 /* NSObject+MemoryLeak.m */,
+				FD539E6B243585AC0085AAA7 /* UIApplication+MemoryLeak.h */,
+				FD539E5F243585AB0085AAA7 /* UIApplication+MemoryLeak.m */,
+				FD539E6E243585AC0085AAA7 /* UINavigationController+MemoryLeak.h */,
+				FD539E6A243585AC0085AAA7 /* UINavigationController+MemoryLeak.m */,
+				FD539E65243585AB0085AAA7 /* UIPageViewController+MemoryLeak.h */,
+				FD539E59243585AB0085AAA7 /* UIPageViewController+MemoryLeak.m */,
+				FD539E62243585AB0085AAA7 /* UISplitViewController+MemoryLeak.h */,
+				FD539E68243585AC0085AAA7 /* UISplitViewController+MemoryLeak.m */,
+				FD539E6D243585AC0085AAA7 /* UITabBarController+MemoryLeak.h */,
+				FD539E63243585AB0085AAA7 /* UITabBarController+MemoryLeak.m */,
+				FD539E6C243585AC0085AAA7 /* UITouch+MemoryLeak.h */,
+				FD539E69243585AC0085AAA7 /* UITouch+MemoryLeak.m */,
+				FD539E6F243585AC0085AAA7 /* UIView+MemoryLeak.h */,
+				FD539E5C243585AB0085AAA7 /* UIView+MemoryLeak.m */,
+				FD539E5B243585AB0085AAA7 /* UIViewController+MemoryLeak.h */,
+				FD539E60243585AB0085AAA7 /* UIViewController+MemoryLeak.m */,
+			);
+			name = DPAppDoctor_SDK;
+			path = ../../DPAppDoctor_SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD3A5076217815A500E17385 /* DPAppDoctor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3A50A3217815A700E17385 /* Build configuration list for PBXNativeTarget "DPAppDoctor" */;
+			buildPhases = (
+				FD3A5073217815A500E17385 /* Sources */,
+				FD3A5074217815A500E17385 /* Frameworks */,
+				FD3A5075217815A500E17385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DPAppDoctor;
+			productName = DPAppDoctorDemo;
+			productReference = FD3A5077217815A500E17385 /* DPAppDoctor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD3A508E217815A700E17385 /* DPAppDoctorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3A50A6217815A700E17385 /* Build configuration list for PBXNativeTarget "DPAppDoctorTests" */;
+			buildPhases = (
+				FD3A508B217815A700E17385 /* Sources */,
+				FD3A508C217815A700E17385 /* Frameworks */,
+				FD3A508D217815A700E17385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD3A5091217815A700E17385 /* PBXTargetDependency */,
+			);
+			name = DPAppDoctorTests;
+			productName = DPAppDoctorDemoTests;
+			productReference = FD3A508F217815A700E17385 /* DPAppDoctorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD3A5099217815A700E17385 /* DPAppDoctorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3A50A9217815A700E17385 /* Build configuration list for PBXNativeTarget "DPAppDoctorUITests" */;
+			buildPhases = (
+				FD3A5096217815A700E17385 /* Sources */,
+				FD3A5097217815A700E17385 /* Frameworks */,
+				FD3A5098217815A700E17385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD3A509C217815A700E17385 /* PBXTargetDependency */,
+			);
+			name = DPAppDoctorUITests;
+			productName = DPAppDoctorDemoUITests;
+			productReference = FD3A509A217815A700E17385 /* DPAppDoctorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD3A506F217815A500E17385 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "yupeng xia";
+				TargetAttributes = {
+					FD3A5076217815A500E17385 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					FD3A508E217815A700E17385 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = FD3A5076217815A500E17385;
+					};
+					FD3A5099217815A700E17385 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = FD3A5076217815A500E17385;
+					};
+				};
+			};
+			buildConfigurationList = FD3A5072217815A500E17385 /* Build configuration list for PBXProject "DPAppDoctor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD3A506E217815A500E17385;
+			productRefGroup = FD3A5078217815A500E17385 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD3A5076217815A500E17385 /* DPAppDoctor */,
+				FD3A508E217815A700E17385 /* DPAppDoctorTests */,
+				FD3A5099217815A700E17385 /* DPAppDoctorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD3A5075217815A500E17385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAF96B321D4AF9100411DE1 /* 3@2x.png in Resources */,
+				FD3A5087217815A700E17385 /* LaunchScreen.storyboard in Resources */,
+				FD3A5084217815A700E17385 /* Assets.xcassets in Resources */,
+				FD3A50B0217816F100E17385 /* 1@2x.png in Resources */,
+				FD3A5082217815A500E17385 /* Main.storyboard in Resources */,
+				FD3A50B2217816F100E17385 /* 2@2x.png in Resources */,
+				FD3A50B1217816F100E17385 /* Launch.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A508D217815A700E17385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A5098217815A700E17385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD3A5073217815A500E17385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD539E71243585AC0085AAA7 /* UIView+MemoryLeak.m in Sources */,
+				FD539E7A243585AC0085AAA7 /* UINavigationController+MemoryLeak.m in Sources */,
+				FD539E75243585AC0085AAA7 /* NSObject+MemoryLeak.m in Sources */,
+				FD3A507F217815A500E17385 /* ViewController.m in Sources */,
+				FD539E78243585AC0085AAA7 /* UISplitViewController+MemoryLeak.m in Sources */,
+				FD539E70243585AC0085AAA7 /* UIPageViewController+MemoryLeak.m in Sources */,
+				FD539E72243585AC0085AAA7 /* MLeakedObjectProxy.m in Sources */,
+				FD3A508A217815A700E17385 /* main.m in Sources */,
+				FD539E73243585AC0085AAA7 /* UIApplication+MemoryLeak.m in Sources */,
+				FD539E79243585AC0085AAA7 /* UITouch+MemoryLeak.m in Sources */,
+				FD539E74243585AC0085AAA7 /* UIViewController+MemoryLeak.m in Sources */,
+				FD539E77243585AC0085AAA7 /* MLeaksMessenger.m in Sources */,
+				FD3A507C217815A500E17385 /* AppDelegate.m in Sources */,
+				FD539E76243585AC0085AAA7 /* UITabBarController+MemoryLeak.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A508B217815A700E17385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3A5094217815A700E17385 /* DPAppDoctorDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A5096217815A700E17385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3A509F217815A700E17385 /* DPAppDoctorDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD3A5091217815A700E17385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD3A5076217815A500E17385 /* DPAppDoctor */;
+			targetProxy = FD3A5090217815A700E17385 /* PBXContainerItemProxy */;
+		};
+		FD3A509C217815A700E17385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD3A5076217815A500E17385 /* DPAppDoctor */;
+			targetProxy = FD3A509B217815A700E17385 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD3A5080217815A500E17385 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD3A5081217815A500E17385 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD3A5085217815A700E17385 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD3A5086217815A700E17385 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD3A50A1217815A700E17385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD3A50A2217815A700E17385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD3A50A4217815A700E17385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99C8L96EFT;
+				INFOPLIST_FILE = DPAppDoctorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.DPAppDoctorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "";
+			};
+			name = Debug;
+		};
+		FD3A50A5217815A700E17385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99C8L96EFT;
+				INFOPLIST_FILE = DPAppDoctorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.DPAppDoctorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "";
+			};
+			name = Release;
+		};
+		FD3A50A7217815A700E17385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99C8L96EFT;
+				INFOPLIST_FILE = DPAppDoctorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.DPAppDoctorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DPAppDoctor.app/DPAppDoctor";
+			};
+			name = Debug;
+		};
+		FD3A50A8217815A700E17385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99C8L96EFT;
+				INFOPLIST_FILE = DPAppDoctorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.DPAppDoctorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DPAppDoctor.app/DPAppDoctor";
+			};
+			name = Release;
+		};
+		FD3A50AA217815A700E17385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99C8L96EFT;
+				INFOPLIST_FILE = DPAppDoctorDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.DPAppDoctorDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DPAppDoctorDemo;
+			};
+			name = Debug;
+		};
+		FD3A50AB217815A700E17385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99C8L96EFT;
+				INFOPLIST_FILE = DPAppDoctorDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.DPAppDoctorDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DPAppDoctorDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD3A5072217815A500E17385 /* Build configuration list for PBXProject "DPAppDoctor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3A50A1217815A700E17385 /* Debug */,
+				FD3A50A2217815A700E17385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD3A50A3217815A700E17385 /* Build configuration list for PBXNativeTarget "DPAppDoctor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3A50A4217815A700E17385 /* Debug */,
+				FD3A50A5217815A700E17385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD3A50A6217815A700E17385 /* Build configuration list for PBXNativeTarget "DPAppDoctorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3A50A7217815A700E17385 /* Debug */,
+				FD3A50A8217815A700E17385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD3A50A9217815A700E17385 /* Build configuration list for PBXNativeTarget "DPAppDoctorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3A50AA217815A700E17385 /* Debug */,
+				FD3A50AB217815A700E17385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD3A506F217815A500E17385 /* Project object */;
+}
