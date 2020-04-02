@@ -20,8 +20,7 @@
     // Override point for customization after application launch.
     
     [DPAppDoctor shareInstance].isLeaked = YES;
-    [DPAppDoctor shareInstance].isCPU = YES;
-    [DPAppDoctor shareInstance].isGPU = YES;
+    [DPAppDoctor shareInstance].isMonitor = YES;
     
     return YES;
 }

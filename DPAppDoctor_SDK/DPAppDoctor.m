@@ -7,6 +7,7 @@
 //
 
 #import "DPAppDoctor.h"
+#import "XLMonitorHandle.h"
 
 #define DPScreenHeight [UIScreen mainScreen].bounds.size.height
 #define DPScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -26,74 +27,74 @@
 @property (nonatomic, strong) UIView *aWindowView;
 @property (nonatomic, strong) UILabel *cpuLabel;
 @property (nonatomic, strong) UILabel *gpuLabel;
-@property (nonatomic, strong) UIPanGestureRecognizer *panGestureRecognizer;
+@property (nonatomic, strong) UILabel *fpsLabel;
 @end
 
 static DPAppDoctor *_zhcwTool = nil;
 
 @implementation DPAppDoctor
-- (void)setIsCPU:(BOOL)isCPU {
-    _isCPU = isCPU;
-    [self updateWindowView];
-}
-
-- (void)setIsGPU:(BOOL)isGPU {
-    _isGPU = isGPU;
+- (void)setIsMonitor:(BOOL)isMonitor {
+    _isMonitor = isMonitor;
     [self updateWindowView];
 }
 
 - (void)updateWindowView {
     UIWindow *aWindow = [[UIApplication sharedApplication] delegate].window;
     
-    if (_aWindowView == nil) {
-        self.aWindowView = [[UIView alloc] initWithFrame:CGRectMake(0, DPNavibarHeight, 100, 0)];
-        _aWindowView.backgroundColor = [UIColor blackColor];
-        _aWindowView.clipsToBounds = NO;
-        _aWindowView.layer.cornerRadius = 15;
-        _aWindowView.layer.masksToBounds = YES;
+    if (_isMonitor) {
+        if (_aWindowView == nil) {
+            self.aWindowView = [[UIView alloc] initWithFrame:CGRectMake(0, DPNavibarHeight, 100, 0)];
+            _aWindowView.backgroundColor = [UIColor blackColor];
+            _aWindowView.clipsToBounds = NO;
+            _aWindowView.layer.cornerRadius = 15;
+            _aWindowView.layer.masksToBounds = YES;
+            [aWindow addSubview:_aWindowView];
+            
+            UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(dragViewMoved:)];
+            [_aWindowView addGestureRecognizer:panGestureRecognizer];
+        }
+
+        if (_cpuLabel == nil) {
+            self.cpuLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(_aWindowView.frame), 40)];
+            _cpuLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
+            _cpuLabel.textColor = [UIColor redColor];
+            _cpuLabel.text = @"CPU:0%";
+            [_aWindowView addSubview:_cpuLabel];
+        }
         
-        _panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(dragViewMoved:)];
-        [_aWindowView addGestureRecognizer:self.panGestureRecognizer];
-    }
-    
-    CGFloat maxY = 0;
-    if (_cpuLabel == nil) {
-        self.cpuLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(_aWindowView.frame), 40)];
-        _cpuLabel.font = [UIFont systemFontOfSize:18];
-        _cpuLabel.textColor = [UIColor redColor];
-        _cpuLabel.text = @"CPU:0%";
-        [_aWindowView addSubview:_cpuLabel];
-        
-    }
-    if (_isCPU == YES) {
-        maxY = CGRectGetMaxY(_cpuLabel.frame);
-        [_aWindowView addSubview:_cpuLabel];
+        if (_gpuLabel == nil) {
+            self.gpuLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_cpuLabel.frame), CGRectGetWidth(_aWindowView.frame), 40)];
+            _gpuLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
+            _gpuLabel.textColor = [UIColor redColor];
+            _gpuLabel.text = @"GPU:0%";
+            [_aWindowView addSubview:_gpuLabel];
+        }
+
+        if (_fpsLabel == nil) {
+            self.fpsLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_gpuLabel.frame), CGRectGetWidth(_aWindowView.frame), 40)];
+            _fpsLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
+            _fpsLabel.textColor = [UIColor redColor];
+            _fpsLabel.text = @"FPS:0%";
+            [_aWindowView addSubview:_fpsLabel];
+        }
+
+        _aWindowView.frame = CGRectMake(CGRectGetWidth(aWindow.frame)-CGRectGetWidth(_aWindowView.frame), (CGRectGetHeight(aWindow.frame)-CGRectGetMaxY(_fpsLabel.frame))/2, CGRectGetWidth(_aWindowView.frame), CGRectGetMaxY(_fpsLabel.frame));
+
+        [[XLMonitorHandle shareInstance] setLogStatus:YES];
+        [[XLMonitorHandle shareInstance] setCpuUsageMax:35];
+        [[XLMonitorHandle shareInstance] startMonitorFpsAndCpuUsage];
+        __block typeof(self) __weak weak_self = self;
+        [XLMonitorHandle shareInstance].aMonitorDataBlock = ^(NSDictionary * _Nonnull aMonitorData) {
+            weak_self.cpuLabel.text = [NSString stringWithFormat:@"%@",aMonitorData[@"cpuUsage"]];
+            weak_self.gpuLabel.text = [NSString stringWithFormat:@"%@",aMonitorData[@""]];
+            weak_self.fpsLabel.text = [NSString stringWithFormat:@"%@",aMonitorData[@"fps"]];
+            
+            [aWindow addSubview:weak_self.aWindowView];
+        };
     }else {
-        maxY = 0;
-        [_cpuLabel removeFromSuperview];
+        [[XLMonitorHandle shareInstance] stopMonitor];
+        [_aWindowView removeFromSuperview];
     }
-    
-    if (_gpuLabel == nil) {
-        self.gpuLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, maxY, CGRectGetWidth(_aWindowView.frame), 40)];
-        _gpuLabel.font = [UIFont systemFontOfSize:18];
-        _gpuLabel.textColor = [UIColor redColor];
-        _gpuLabel.text = @"GPU:0%";
-        [_aWindowView addSubview:_gpuLabel];
-        
-    }
-    if (_isGPU == YES) {
-        maxY = CGRectGetMaxY(_gpuLabel.frame);
-        [_aWindowView addSubview:_gpuLabel];
-    }else {
-        maxY = 0;
-        [_gpuLabel removeFromSuperview];
-    }
-    
-    __block typeof(self) __weak weak_self = self;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        weak_self.aWindowView.frame = CGRectMake(CGRectGetWidth(aWindow.frame)-CGRectGetWidth(weak_self.aWindowView.frame), (CGRectGetHeight(aWindow.frame)-maxY)/2, CGRectGetWidth(weak_self.aWindowView.frame), maxY);
-        [aWindow addSubview:weak_self.aWindowView];
-    });
 }
 
 - (void)dragViewMoved:(UIPanGestureRecognizer *)panGestureRecognizer {

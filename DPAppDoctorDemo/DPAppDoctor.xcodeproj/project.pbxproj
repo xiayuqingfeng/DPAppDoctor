@@ -34,6 +34,9 @@
 		FD539E7A243585AC0085AAA7 /* UINavigationController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E6A243585AC0085AAA7 /* UINavigationController+MemoryLeak.m */; };
 		FD539E7E24358A2F0085AAA7 /* LeakedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E7C24358A2E0085AAA7 /* LeakedViewController.m */; };
 		FD539E8124359FA10085AAA7 /* DPAppDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E8024359FA10085AAA7 /* DPAppDoctor.m */; };
+		FD539EDF2435DECC0085AAA7 /* XLMonitorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539ED82435DECC0085AAA7 /* XLMonitorHandle.m */; };
+		FD539EE02435DECC0085AAA7 /* SMCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539ED92435DECC0085AAA7 /* SMCallStack.m */; };
+		FD539EE12435DECC0085AAA7 /* SMCallLib.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539EDB2435DECC0085AAA7 /* SMCallLib.m */; };
 		FDAF96B321D4AF9100411DE1 /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDAF96B221D4AF9100411DE1 /* 3@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +113,12 @@
 		FD539E7D24358A2E0085AAA7 /* LeakedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeakedViewController.h; path = DPAppDoctorDemo/LeakedViewController.h; sourceTree = SOURCE_ROOT; };
 		FD539E7F24359FA10085AAA7 /* DPAppDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAppDoctor.h; sourceTree = "<group>"; };
 		FD539E8024359FA10085AAA7 /* DPAppDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAppDoctor.m; sourceTree = "<group>"; };
+		FD539ED22435DECC0085AAA7 /* SMCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStack.h; sourceTree = "<group>"; };
+		FD539ED32435DECC0085AAA7 /* XLMonitorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMonitorHandle.h; sourceTree = "<group>"; };
+		FD539ED52435DECC0085AAA7 /* SMCallLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallLib.h; sourceTree = "<group>"; };
+		FD539ED82435DECC0085AAA7 /* XLMonitorHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLMonitorHandle.m; sourceTree = "<group>"; };
+		FD539ED92435DECC0085AAA7 /* SMCallStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStack.m; sourceTree = "<group>"; };
+		FD539EDB2435DECC0085AAA7 /* SMCallLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallLib.m; sourceTree = "<group>"; };
 		FDAF96B221D4AF9100411DE1 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +247,7 @@
 		FD3A50B72178326B00E17385 /* DPAppDoctor_SDK */ = {
 			isa = PBXGroup;
 			children = (
+				FD539ED02435DECC0085AAA7 /* Monitor */,
 				FD539E7F24359FA10085AAA7 /* DPAppDoctor.h */,
 				FD539E8024359FA10085AAA7 /* DPAppDoctor.m */,
 				FD539E7B243589680085AAA7 /* Leaked */,
@@ -274,6 +284,19 @@
 				FD539E60243585AB0085AAA7 /* UIViewController+MemoryLeak.m */,
 			);
 			path = Leaked;
+			sourceTree = "<group>";
+		};
+		FD539ED02435DECC0085AAA7 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				FD539ED52435DECC0085AAA7 /* SMCallLib.h */,
+				FD539EDB2435DECC0085AAA7 /* SMCallLib.m */,
+				FD539ED22435DECC0085AAA7 /* SMCallStack.h */,
+				FD539ED92435DECC0085AAA7 /* SMCallStack.m */,
+				FD539ED32435DECC0085AAA7 /* XLMonitorHandle.h */,
+				FD539ED82435DECC0085AAA7 /* XLMonitorHandle.m */,
+			);
+			path = Monitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,13 +531,16 @@
 				FD539E70243585AC0085AAA7 /* UIPageViewController+MemoryLeak.m in Sources */,
 				FD539E72243585AC0085AAA7 /* DPLeakedObjectProxy.m in Sources */,
 				FD539E7E24358A2F0085AAA7 /* LeakedViewController.m in Sources */,
+				FD539EDF2435DECC0085AAA7 /* XLMonitorHandle.m in Sources */,
 				FD3A508A217815A700E17385 /* main.m in Sources */,
 				FD539E73243585AC0085AAA7 /* UIApplication+MemoryLeak.m in Sources */,
 				FD539E79243585AC0085AAA7 /* UITouch+MemoryLeak.m in Sources */,
 				FD539E74243585AC0085AAA7 /* UIViewController+MemoryLeak.m in Sources */,
+				FD539EE12435DECC0085AAA7 /* SMCallLib.m in Sources */,
 				FD539E77243585AC0085AAA7 /* DPLeaksMessenger.m in Sources */,
 				FD3A507C217815A500E17385 /* AppDelegate.m in Sources */,
 				FD539E76243585AC0085AAA7 /* UITabBarController+MemoryLeak.m in Sources */,
+				FD539EE02435DECC0085AAA7 /* SMCallStack.m in Sources */,
 				FD539E8124359FA10085AAA7 /* DPAppDoctor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

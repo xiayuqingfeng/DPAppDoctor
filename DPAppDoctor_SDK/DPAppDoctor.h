@@ -12,10 +12,8 @@
 @interface DPAppDoctor : NSObject
 ///内存泄露监测开关: YES 打开, NO 关闭, 默认 NO;
 @property (nonatomic, assign) BOOL isLeaked;
-///CPU监测开关: YES 打开, NO 关闭, 默认 NO;
-@property (nonatomic, assign) BOOL isCPU;
-///GPU监测开关: YES 打开, NO 关闭, 默认 NO;
-@property (nonatomic, assign) BOOL isGPU;
+///CPU、GPU、FPS监测开关: YES 打开, NO 关闭, 默认 NO;
+@property (nonatomic, assign) BOOL isMonitor;
 
 + (instancetype)shareInstance;
 @end
