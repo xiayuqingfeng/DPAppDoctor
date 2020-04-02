@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "DPAppDoctor.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [DPAppDoctor shareInstance].isLeaked = YES;
+    [DPAppDoctor shareInstance].isCPU = YES;
+    [DPAppDoctor shareInstance].isGPU = YES;
+    
     return YES;
 }
 
