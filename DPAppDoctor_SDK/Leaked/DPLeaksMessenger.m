@@ -7,7 +7,7 @@
 //
 
 #import "DPLeaksMessenger.h"
-#import "DPAppDoctor.h"
+#ifdef DPAppDoctorDebug
 
 static __weak UIAlertView *alertView;
 
@@ -34,3 +34,5 @@ static __weak UIAlertView *alertView;
 }
 
 @end
+
+#endif

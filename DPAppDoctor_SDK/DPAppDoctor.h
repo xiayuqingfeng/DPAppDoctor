@@ -6,6 +6,10 @@
 //  Copyright © 2020 夏玉鹏. All rights reserved.
 //
 
+#define DPAppDoctorDebug DEBUG
+
+#ifdef DPAppDoctorDebug
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
@@ -17,3 +21,5 @@
 
 + (instancetype)shareInstance;
 @end
+
+#endif

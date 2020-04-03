@@ -5,7 +5,10 @@
 //  Created by DaiMing on 2017/7/8.
 //  Copyright © 2017年 DiDi. All rights reserved.
 //
-#import <Foundation/Foundation.h>
+
+#import "DPAppDoctor.h"
+#ifdef DPAppDoctorDebug
+
 #include <mach/mach.h>
 #include <dlfcn.h>
 #include <pthread.h>
@@ -56,3 +59,5 @@ typedef struct nlist              nlistByCPU;
 @interface SMCallLib : NSObject
 
 @end
+
+#endif

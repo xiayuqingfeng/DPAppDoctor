@@ -5,8 +5,9 @@
 //  Copyright © 2017年 Starming. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#import "DPAppDoctor.h"
+#ifdef DPAppDoctorDebug
+
 #import "SMCallLib.h"
 
 typedef NS_ENUM(NSUInteger, SMCallStackType) {
@@ -22,3 +23,5 @@ typedef NS_ENUM(NSUInteger, SMCallStackType) {
 extern NSString *smStackOfThread(thread_t thread);
 
 @end
+
+#endif

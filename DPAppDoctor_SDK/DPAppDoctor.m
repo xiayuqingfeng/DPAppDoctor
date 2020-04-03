@@ -7,6 +7,8 @@
 //
 
 #import "DPAppDoctor.h"
+#ifdef DPAppDoctorDebug
+
 #import "XLMonitorHandle.h"
 
 #define DPScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -43,7 +45,7 @@ static DPAppDoctor *_zhcwTool = nil;
     
     if (_isMonitor) {
         if (_aWindowView == nil) {
-            self.aWindowView = [[UIView alloc] initWithFrame:CGRectMake(0, DPNavibarHeight, 100, 0)];
+            self.aWindowView = [[UIView alloc] initWithFrame:CGRectMake(0, DPNavibarHeight, 70, 0)];
             _aWindowView.backgroundColor = [UIColor blackColor];
             _aWindowView.clipsToBounds = NO;
             _aWindowView.layer.cornerRadius = 15;
@@ -85,9 +87,8 @@ static DPAppDoctor *_zhcwTool = nil;
         [[XLMonitorHandle shareInstance] startMonitorFpsAndCpuUsage];
         __block typeof(self) __weak weak_self = self;
         [XLMonitorHandle shareInstance].aMonitorDataBlock = ^(NSDictionary * _Nonnull aMonitorData) {
-            weak_self.cpuLabel.text = [NSString stringWithFormat:@"%@",aMonitorData[@"cpuUsage"]];
-            weak_self.gpuLabel.text = [NSString stringWithFormat:@"%@",aMonitorData[@""]];
-            weak_self.fpsLabel.text = [NSString stringWithFormat:@"%@",aMonitorData[@"fps"]];
+            weak_self.cpuLabel.text = [NSString stringWithFormat:@"CPU:%@",aMonitorData[@"cpuUsage"]];
+            weak_self.fpsLabel.text = [NSString stringWithFormat:@"FPS:%@",aMonitorData[@"fps"]];
             
             [aWindow addSubview:weak_self.aWindowView];
         };
@@ -133,3 +134,5 @@ static DPAppDoctor *_zhcwTool = nil;
     return _zhcwTool;
 }
 @end
+
+#endif

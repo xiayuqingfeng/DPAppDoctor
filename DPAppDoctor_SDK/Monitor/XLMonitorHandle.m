@@ -7,6 +7,8 @@
 //
 
 #import "XLMonitorHandle.h"
+#ifdef DPAppDoctorDebug
+
 #include <sys/sysctl.h>
 #include <mach/mach.h>
 #import <QuartzCore/QuartzCore.h>
@@ -281,3 +283,5 @@
 }
 
 @end
+
+#endif

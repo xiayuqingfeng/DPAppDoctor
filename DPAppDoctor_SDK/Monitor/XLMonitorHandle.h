@@ -6,10 +6,8 @@
 //  Copyright © 2019 HeXiuLian. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-
-NS_ASSUME_NONNULL_BEGIN
+#import "DPAppDoctor.h"
+#ifdef DPAppDoctorDebug
 
 typedef void(^MonitorDataBlock)(NSDictionary *aMonitorData);
 
@@ -50,4 +48,4 @@ typedef void(^MonitorDataBlock)(NSDictionary *aMonitorData);
 
 @end
 
-NS_ASSUME_NONNULL_END
+#endif

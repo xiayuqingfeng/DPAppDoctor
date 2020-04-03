@@ -7,14 +7,12 @@
 //
 
 #import "NSObject+MemoryLeak.h"
-#import "DPLeakedObjectProxy.h"
-#import "DPLeaksFinder.h"
-#import <objc/runtime.h>
-#import <UIKit/UIKit.h>
+#ifdef DPAppDoctorDebug
 
-#if _INTERNAL_DPLF_RC_ENABLED
+#import "DPLeakedHeader.h"
+#import <objc/runtime.h>
+#import "DPLeakedObjectProxy.h"
 #import <FBRetainCycleDetector/FBRetainCycleDetector.h>
-#endif
 
 static const void *const kViewStackKey = &kViewStackKey;
 static const void *const kParentPtrsKey = &kParentPtrsKey;
@@ -132,9 +130,7 @@ const void *const kLatestSenderKey = &kLatestSenderKey;
 }
 
 + (void)swizzleSEL:(SEL)originalSEL withSEL:(SEL)swizzledSEL {
-#if _INTERNAL_DPLF_ENABLED
     
-#if _INTERNAL_DPLF_RC_ENABLED
     // Just find a place to set up FBRetainCycleDetector.
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -142,7 +138,6 @@ const void *const kLatestSenderKey = &kLatestSenderKey;
             [FBAssociationManager hook];
         });
     });
-#endif
     
     Class class = [self class];
     
@@ -163,7 +158,8 @@ const void *const kLatestSenderKey = &kLatestSenderKey;
     } else {
         method_exchangeImplementations(originalMethod, swizzledMethod);
     }
-#endif
 }
 
 @end
+
+#endif

@@ -7,10 +7,10 @@
 //
 
 #import "UINavigationController+MemoryLeak.h"
-#import "NSObject+MemoryLeak.h"
-#import <objc/runtime.h>
+#ifdef DPAppDoctorDebug
 
-#if _INTERNAL_DPLF_ENABLED
+#import "DPLeakedHeader.h"
+#import <objc/runtime.h>
 
 static const void *const kPoppedDetailVCKey = &kPoppedDetailVCKey;
 

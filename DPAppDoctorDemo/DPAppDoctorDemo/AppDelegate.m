@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
+
+#ifdef DEBUG
 #import "DPAppDoctor.h"
+#endif
 
 @interface AppDelegate ()
 
@@ -19,8 +22,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    #ifdef DPAppDoctorDebug
     [DPAppDoctor shareInstance].isLeaked = YES;
     [DPAppDoctor shareInstance].isMonitor = YES;
+    #endif
     
     return YES;
 }

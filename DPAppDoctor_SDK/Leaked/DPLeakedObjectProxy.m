@@ -7,15 +7,12 @@
 //
 
 #import "DPLeakedObjectProxy.h"
-#import "DPLeaksFinder.h"
-#import "DPLeaksMessenger.h"
-#import "NSObject+MemoryLeak.h"
-#import <objc/runtime.h>
-#import <UIKit/UIKit.h>
+#ifdef DPAppDoctorDebug
 
-#if _INTERNAL_DPLF_RC_ENABLED
+#import "DPLeakedHeader.h"
+#import "DPLeaksMessenger.h"
+#import <objc/runtime.h>
 #import <FBRetainCycleDetector/FBRetainCycleDetector.h>
-#endif
 
 static NSMutableSet *leakedObjectPtrs;
 
@@ -57,15 +54,10 @@ static NSMutableSet *leakedObjectPtrs;
     
     [leakedObjectPtrs addObject:proxy.objectPtr];
     
-#if _INTERNAL_DPLF_RC_ENABLED
     [DPLeaksMessenger alertWithTitle:@"Memory Leak"
-                            message:[NSString stringWithFormat:@"%@", proxy.viewStack]
-                           delegate:proxy
-              additionalButtonTitle:@"Retain Cycle"];
-#else
-    [DPLeaksMessenger alertWithTitle:@"Memory Leak"
-                            message:[NSString stringWithFormat:@"%@", proxy.viewStack]];
-#endif
+                             message:[NSString stringWithFormat:@"%@", proxy.viewStack]
+                            delegate:proxy
+               additionalButtonTitle:@"Retain Cycle"];
 }
 
 - (void)dealloc {
@@ -74,7 +66,7 @@ static NSMutableSet *leakedObjectPtrs;
     dispatch_async(dispatch_get_main_queue(), ^{
         [leakedObjectPtrs removeObject:objectPtr];
         [DPLeaksMessenger alertWithTitle:@"Object Deallocated"
-                                message:[NSString stringWithFormat:@"%@", viewStack]];
+                                 message:[NSString stringWithFormat:@"%@", viewStack]];
     });
 }
 
@@ -90,7 +82,6 @@ static NSMutableSet *leakedObjectPtrs;
         return;
     }
     
-#if _INTERNAL_DPLF_RC_ENABLED
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         FBRetainCycleDetector *detector = [FBRetainCycleDetector new];
         [detector addCandidate:self.object];
@@ -105,7 +96,7 @@ static NSMutableSet *leakedObjectPtrs;
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
                         [DPLeaksMessenger alertWithTitle:@"Retain Cycle"
-                                                message:[NSString stringWithFormat:@"%@", shiftedRetainCycle]];
+                                                 message:[NSString stringWithFormat:@"%@", shiftedRetainCycle]];
                     });
                     hasFound = YES;
                     break;
@@ -120,11 +111,10 @@ static NSMutableSet *leakedObjectPtrs;
         if (!hasFound) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 [DPLeaksMessenger alertWithTitle:@"Retain Cycle"
-                                        message:@"Fail to find a retain cycle"];
+                                         message:@"Fail to find a retain cycle"];
             });
         }
     });
-#endif
 }
 
 - (NSArray *)shiftArray:(NSArray *)array toIndex:(NSInteger)index {
@@ -139,3 +129,5 @@ static NSMutableSet *leakedObjectPtrs;
 }
 
 @end
+
+#endif

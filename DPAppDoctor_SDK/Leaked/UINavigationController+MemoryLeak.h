@@ -6,10 +6,8 @@
 //  Copyright © 2020 夏玉鹏. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "DPLeaksFinder.h"
-
-#if _INTERNAL_DPLF_ENABLED
+#import "DPAppDoctor.h"
+#ifdef DPAppDoctorDebug
 
 @interface UINavigationController (MemoryLeak)
 

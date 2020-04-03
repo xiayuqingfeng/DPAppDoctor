@@ -97,7 +97,6 @@
 		FD539E61243585AB0085AAA7 /* NSObject+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MemoryLeak.m"; sourceTree = "<group>"; };
 		FD539E62243585AB0085AAA7 /* UISplitViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+MemoryLeak.h"; sourceTree = "<group>"; };
 		FD539E63243585AB0085AAA7 /* UITabBarController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+MemoryLeak.m"; sourceTree = "<group>"; };
-		FD539E64243585AB0085AAA7 /* DPLeaksFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeaksFinder.h; sourceTree = "<group>"; };
 		FD539E65243585AB0085AAA7 /* UIPageViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageViewController+MemoryLeak.h"; sourceTree = "<group>"; };
 		FD539E66243585AB0085AAA7 /* NSObject+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MemoryLeak.h"; sourceTree = "<group>"; };
 		FD539E67243585AB0085AAA7 /* DPLeaksMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLeaksMessenger.m; sourceTree = "<group>"; };
@@ -120,6 +119,7 @@
 		FD539ED92435DECC0085AAA7 /* SMCallStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStack.m; sourceTree = "<group>"; };
 		FD539EDB2435DECC0085AAA7 /* SMCallLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallLib.m; sourceTree = "<group>"; };
 		FDAF96B221D4AF9100411DE1 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
+		FDEC7176243730D800EFA1A3 /* DPLeakedHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeakedHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,10 +247,10 @@
 		FD3A50B72178326B00E17385 /* DPAppDoctor_SDK */ = {
 			isa = PBXGroup;
 			children = (
-				FD539ED02435DECC0085AAA7 /* Monitor */,
 				FD539E7F24359FA10085AAA7 /* DPAppDoctor.h */,
 				FD539E8024359FA10085AAA7 /* DPAppDoctor.m */,
 				FD539E7B243589680085AAA7 /* Leaked */,
+				FD539ED02435DECC0085AAA7 /* Monitor */,
 			);
 			name = DPAppDoctor_SDK;
 			path = ../../DPAppDoctor_SDK;
@@ -259,9 +259,9 @@
 		FD539E7B243589680085AAA7 /* Leaked */ = {
 			isa = PBXGroup;
 			children = (
+				FDEC7176243730D800EFA1A3 /* DPLeakedHeader.h */,
 				FD539E5E243585AB0085AAA7 /* DPLeakedObjectProxy.h */,
 				FD539E5D243585AB0085AAA7 /* DPLeakedObjectProxy.m */,
-				FD539E64243585AB0085AAA7 /* DPLeaksFinder.h */,
 				FD539E5A243585AB0085AAA7 /* DPLeaksMessenger.h */,
 				FD539E67243585AB0085AAA7 /* DPLeaksMessenger.m */,
 				FD539E66243585AB0085AAA7 /* NSObject+MemoryLeak.h */,

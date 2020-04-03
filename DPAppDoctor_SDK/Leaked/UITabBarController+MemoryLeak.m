@@ -7,9 +7,9 @@
 //
 
 #import "UITabBarController+MemoryLeak.h"
-#import "NSObject+MemoryLeak.h"
+#ifdef DPAppDoctorDebug
 
-#if _INTERNAL_DPLF_ENABLED
+#import "DPLeakedHeader.h"
 
 @implementation UITabBarController (MemoryLeak)
 

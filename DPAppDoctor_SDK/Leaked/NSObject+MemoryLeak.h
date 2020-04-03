@@ -6,7 +6,8 @@
 //  Copyright © 2020 夏玉鹏. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "DPAppDoctor.h"
+#ifdef DPAppDoctorDebug
 
 #define DPLCheck(TARGET) [self willReleaseObject:(TARGET) relationship:@#TARGET];
 
@@ -25,3 +26,5 @@
 + (void)swizzleSEL:(SEL)originalSEL withSEL:(SEL)swizzledSEL;
 
 @end
+
+#endif

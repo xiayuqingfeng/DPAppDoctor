@@ -6,7 +6,8 @@
 //  Copyright © 2020 夏玉鹏. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "DPAppDoctor.h"
+#ifdef DPAppDoctorDebug
 
 @interface DPLeakedObjectProxy : NSObject
 
@@ -14,3 +15,5 @@
 + (void)addLeakedObject:(id)object;
 
 @end
+
+#endif

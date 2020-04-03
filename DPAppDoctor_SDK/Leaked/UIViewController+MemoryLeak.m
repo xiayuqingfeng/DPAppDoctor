@@ -7,10 +7,10 @@
 //
 
 #import "UIViewController+MemoryLeak.h"
-#import "NSObject+MemoryLeak.h"
-#import <objc/runtime.h>
+#ifdef DPAppDoctorDebug
 
-#if _INTERNAL_DPLF_ENABLED
+#import "DPLeakedHeader.h"
+#import <objc/runtime.h>
 
 const void *const kHasBeenPoppedKey = &kHasBeenPoppedKey;
 

@@ -7,7 +7,10 @@
 //
 
 #import "SMCallLib.h"
+#ifdef DPAppDoctorDebug
 
 @implementation SMCallLib
 
 @end
+
+#endif

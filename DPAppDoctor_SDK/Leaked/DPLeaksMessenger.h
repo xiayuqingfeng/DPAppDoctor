@@ -6,8 +6,8 @@
 //  Copyright © 2020 夏玉鹏. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#import "DPAppDoctor.h"
+#ifdef DPAppDoctorDebug
 
 @interface DPLeaksMessenger : NSObject
 
@@ -18,3 +18,5 @@
  additionalButtonTitle:(NSString *)additionalButtonTitle;
 
 @end
+
+#endif
