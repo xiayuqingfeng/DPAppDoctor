@@ -9,43 +9,24 @@
 #import "DPAppDoctor.h"
 #ifdef DPAppDoctorDebug
 
-typedef void(^MonitorDataBlock)(NSDictionary *aMonitorData);
+typedef void(^MonitorDataBlock)(NSDictionary *monitorData);
 
 @interface XLMonitorHandle : NSObject
 @property (nonatomic, copy) MonitorDataBlock aMonitorDataBlock;
+///CPU使用率警戒值, 默认 90
+@property (nonatomic, assign) CGFloat cpuUsageMax;
 
 + (instancetype)shareInstance;
-
-/**
- 开始监测
- */
+///开始监测
 - (void)startMonitorFpsAndCpuUsage;
-
-/**
- 停止监测
- */
+///停止监测
 - (void)stopMonitor;
-
-/**
- 是否打印 cpuUsage和fps的值
- @param logStatus 默认NO
- */
-- (void)setLogStatus:(BOOL)logStatus;
-
-/**
- 清除已经收集的数据
- */
+///清除监测数据
 - (void)clearMonitorData;
-
-/**
- 设置超过最大cpu使用率的值
-
- @param UsageMax 最大使用率 默认 90
- */
-- (void)setCpuUsageMax:(CGFloat)UsageMax;
-
+///获取监测数据
 - (NSArray *)getCpuUsageData;
-
+///是否打印监测日志
+- (void)setLogStatus:(BOOL)logStatus;
 @end
 
 #endif

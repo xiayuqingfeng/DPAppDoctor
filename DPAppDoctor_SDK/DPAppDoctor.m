@@ -28,8 +28,9 @@
 }
 @property (nonatomic, strong) UIView *aWindowView;
 @property (nonatomic, strong) UILabel *cpuLabel;
-@property (nonatomic, strong) UILabel *gpuLabel;
+@property (nonatomic, strong) UILabel *memoryLabel;
 @property (nonatomic, strong) UILabel *fpsLabel;
+@property (nonatomic, strong) UILabel *trafficLabel;
 @end
 
 static DPAppDoctor *_zhcwTool = nil;
@@ -45,7 +46,7 @@ static DPAppDoctor *_zhcwTool = nil;
     
     if (_isMonitor) {
         if (_aWindowView == nil) {
-            self.aWindowView = [[UIView alloc] initWithFrame:CGRectMake(0, DPNavibarHeight, 70, 0)];
+            self.aWindowView = [[UIView alloc] initWithFrame:CGRectMake(0, DPNavibarHeight, 100, 0)];
             _aWindowView.backgroundColor = [UIColor blackColor];
             _aWindowView.clipsToBounds = NO;
             _aWindowView.layer.cornerRadius = 15;
@@ -57,39 +58,48 @@ static DPAppDoctor *_zhcwTool = nil;
         }
 
         if (_cpuLabel == nil) {
-            self.cpuLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(_aWindowView.frame), 40)];
+            self.cpuLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 0, CGRectGetWidth(_aWindowView.frame)-5, 25)];
             _cpuLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
             _cpuLabel.textColor = [UIColor redColor];
             _cpuLabel.text = @"CPU:0%";
             [_aWindowView addSubview:_cpuLabel];
         }
         
-        if (_gpuLabel == nil) {
-            self.gpuLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_cpuLabel.frame), CGRectGetWidth(_aWindowView.frame), 40)];
-            _gpuLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
-            _gpuLabel.textColor = [UIColor redColor];
-            _gpuLabel.text = @"GPU:0%";
-            [_aWindowView addSubview:_gpuLabel];
+        if (_memoryLabel == nil) {
+            self.memoryLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, CGRectGetMaxY(_cpuLabel.frame), CGRectGetWidth(_aWindowView.frame)-5, 25)];
+            _memoryLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
+            _memoryLabel.textColor = [UIColor redColor];
+            _memoryLabel.text = @"MS:0%MB";
+            [_aWindowView addSubview:_memoryLabel];
         }
 
         if (_fpsLabel == nil) {
-            self.fpsLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_gpuLabel.frame), CGRectGetWidth(_aWindowView.frame), 40)];
+            self.fpsLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, CGRectGetMaxY(_memoryLabel.frame), CGRectGetWidth(_aWindowView.frame)-5, 25)];
             _fpsLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
             _fpsLabel.textColor = [UIColor redColor];
             _fpsLabel.text = @"FPS:0%";
             [_aWindowView addSubview:_fpsLabel];
         }
 
-        _aWindowView.frame = CGRectMake(CGRectGetWidth(aWindow.frame)-CGRectGetWidth(_aWindowView.frame), (CGRectGetHeight(aWindow.frame)-CGRectGetMaxY(_fpsLabel.frame))/2, CGRectGetWidth(_aWindowView.frame), CGRectGetMaxY(_fpsLabel.frame));
+        if (_trafficLabel == nil) {
+            self.trafficLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, CGRectGetMaxY(_fpsLabel.frame), CGRectGetWidth(_aWindowView.frame)-5, 25)];
+            _trafficLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
+            _trafficLabel.textColor = [UIColor redColor];
+            _trafficLabel.text = @"TRA:0kb";
+            [_aWindowView addSubview:_trafficLabel];
+        }
+        
+        _aWindowView.frame = CGRectMake(CGRectGetWidth(aWindow.frame)-CGRectGetWidth(_aWindowView.frame), (CGRectGetHeight(aWindow.frame)-CGRectGetMaxY(_trafficLabel.frame))/2, CGRectGetWidth(_aWindowView.frame), CGRectGetMaxY(_trafficLabel.frame));
 
         [[XLMonitorHandle shareInstance] setLogStatus:YES];
         [[XLMonitorHandle shareInstance] setCpuUsageMax:35];
         [[XLMonitorHandle shareInstance] startMonitorFpsAndCpuUsage];
         __block typeof(self) __weak weak_self = self;
         [XLMonitorHandle shareInstance].aMonitorDataBlock = ^(NSDictionary * _Nonnull aMonitorData) {
-            weak_self.cpuLabel.text = [NSString stringWithFormat:@"CPU:%@",aMonitorData[@"cpuUsage"]];
+            weak_self.cpuLabel.text = [NSString stringWithFormat:@"CPU:%@%%",aMonitorData[@"cpuUsage"]];
+            weak_self.memoryLabel.text = [NSString stringWithFormat:@"MS:%@MB",aMonitorData[@"memory"]];
             weak_self.fpsLabel.text = [NSString stringWithFormat:@"FPS:%@",aMonitorData[@"fps"]];
-            
+            weak_self.trafficLabel.text = [NSString stringWithFormat:@"TRA:%@kb",aMonitorData[@"traffic"]];
             [aWindow addSubview:weak_self.aWindowView];
         };
     }else {
