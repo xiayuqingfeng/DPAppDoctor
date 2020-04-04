@@ -18,9 +18,7 @@
 		FD3A508A217815A700E17385 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A5089217815A700E17385 /* main.m */; };
 		FD3A5094217815A700E17385 /* DPAppDoctorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A5093217815A700E17385 /* DPAppDoctorDemoTests.m */; };
 		FD3A509F217815A700E17385 /* DPAppDoctorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A509E217815A700E17385 /* DPAppDoctorDemoUITests.m */; };
-		FD3A50B0217816F100E17385 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3A50AD217816F100E17385 /* 1@2x.png */; };
 		FD3A50B1217816F100E17385 /* Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3A50AE217816F100E17385 /* Launch.png */; };
-		FD3A50B2217816F100E17385 /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3A50AF217816F100E17385 /* 2@2x.png */; };
 		FD539E70243585AC0085AAA7 /* UIPageViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E59243585AB0085AAA7 /* UIPageViewController+MemoryLeak.m */; };
 		FD539E71243585AC0085AAA7 /* UIView+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E5C243585AB0085AAA7 /* UIView+MemoryLeak.m */; };
 		FD539E72243585AC0085AAA7 /* DPLeakedObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E5D243585AB0085AAA7 /* DPLeakedObjectProxy.m */; };
@@ -38,7 +36,6 @@
 		FD539EE02435DECC0085AAA7 /* SMCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539ED92435DECC0085AAA7 /* SMCallStack.m */; };
 		FD539EE12435DECC0085AAA7 /* SMCallLib.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539EDB2435DECC0085AAA7 /* SMCallLib.m */; };
 		FD7EE774243888D2004AEAAA /* CheckNetWorkBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7EE773243888D2004AEAAA /* CheckNetWorkBytes.m */; };
-		FDAF96B321D4AF9100411DE1 /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDAF96B221D4AF9100411DE1 /* 3@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,9 +81,7 @@
 		FD3A509A217815A700E17385 /* DPAppDoctorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPAppDoctorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3A509E217815A700E17385 /* DPAppDoctorDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPAppDoctorDemoUITests.m; sourceTree = "<group>"; };
 		FD3A50A0217815A700E17385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD3A50AD217816F100E17385 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
 		FD3A50AE217816F100E17385 /* Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch.png; sourceTree = "<group>"; };
-		FD3A50AF217816F100E17385 /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2@2x.png"; sourceTree = "<group>"; };
 		FD539E59243585AB0085AAA7 /* UIPageViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageViewController+MemoryLeak.m"; sourceTree = "<group>"; };
 		FD539E5A243585AB0085AAA7 /* DPLeaksMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeaksMessenger.h; sourceTree = "<group>"; };
 		FD539E5B243585AB0085AAA7 /* UIViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MemoryLeak.h"; sourceTree = "<group>"; };
@@ -121,7 +116,6 @@
 		FD539EDB2435DECC0085AAA7 /* SMCallLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallLib.m; sourceTree = "<group>"; };
 		FD7EE772243888D2004AEAAA /* CheckNetWorkBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckNetWorkBytes.h; sourceTree = "<group>"; };
 		FD7EE773243888D2004AEAAA /* CheckNetWorkBytes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckNetWorkBytes.m; sourceTree = "<group>"; };
-		FDAF96B221D4AF9100411DE1 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
 		FDEC7176243730D800EFA1A3 /* DPLeakedHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeakedHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,9 +233,6 @@
 		FD3A50AC217816F100E17385 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FDAF96B221D4AF9100411DE1 /* 3@2x.png */,
-				FD3A50AD217816F100E17385 /* 1@2x.png */,
-				FD3A50AF217816F100E17385 /* 2@2x.png */,
 				FD3A50AE217816F100E17385 /* Launch.png */,
 			);
 			path = Resources;
@@ -411,12 +402,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDAF96B321D4AF9100411DE1 /* 3@2x.png in Resources */,
 				FD3A5087217815A700E17385 /* LaunchScreen.storyboard in Resources */,
 				FD3A5084217815A700E17385 /* Assets.xcassets in Resources */,
-				FD3A50B0217816F100E17385 /* 1@2x.png in Resources */,
 				FD3A5082217815A500E17385 /* Main.storyboard in Resources */,
-				FD3A50B2217816F100E17385 /* 2@2x.png in Resources */,
 				FD3A50B1217816F100E17385 /* Launch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
