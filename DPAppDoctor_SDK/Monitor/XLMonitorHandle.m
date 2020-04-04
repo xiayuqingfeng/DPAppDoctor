@@ -17,6 +17,7 @@
 #include <ifaddrs.h>
 #include <net/if_dl.h>
 #import "SMCallStack.h"
+#import "CheckNetWorkBytes.h"
 
 #define CPUMONITORRATE  90
 
@@ -101,7 +102,7 @@
         frameCount = 0;
         
         NSString *indexStr = [NSString stringWithFormat:@"%lu",(unsigned long)_monitorDataArr.count];
-
+        
         UIViewController *VC = [self getCurrentVC];
         NSString *vcName = NSStringFromClass([VC class]);
         vcName = vcName ? vcName : @"nil";
@@ -110,13 +111,13 @@
                                @"cpuUsage":[self cpuUsageInfo],
                                @"fps":fps,
                                @"memory":[self getMemoryInfo],
-                               @"traffic":[self getTraffic],
+                               @"traffic":[CheckNetWorkBytes getNetWorkBytesPerSecond],
                                @"arrThreadInfo":[self getThreadInfo],
                                @"time":[self getCurrentDate],
                                @"vcName":vcName
         };
         [_monitorDataArr addObject:dict];
-        
+
         if (self.logStatus) {
             NSLog(@"DPAppDoctorLog: %@",dict);
         }
@@ -232,7 +233,7 @@
         cursor = addrs;
         while (cursor != NULL) {
             name=[NSString stringWithFormat:@"%s",cursor->ifa_name];
-
+            
             if (cursor->ifa_addr->sa_family == AF_LINK) {
                 //wifi消耗流量
                 if ([name hasPrefix:@"en"]) {
@@ -240,7 +241,7 @@
                     WiFiSent+=networkStatisc->ifi_obytes;
                     WiFiReceived+=networkStatisc->ifi_ibytes;
                 }
-
+                
                 //移动网络消耗流量
                 if ([name hasPrefix:@"pdp_ip0"]) {
                     networkStatisc = (const struct if_data *) cursor->ifa_data;
@@ -252,7 +253,7 @@
         }
         freeifaddrs(addrs);
     }
-
+    
     self.trafficValue = [NSString stringWithFormat:@"%d",WiFiSent+WiFiReceived+WWANSent+WWANReceived];
     oldTrafficValue = [NSString stringWithFormat:@"%.0f",([_trafficValue intValue]-[oldTrafficValue intValue])/1024.0];
     return oldTrafficValue;

@@ -59,32 +59,36 @@ static DPAppDoctor *_zhcwTool = nil;
 
         if (_cpuLabel == nil) {
             self.cpuLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 0, CGRectGetWidth(_aWindowView.frame)-5, 25)];
+            _cpuLabel.adjustsFontSizeToFitWidth = YES;
             _cpuLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
-            _cpuLabel.textColor = [UIColor redColor];
+            _cpuLabel.textColor = [UIColor greenColor];
             _cpuLabel.text = @"CPU:0%";
             [_aWindowView addSubview:_cpuLabel];
         }
         
         if (_memoryLabel == nil) {
             self.memoryLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, CGRectGetMaxY(_cpuLabel.frame), CGRectGetWidth(_aWindowView.frame)-5, 25)];
+            _memoryLabel.adjustsFontSizeToFitWidth = YES;
             _memoryLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
-            _memoryLabel.textColor = [UIColor redColor];
+            _memoryLabel.textColor = [UIColor greenColor];
             _memoryLabel.text = @"MS:0%MB";
             [_aWindowView addSubview:_memoryLabel];
         }
 
         if (_fpsLabel == nil) {
             self.fpsLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, CGRectGetMaxY(_memoryLabel.frame), CGRectGetWidth(_aWindowView.frame)-5, 25)];
+            _fpsLabel.adjustsFontSizeToFitWidth = YES;
             _fpsLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
-            _fpsLabel.textColor = [UIColor redColor];
+            _fpsLabel.textColor = [UIColor greenColor];
             _fpsLabel.text = @"FPS:0%";
             [_aWindowView addSubview:_fpsLabel];
         }
 
         if (_trafficLabel == nil) {
             self.trafficLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, CGRectGetMaxY(_fpsLabel.frame), CGRectGetWidth(_aWindowView.frame)-5, 25)];
+            _trafficLabel.adjustsFontSizeToFitWidth = YES;
             _trafficLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
-            _trafficLabel.textColor = [UIColor redColor];
+            _trafficLabel.textColor = [UIColor greenColor];
             _trafficLabel.text = @"TRA:0kb";
             [_aWindowView addSubview:_trafficLabel];
         }
@@ -96,9 +100,28 @@ static DPAppDoctor *_zhcwTool = nil;
         [[XLMonitorHandle shareInstance] startMonitorFpsAndCpuUsage];
         __block typeof(self) __weak weak_self = self;
         [XLMonitorHandle shareInstance].aMonitorDataBlock = ^(NSDictionary * _Nonnull aMonitorData) {
-            weak_self.cpuLabel.text = [NSString stringWithFormat:@"CPU:%@%%",aMonitorData[@"cpuUsage"]];
+            NSString *cpuValue = [NSString stringWithFormat:@"%@",aMonitorData[@"cpuUsage"]];
+            weak_self.cpuLabel.text = [NSString stringWithFormat:@"CPU:%@%%",cpuValue];
+            if (cpuValue.intValue >= 85) {
+                weak_self.cpuLabel.textColor = [UIColor redColor];
+            } else if (cpuValue.intValue>=60 && cpuValue.intValue<85) {
+                weak_self.cpuLabel.textColor = [UIColor yellowColor];
+            } else {
+                weak_self.cpuLabel.textColor = [UIColor greenColor];
+            }
+            
             weak_self.memoryLabel.text = [NSString stringWithFormat:@"MS:%@MB",aMonitorData[@"memory"]];
-            weak_self.fpsLabel.text = [NSString stringWithFormat:@"FPS:%@",aMonitorData[@"fps"]];
+            
+            NSString *fpsValue = [NSString stringWithFormat:@"%@",aMonitorData[@"fps"]];
+            weak_self.fpsLabel.text = [NSString stringWithFormat:@"FPS:%@",fpsValue];
+            if (fpsValue.intValue >= 55) {
+                weak_self.fpsLabel.textColor = [UIColor greenColor];
+            } else if (fpsValue.intValue>=50 && fpsValue.intValue<55) {
+                weak_self.fpsLabel.textColor = [UIColor yellowColor];
+            } else {
+                weak_self.fpsLabel.textColor = [UIColor redColor];
+            }
+            
             weak_self.trafficLabel.text = [NSString stringWithFormat:@"TRA:%@kb",aMonitorData[@"traffic"]];
             [aWindow addSubview:weak_self.aWindowView];
         };

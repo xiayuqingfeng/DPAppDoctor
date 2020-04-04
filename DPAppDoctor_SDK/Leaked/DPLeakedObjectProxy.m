@@ -54,10 +54,10 @@ static NSMutableSet *leakedObjectPtrs;
     
     [leakedObjectPtrs addObject:proxy.objectPtr];
     
-    [DPLeaksMessenger alertWithTitle:@"Memory Leak"
+    [DPLeaksMessenger alertWithTitle:@"内存泄露"
                              message:[NSString stringWithFormat:@"%@", proxy.viewStack]
                             delegate:proxy
-               additionalButtonTitle:@"Retain Cycle"];
+               additionalButtonTitle:@"查看泄露定位"];
 }
 
 - (void)dealloc {
@@ -65,7 +65,7 @@ static NSMutableSet *leakedObjectPtrs;
     NSArray *viewStack = _viewStack;
     dispatch_async(dispatch_get_main_queue(), ^{
         [leakedObjectPtrs removeObject:objectPtr];
-        [DPLeaksMessenger alertWithTitle:@"Object Deallocated"
+        [DPLeaksMessenger alertWithTitle:@"内存分配对象"
                                  message:[NSString stringWithFormat:@"%@", viewStack]];
     });
 }
@@ -95,7 +95,7 @@ static NSMutableSet *leakedObjectPtrs;
                     NSArray *shiftedRetainCycle = [self shiftArray:retainCycle toIndex:index];
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        [DPLeaksMessenger alertWithTitle:@"Retain Cycle"
+                        [DPLeaksMessenger alertWithTitle:@"泄露记录"
                                                  message:[NSString stringWithFormat:@"%@", shiftedRetainCycle]];
                     });
                     hasFound = YES;
@@ -110,8 +110,8 @@ static NSMutableSet *leakedObjectPtrs;
         }
         if (!hasFound) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                [DPLeaksMessenger alertWithTitle:@"Retain Cycle"
-                                         message:@"Fail to find a retain cycle"];
+                [DPLeaksMessenger alertWithTitle:@"泄露记录"
+                                         message:@"泄露定位失败"];
             });
         }
     });

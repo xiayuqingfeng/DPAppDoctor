@@ -27,7 +27,7 @@ static __weak UIAlertView *alertView;
     UIAlertView *alertViewTemp = [[UIAlertView alloc] initWithTitle:title
                                                             message:message
                                                            delegate:delegate
-                                                  cancelButtonTitle:@"OK"
+                                                  cancelButtonTitle:@"忽略"
                                                   otherButtonTitles:additionalButtonTitle, nil];
     [alertViewTemp show];
     alertView = alertViewTemp;
