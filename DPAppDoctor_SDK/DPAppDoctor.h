@@ -6,7 +6,9 @@
 //  Copyright © 2020 夏玉鹏. All rights reserved.
 //
 
-#define DPAppDoctorDebug DEBUG
+#ifdef DEBUG
+#define DPAppDoctorDebug 1
+#endif
 
 #ifdef DPAppDoctorDebug
 
