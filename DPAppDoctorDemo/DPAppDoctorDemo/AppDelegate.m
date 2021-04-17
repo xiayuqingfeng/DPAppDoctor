@@ -23,8 +23,7 @@
     // Override point for customization after application launch.
     
     #ifdef DPAppDoctorDebug
-    [DPAppDoctor shareInstance].isLeaked = YES;
-    [DPAppDoctor shareInstance].isMonitor = YES;
+    [DPAppDoctor shareInstance].isShowTest = YES;
     #endif
     
     return YES;

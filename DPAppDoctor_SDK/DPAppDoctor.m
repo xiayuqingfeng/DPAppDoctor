@@ -9,154 +9,30 @@
 #import "DPAppDoctor.h"
 #ifdef DPAppDoctorDebug
 
-#import "XLMonitorHandle.h"
-
-#define DPScreenHeight [UIScreen mainScreen].bounds.size.height
-#define DPScreenWidth [UIScreen mainScreen].bounds.size.width
-
-#define DPIS_iPhoneX (((DPScreenWidth == 375 && DPScreenHeight == 812)||(DPScreenWidth == 812 && DPScreenHeight == 375) )?true:false)
-#define DPIS_iPhoneXS DPIS_iPhoneX
-#define DPIS_iPhoneXR (((DPScreenWidth == 414 && DPScreenHeight == 896)||(DPScreenWidth == 896 && DPScreenHeight == 414) )?true:false)
-#define DPIS_iPhoneXS_Max DPIS_iPhoneXR
-#define DPIS_iPhoneXAll (DPIS_iPhoneX || DPIS_iPhoneXS || DPIS_iPhoneXR || DPIS_iPhoneXS_Max)
-
-#define DPStatusbarH (CGRectIsEmpty([UIApplication sharedApplication].statusBarFrame)?(UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation)?20:(DPIS_iPhoneXAll ? 44 : 20)):CGRectGetHeight([UIApplication sharedApplication].statusBarFrame))
-#define DPNavibarHeight (DPIS_iPhoneXAll ? 88 : 64)
+#import "DPLogView.h"
+#import "DPMonitorView.h"
 
 @interface DPAppDoctor (){
     
 }
-@property (nonatomic, strong) UIView *aWindowView;
-@property (nonatomic, strong) UILabel *cpuLabel;
-@property (nonatomic, strong) UILabel *memoryLabel;
-@property (nonatomic, strong) UILabel *fpsLabel;
-@property (nonatomic, strong) UILabel *trafficLabel;
+//测试项选择模块
+@property (nonatomic, strong) UIView *testView;
+@property (nonatomic, strong) UIButton *titleBtn;
+@property (nonatomic, strong) UIButton *logBtn;
+@property (nonatomic, strong) UIButton *leakedBtn;
+@property (nonatomic, strong) UIButton *monitorBtn;
+@property (nonatomic, strong) UIButton *viewColorBtn;
+@property (nonatomic, strong) UIButton *otherBtn;
+
+//日志View
+@property (nonatomic, strong) DPLogView *aLogView;
+//性能检测View
+@property (nonatomic, strong) DPMonitorView *aMonitorView;
 @end
 
 static DPAppDoctor *_zhcwTool = nil;
 
 @implementation DPAppDoctor
-- (void)setIsMonitor:(BOOL)isMonitor {
-    _isMonitor = isMonitor;
-    [self updateWindowView];
-}
-
-- (void)updateWindowView {
-    UIWindow *aWindow = [[UIApplication sharedApplication] delegate].window;
-    
-    if (_isMonitor) {
-        if (_aWindowView == nil) {
-            self.aWindowView = [[UIView alloc] initWithFrame:CGRectMake(0, DPNavibarHeight, 100, 0)];
-            _aWindowView.backgroundColor = [UIColor blackColor];
-            _aWindowView.clipsToBounds = NO;
-            _aWindowView.layer.cornerRadius = 15;
-            _aWindowView.layer.masksToBounds = YES;
-            [aWindow addSubview:_aWindowView];
-            
-            UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(dragViewMoved:)];
-            [_aWindowView addGestureRecognizer:panGestureRecognizer];
-        }
-
-        if (_cpuLabel == nil) {
-            self.cpuLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 0, CGRectGetWidth(_aWindowView.frame)-5, 25)];
-            _cpuLabel.adjustsFontSizeToFitWidth = YES;
-            _cpuLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
-            _cpuLabel.textColor = [UIColor greenColor];
-            _cpuLabel.text = @"CPU:0%";
-            [_aWindowView addSubview:_cpuLabel];
-        }
-        
-        if (_memoryLabel == nil) {
-            self.memoryLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, CGRectGetMaxY(_cpuLabel.frame), CGRectGetWidth(_aWindowView.frame)-5, 25)];
-            _memoryLabel.adjustsFontSizeToFitWidth = YES;
-            _memoryLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
-            _memoryLabel.textColor = [UIColor greenColor];
-            _memoryLabel.text = @"MS:0%MB";
-            [_aWindowView addSubview:_memoryLabel];
-        }
-
-        if (_fpsLabel == nil) {
-            self.fpsLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, CGRectGetMaxY(_memoryLabel.frame), CGRectGetWidth(_aWindowView.frame)-5, 25)];
-            _fpsLabel.adjustsFontSizeToFitWidth = YES;
-            _fpsLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
-            _fpsLabel.textColor = [UIColor greenColor];
-            _fpsLabel.text = @"FPS:0%";
-            [_aWindowView addSubview:_fpsLabel];
-        }
-
-        if (_trafficLabel == nil) {
-            self.trafficLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, CGRectGetMaxY(_fpsLabel.frame), CGRectGetWidth(_aWindowView.frame)-5, 25)];
-            _trafficLabel.adjustsFontSizeToFitWidth = YES;
-            _trafficLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:18];
-            _trafficLabel.textColor = [UIColor greenColor];
-            _trafficLabel.text = @"TRA:0kb";
-            [_aWindowView addSubview:_trafficLabel];
-        }
-        
-        _aWindowView.frame = CGRectMake(CGRectGetWidth(aWindow.frame)-CGRectGetWidth(_aWindowView.frame), (CGRectGetHeight(aWindow.frame)-CGRectGetMaxY(_trafficLabel.frame))/2, CGRectGetWidth(_aWindowView.frame), CGRectGetMaxY(_trafficLabel.frame));
-
-        [[XLMonitorHandle shareInstance] setLogStatus:YES];
-        [[XLMonitorHandle shareInstance] setCpuUsageMax:35];
-        [[XLMonitorHandle shareInstance] startMonitorFpsAndCpuUsage];
-        __block typeof(self) __weak weak_self = self;
-        [XLMonitorHandle shareInstance].aMonitorDataBlock = ^(NSDictionary * _Nonnull aMonitorData) {
-            NSString *cpuValue = [NSString stringWithFormat:@"%@",aMonitorData[@"cpuUsage"]];
-            weak_self.cpuLabel.text = [NSString stringWithFormat:@"CPU:%@%%",cpuValue];
-            if (cpuValue.intValue >= 85) {
-                weak_self.cpuLabel.textColor = [UIColor redColor];
-            } else if (cpuValue.intValue>=60 && cpuValue.intValue<85) {
-                weak_self.cpuLabel.textColor = [UIColor yellowColor];
-            } else {
-                weak_self.cpuLabel.textColor = [UIColor greenColor];
-            }
-            
-            weak_self.memoryLabel.text = [NSString stringWithFormat:@"MS:%@MB",aMonitorData[@"memory"]];
-            
-            NSString *fpsValue = [NSString stringWithFormat:@"%@",aMonitorData[@"fps"]];
-            weak_self.fpsLabel.text = [NSString stringWithFormat:@"FPS:%@",fpsValue];
-            if (fpsValue.intValue >= 55) {
-                weak_self.fpsLabel.textColor = [UIColor greenColor];
-            } else if (fpsValue.intValue>=50 && fpsValue.intValue<55) {
-                weak_self.fpsLabel.textColor = [UIColor yellowColor];
-            } else {
-                weak_self.fpsLabel.textColor = [UIColor redColor];
-            }
-            
-            weak_self.trafficLabel.text = [NSString stringWithFormat:@"TRA:%@kb",aMonitorData[@"traffic"]];
-            [aWindow addSubview:weak_self.aWindowView];
-        };
-    }else {
-        [[XLMonitorHandle shareInstance] stopMonitor];
-        [_aWindowView removeFromSuperview];
-    }
-}
-
-- (void)dragViewMoved:(UIPanGestureRecognizer *)panGestureRecognizer {
-    if (panGestureRecognizer.state == UIGestureRecognizerStateChanged) {
-        UIWindow *aWindow = [[UIApplication sharedApplication] delegate].window;
-        
-        CGPoint translation = [panGestureRecognizer translationInView:_aWindowView];
-        _aWindowView.center = CGPointMake(_aWindowView.center.x + translation.x, _aWindowView.center.y + translation.y);
-        
-        CGRect aFrame = _aWindowView.frame;
-        if (CGRectGetMinX(aFrame) < 0) {
-            aFrame.origin.x = 0;
-        }
-        if (CGRectGetMaxX(aFrame) > CGRectGetWidth(aWindow.frame)) {
-            aFrame.origin.x = CGRectGetWidth(aWindow.frame)-CGRectGetWidth(aFrame);
-        }
-        if (CGRectGetMinY(aFrame) < 0) {
-            aFrame.origin.y = 0;
-        }
-        if (CGRectGetMaxY(aFrame) > CGRectGetHeight(aWindow.frame)) {
-            aFrame.origin.y = CGRectGetHeight(aWindow.frame)-CGRectGetHeight(aFrame);
-        }
-        _aWindowView.frame = aFrame;
-        
-        [panGestureRecognizer setTranslation:CGPointZero inView:aWindow];
-    }
-}
-
 + (instancetype)shareInstance{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -165,6 +41,224 @@ static DPAppDoctor *_zhcwTool = nil;
         }
     });
     return _zhcwTool;
+}
+
+//测试项选择模块
+- (void)updateTestView {
+    UIWindow *aWindow = [UIApplication sharedApplication].keyWindowDP;
+    if (_isShowTest) {
+        _testView.hidden = NO;
+        
+        if (_testView == nil) {
+            self.testView = [[UIView alloc] init];
+            _testView.yDP = DPFrameHeight(100);
+            _testView.backgroundColor = rgbadp(0, 0, 0, 1);
+            _testView.clipsToBounds = YES;
+            [aWindow addSubview:_testView];
+            
+            UIPanGestureRecognizer *testViewTap = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(testViewTapAction:)];
+            [_testView addGestureRecognizer:testViewTap];
+            
+            self.titleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            _titleBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+            [_titleBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+            [_titleBtn setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
+            [_titleBtn setTitle:@"Test" forState:UIControlStateNormal];
+            [_titleBtn setTitle:@"Test(关闭)" forState:UIControlStateHighlighted];
+            [_titleBtn setTitle:@"Test(关闭)" forState:UIControlStateSelected];
+            [_titleBtn addTarget:self action:@selector(titleBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+            [_testView addSubview:_titleBtn];
+            
+            self.logBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            _logBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+            [_logBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+            [_logBtn setTitleColor:[UIColor greenColor] forState:UIControlStateSelected];
+            [_logBtn setTitle:@"日志打印(打开)" forState:UIControlStateNormal];
+            [_logBtn setTitle:@"日志打印(关闭)" forState:UIControlStateSelected];
+            [_logBtn addTarget:self action:@selector(logBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+            [_testView addSubview:_logBtn];
+         
+            self.leakedBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            _leakedBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+            [_leakedBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+            [_leakedBtn setTitleColor:[UIColor greenColor] forState:UIControlStateSelected];
+            [_leakedBtn setTitle:@"内存泄露监测(打开)" forState:UIControlStateNormal];
+            [_leakedBtn setTitle:@"内存泄露监测(关闭)" forState:UIControlStateSelected];
+            [_leakedBtn addTarget:self action:@selector(leakedBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+            [_testView addSubview:_leakedBtn];
+            
+            self.monitorBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            _monitorBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+            [_monitorBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+            [_monitorBtn setTitleColor:[UIColor greenColor] forState:UIControlStateSelected];
+            [_monitorBtn setTitle:@"C、G、F监测(打开)" forState:UIControlStateNormal];
+            [_monitorBtn setTitle:@"C、G、F监测(关闭)" forState:UIControlStateSelected];
+            [_monitorBtn addTarget:self action:@selector(monitorBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+            [_testView addSubview:_monitorBtn];
+            
+            self.viewColorBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            _viewColorBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+            [_viewColorBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+            [_viewColorBtn setTitleColor:[UIColor greenColor] forState:UIControlStateSelected];
+            [_viewColorBtn setTitle:@"UI布局(打开)" forState:UIControlStateNormal];
+            [_viewColorBtn setTitle:@"UI布局(关闭)" forState:UIControlStateSelected];
+            [_viewColorBtn addTarget:self action:@selector(viewColorBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+            [_testView addSubview:_viewColorBtn];
+            
+            self.otherBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            _otherBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+            [_otherBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+            [_otherBtn setTitleColor:[UIColor greenColor] forState:UIControlStateSelected];
+            [_otherBtn setTitle:@"DIY(打开)" forState:UIControlStateNormal];
+            [_otherBtn setTitle:@"DIY(关闭)" forState:UIControlStateSelected];
+            [_otherBtn addTarget:self action:@selector(otherBtnBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+            [_testView addSubview:_otherBtn];
+        }
+        
+        if (_titleBtn.selected == NO) {
+            _testView.frame = CGRectMake(_testView.superview.widthDP-DPFrameWidth(50), _testView.yDP, DPFrameWidth(50), DPFrameHeight(30));
+            _titleBtn.frame = _testView.bounds;
+        }else {
+            _testView.frame = CGRectMake(_testView.superview.widthDP-DPFrameWidth(150), _testView.yDP, DPFrameWidth(150), DPFrameHeight(30)*6);
+            _titleBtn.frame = CGRectMake(0, DPFrameHeight(30)*0, _testView.widthDP, DPFrameHeight(30));
+            _logBtn.frame = CGRectMake(0, DPFrameHeight(30)*1, _testView.widthDP, DPFrameHeight(30));
+            _leakedBtn.frame = CGRectMake(0, DPFrameHeight(30)*2, _testView.widthDP, DPFrameHeight(30));
+            _monitorBtn.frame = CGRectMake(0, DPFrameHeight(30)*3, _testView.widthDP, DPFrameHeight(30));
+            _viewColorBtn.frame = CGRectMake(0, DPFrameHeight(30)*4, _testView.widthDP, DPFrameHeight(30));
+            _otherBtn.frame = CGRectMake(0, DPFrameHeight(30)*5, _testView.widthDP, DPFrameHeight(30));
+        }
+        [_testView setDPRoundingCorners:UIRectCornerTopLeft|UIRectCornerBottomLeft radius:5 borderCorners:DPBorderDirectionAllCorners borderWidth:0 borderColor:nil];
+    }else {
+        _testView.hidden = YES;
+    }
+    
+    [self logBtnAction:nil];
+    [self leakedBtnAction:nil];
+    [self monitorBtnAction:nil];
+    [self viewColorBtnAction:nil];
+    [self otherBtnBtnAction:nil];
+}
+- (void)testViewTapAction:(UIPanGestureRecognizer *)panGestureRecognizer {
+    if (_titleBtn.selected) {
+        return;
+    }
+    
+    if (panGestureRecognizer.state == UIGestureRecognizerStateChanged) {
+        UIWindow *aWindow = [UIApplication sharedApplication].keyWindowDP;
+        
+        CGPoint translation = [panGestureRecognizer translationInView:_testView];
+        _testView.centerYDP = _testView.center.y + translation.y;
+        
+        if (_testView.yDP < 0) {
+            _testView.yDP = 0;
+        }
+        if (_testView.yMaxDP > aWindow.heightDP) {
+            _testView.yMaxDP = aWindow.heightDP-_testView.heightDP;
+        }
+        [panGestureRecognizer setTranslation:CGPointZero inView:aWindow];
+    }
+}
+- (void)titleBtnAction:(UIButton *)button {
+    button.selected = !button.selected;
+    [self updateTestView];
+}
+- (void)logBtnAction:(UIButton *)button {
+    BOOL bol = NO;
+    if (button == nil) {
+        bol = [[NSUserDefaults standardUserDefaults] boolForKey:@"logBtn"];
+    }else {
+        button.selected = !button.selected;
+        bol = button.selected;
+        [[NSUserDefaults standardUserDefaults] setBool:bol forKey:@"logBtn"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    self.isLogOut = bol;
+}
+- (void)leakedBtnAction:(UIButton *)button {
+    BOOL bol = NO;
+    if (button == nil) {
+        bol = [[NSUserDefaults standardUserDefaults] boolForKey:@"leakedBtn"];
+    }else {
+        button.selected = !button.selected;
+        bol = button.selected;
+        [[NSUserDefaults standardUserDefaults] setBool:bol forKey:@"leakedBtn"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    self.isLeaked = bol;
+}
+- (void)monitorBtnAction:(UIButton *)button {
+    BOOL bol = NO;
+    if (button == nil) {
+        bol = [[NSUserDefaults standardUserDefaults] boolForKey:@"monitorBtn"];
+    }else {
+        button.selected = !button.selected;
+        bol = button.selected;
+        [[NSUserDefaults standardUserDefaults] setBool:bol forKey:@"monitorBtn"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    self.isMonitor = bol;
+}
+- (void)viewColorBtnAction:(UIButton *)button {
+    BOOL bol = NO;
+    if (button == nil) {
+        bol = [[NSUserDefaults standardUserDefaults] boolForKey:@"viewColorBtn"];
+    }else {
+        button.selected = !button.selected;
+        bol = button.selected;
+        [[NSUserDefaults standardUserDefaults] setBool:bol forKey:@"viewColorBtn"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    self.isViewColor = bol;
+}
+- (void)otherBtnBtnAction:(UIButton *)button {
+    BOOL bol = NO;
+    if (button == nil) {
+        bol = [[NSUserDefaults standardUserDefaults] boolForKey:@"otherBtn"];
+    }else {
+        button.selected = !button.selected;
+        bol = button.selected;
+        [[NSUserDefaults standardUserDefaults] setBool:bol forKey:@"otherBtn"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    self.isDiy = bol;
+}
+
+#pragma mark <-------------Setter_methods------------->
+- (void)setIsShowTest:(BOOL)isShowTest {
+    _isShowTest = isShowTest;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self updateTestView];
+    });
+}
+- (void)setIsLogOut:(BOOL)isLogOut {
+    _isLogOut = isLogOut;
+    self.logBtn.selected = _isLogOut;
+    
+    if (_aLogView == nil) {
+        self.aLogView = [[DPLogView alloc] initWithBtnMinY:[UIApplication sharedApplication].keyWindowDP.heightDP/2];
+    }
+    _aLogView.hidden = !_isLogOut;
+}
+- (void)setIsLeaked:(BOOL)isLeaked {
+    _isLeaked = isLeaked;
+    self.leakedBtn.selected = _isLeaked;
+}
+- (void)setIsMonitor:(BOOL)isMonitor {
+    _isMonitor = isMonitor;
+    self.monitorBtn.selected = _isMonitor;
+    
+    if (_aMonitorView == nil) {
+        self.aMonitorView = [[DPMonitorView alloc] initWithBtnMinY:[UIApplication sharedApplication].keyWindowDP.heightDP/2+60];
+    }
+    _aMonitorView.hidden = !_isMonitor;
+}
+- (void)setIsViewColor:(BOOL)isViewColor {
+    _isViewColor = isViewColor;
+    self.viewColorBtn.selected = _isViewColor;
+}
+- (void)setIsDiy:(BOOL)isDiy {
+    _isDiy = isDiy;
+    self.otherBtn.selected = _isDiy;
 }
 @end
 

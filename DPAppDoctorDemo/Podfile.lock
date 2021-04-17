@@ -5,7 +5,7 @@ DEPENDENCIES:
   - FBRetainCycleDetector
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - FBRetainCycleDetector
 
 SPEC CHECKSUMS:
@@ -13,4 +13,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 7314c38e7b1babaaf018b5ae96771a8de60c70c1
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.3
