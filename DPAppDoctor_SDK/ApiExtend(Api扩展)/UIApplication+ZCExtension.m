@@ -28,7 +28,7 @@
         aWindow = [UIApplication sharedApplication].keyWindow;
     }
     if (aWindow == nil || !aWindow.isKeyWindow) {
-        aWindow = ((AppDelegate *)[[UIApplication sharedApplication] delegate]).window;
+        aWindow = [[UIApplication sharedApplication] delegate].window;
     }
     return aWindow;
 }
