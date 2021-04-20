@@ -6,7 +6,7 @@
 //  Copyright © 2021 yupeng xia. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "DPHeaderObject.h"
 
 @interface NSString (DPExtension)
 ///获取字符串中多个相同字符串的所有range

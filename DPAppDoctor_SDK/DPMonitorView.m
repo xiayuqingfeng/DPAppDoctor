@@ -7,7 +7,7 @@
 //
 
 #import "DPMonitorView.h"
-#import "DPAppDoctor.h"
+#import "DPHeaderObject.h"
 #import "XLMonitorHandle.h"
 
 @interface DPMonitorView () {

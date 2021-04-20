@@ -7,7 +7,7 @@
 //
 
 #import "DPViewColorView.h"
-#import "DPAppDoctor.h"
+#import "DPHeaderObject.h"
 
 @interface DPViewColorView () {
     CGFloat viewMinY;

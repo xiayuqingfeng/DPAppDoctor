@@ -12,10 +12,7 @@
 
 #ifdef DPAppDoctorDebug
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import "DPNormal.h"
-#import "DPExtension.h"
+#import "DPHeaderObject.h"
 
 @interface DPAppDoctor : NSObject
 ///DIY自定义block函数

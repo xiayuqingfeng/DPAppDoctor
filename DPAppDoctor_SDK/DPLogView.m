@@ -7,7 +7,7 @@
 //
 
 #import "DPLogView.h"
-#import "DPAppDoctor.h"
+#import "DPHeaderObject.h"
 
 @interface DPLogView () <UITextViewDelegate>{
     CGFloat viewMinY;

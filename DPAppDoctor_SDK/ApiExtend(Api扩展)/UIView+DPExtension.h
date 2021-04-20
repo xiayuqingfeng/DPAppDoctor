@@ -6,8 +6,7 @@
 //  Copyright © 2021 yupeng xia. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#import "DPHeaderObject.h"
 
 typedef NS_OPTIONS(NSUInteger, DPBorderDirection) {//需要显示的边框方向
     DPBorderDirectionTop          = 1 << 0,

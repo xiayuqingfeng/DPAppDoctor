@@ -6,8 +6,7 @@
 //  Copyright © 2021 yupeng xia. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#import "DPHeaderObject.h"
 
 @interface NSObject (DPExtension)
 @property (nonatomic, assign) id idInfo;

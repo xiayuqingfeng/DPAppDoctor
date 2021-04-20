@@ -6,7 +6,7 @@
 //  Copyright © 2021 yupeng xia. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "DPHeaderObject.h"
 
 @interface UIColor (DPExtension)
 + (UIColor *)dpColorWithHexString:(NSString *)hexString;

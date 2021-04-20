@@ -6,7 +6,7 @@
 //  Copyright © 2021 zcw. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "DPHeaderObject.h"
 
 @interface UIApplication (DPExtension)
 ///获取keyWindow，iOS13废弃 [UIApplication sharedApplication].keyWindow

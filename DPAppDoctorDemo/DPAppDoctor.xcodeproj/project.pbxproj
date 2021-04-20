@@ -134,6 +134,7 @@
 		FDB65C382629585900CA01B6 /* DPMonitorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMonitorView.m; sourceTree = "<group>"; };
 		FDB65C392629585900CA01B6 /* DPMonitorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMonitorView.h; sourceTree = "<group>"; };
 		FDB65C40262959E800CA01B6 /* DPExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPExtension.h; sourceTree = "<group>"; };
+		FDC04FDF262EB6E900CCDBB5 /* DPHeaderObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPHeaderObject.h; sourceTree = "<group>"; };
 		FDD51A4E262D504D0002C1AF /* UIColor+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DPExtension.m"; sourceTree = "<group>"; };
 		FDD51A4F262D504D0002C1AF /* UIView+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DPExtension.h"; sourceTree = "<group>"; };
 		FDD51A50262D504D0002C1AF /* NSString+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DPExtension.m"; sourceTree = "<group>"; };
@@ -281,6 +282,7 @@
 				FDB65C382629585900CA01B6 /* DPMonitorView.m */,
 				FDB2CBA5262AAFE00066A854 /* DPViewColorView.h */,
 				FDB2CBA4262AAFE00066A854 /* DPViewColorView.m */,
+				FDC04FDF262EB6E900CCDBB5 /* DPHeaderObject.h */,
 				FDB65C3F2629597400CA01B6 /* Macros(宏) */,
 				FDB65C3E2629595C00CA01B6 /* ApiExtend(Api扩展) */,
 				FD539E7B243589680085AAA7 /* Leaked */,
