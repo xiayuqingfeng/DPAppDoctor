@@ -1,6 +1,6 @@
 //
 //  DPViewColorView.m
-//  DPAppDoctor
+//  DPViewColorView
 //
 //  Created by yupeng xia on 2021/4/13.
 //  Copyright © 2021 yupeng xia. All rights reserved.
@@ -150,14 +150,14 @@
 }
 
 - (void)setButtonSelect {
-    NSDictionary *colorDic = [[DPAppDoctor shareInstance] valueForKey:@"colorSetDic"];
-    if (colorDic != nil) {
-        viewBtn.selected = ((NSString *)[colorDic objectForKey:@"UIView"]).integerValue;
-        labelBtn.selected = ((NSString *)[colorDic objectForKey:@"UILabel"]).integerValue;
-        buttonBtn.selected = ((NSString *)[colorDic objectForKey:@"UIButton"]).integerValue;
-        textViewBtn.selected = ((NSString *)[colorDic objectForKey:@"UITextView"]).integerValue;
-        textFieldBtn.selected = ((NSString *)[colorDic objectForKey:@"UITextField"]).integerValue;
-    }
+//    NSDictionary *colorDic = [[DPAppDoctor shareInstance] valueForKey:@"colorSetDic"];
+//    if (colorDic != nil) {
+//        viewBtn.selected = ((NSString *)[colorDic objectForKey:@"UIView"]).integerValue;
+//        labelBtn.selected = ((NSString *)[colorDic objectForKey:@"UILabel"]).integerValue;
+//        buttonBtn.selected = ((NSString *)[colorDic objectForKey:@"UIButton"]).integerValue;
+//        textViewBtn.selected = ((NSString *)[colorDic objectForKey:@"UITextView"]).integerValue;
+//        textFieldBtn.selected = ((NSString *)[colorDic objectForKey:@"UITextField"]).integerValue;
+//    }
 }
 
 - (void)setColorSetDic {
@@ -172,7 +172,7 @@
     [aMutaDic setValue:textViewBtn.selected ? @"1" : @"0" forKey:@"UITextView"];
     [aMutaDic setValue:textFieldBtn.selected ? @"1" : @"0" forKey:@"UITextField"];
     
-    [[DPAppDoctor shareInstance] setValue:aMutaDic forKey:@"colorSetDic"];
+//    [[DPAppDoctor shareInstance] setValue:aMutaDic forKey:@"colorSetDic"];
     
     [[NSUserDefaults standardUserDefaults] setValue:aMutaDic forKey:@"colorSetDic"];
     [[NSUserDefaults standardUserDefaults] synchronize];
