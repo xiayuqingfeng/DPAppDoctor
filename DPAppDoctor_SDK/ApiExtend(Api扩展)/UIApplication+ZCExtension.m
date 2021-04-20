@@ -7,6 +7,7 @@
 //
 
 #import "UIApplication+ZCExtension.h"
+#import "DPHeaderObject.h"
 
 @implementation UIApplication (DPExtension)
 ///获取keyWindow，iOS13废弃 [UIApplication sharedApplication].keyWindow

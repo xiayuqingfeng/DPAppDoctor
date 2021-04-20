@@ -7,6 +7,7 @@
 //
 
 #import "UIView+DPExtension.h"
+#import "DPHeaderObject.h"
 
 @implementation UIView (DPExtension)
 - (void)didAddSubview:(UIView *)subview {
