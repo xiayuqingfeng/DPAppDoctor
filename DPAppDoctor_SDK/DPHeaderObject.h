@@ -12,9 +12,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "DPAppDoctor.h"
 #import "DPNormal.h"
 #import "DPExtension.h"
-
-#import "DPAppDoctor.h"
 
 #endif /* DPHeaderObject_h */
