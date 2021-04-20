@@ -57,8 +57,8 @@ There are three ways to use DPAppDoctor in your project:
 
 #### Podfile
 ```
-platform :ios, '7.0'
-pod 'DPAppDoctor', '~> 2.0.3'
+platform :ios, '8.0'
+pod 'DPAppDoctor', '~> 3.0.0'
 ```
 
 If you are using Swift, be sure to add `use_frameworks!` and set your target to iOS 8+:
