@@ -32,20 +32,4 @@
     }
     return aWindow;
 }
-
-///获取LaunchImage启动图片
-+ (NSString *)getLaunchImageName {
-    NSArray *imagesDict = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"UILaunchImages"];
-    CGSize viewSize = [UIApplication sharedApplication].keyWindow.bounds.size;
-    //横屏请设置成 @"Landscape"
-    NSString *viewOrientation = @"Portrait";
-    NSString *launchImage = nil;
-    for (NSDictionary* dict in imagesDict) {
-        CGSize imageSize = CGSizeFromString(dict[@"UILaunchImageSize"]);
-        if (CGSizeEqualToSize(imageSize, viewSize) && [viewOrientation isEqualToString:dict[@"UILaunchImageOrientation"]]) {
-            launchImage = dict[@"UILaunchImageName"];
-        }
-    }
-    return launchImage;
-}
 @end

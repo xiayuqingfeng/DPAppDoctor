@@ -8,8 +8,8 @@ s.homepage     = "https://github.com/xiayuqingfeng/DPAppDoctor"
 s.license      = { :type => "MIT", :file => "LICENSE" }
 s.author       = { "涂鸦" => "13673677305@163.com" }
 s.source       = { :git => "https://github.com/xiayuqingfeng/DPAppDoctor.git", :tag => s.version }
-s.source_files  = "DPAppDoctor_SDK/**/*.{h,m}"
+s.source_files = "DPAppDoctor_SDK/**/*.{h,m}"
 s.requires_arc = true
-s.frameworks = 'UIKit',"Foundation"
-s.dependency "FBRetainCycleDetector"
+s.frameworks   = 'UIKit',"Foundation"
+s.dependency   "FBRetainCycleDetector"
 end

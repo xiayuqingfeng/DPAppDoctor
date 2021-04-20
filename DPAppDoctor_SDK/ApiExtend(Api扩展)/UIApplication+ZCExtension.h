@@ -11,7 +11,4 @@
 @interface UIApplication (DPExtension)
 ///获取keyWindow，iOS13废弃 [UIApplication sharedApplication].keyWindow
 @property(nullable, nonatomic, readonly) UIWindow *keyWindowDP;
-
-///获取LaunchImage启动图片
-+ (NSString *)getLaunchImageName;
 @end

@@ -21,74 +21,74 @@
     [self dpUpdateViewBackgroundColor];
 }
 - (void)dpUpdateViewBackgroundColor {
-    NSDictionary *colorDic = [[DPAppDoctor shareInstance] valueForKey:@"colorSetDic"];
-    if (colorDic != nil) {
-        if (self.idInfo == nil && self.layer.borderWidth > 0 && self.layer.borderWidth != 5) {
-            
-            self.idInfo = @{
-                @"borderWidth" : [NSString stringWithFormat:@"%f",self.layer.borderWidth],
-                @"borderColor" : [[UIColor colorWithCGColor:self.layer.borderColor] dpHexStringFromColor]
-            };
-        }
-        if (self.idInfo != nil) {
-            NSDictionary *aDic = self.idInfo;
-            self.layer.borderWidth = [NSString stringWithFormat:@"%@",aDic[@"borderWidth"]].floatValue;
-            self.layer.borderColor = [UIColor dpColorWithHexString:[NSString stringWithFormat:@"%@",aDic[@"borderColor"]]].CGColor;
-        }
-        
-        NSString *viewType = [colorDic objectForKey:@"UIView"];
-        if (viewType.length && viewType.integerValue == 1) {
-            self.layer.borderColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1].CGColor;
-            self.layer.borderWidth = 5;
-        }else if (self.idInfo == nil) {
-            self.layer.borderWidth = 0;
-        }
-        
-        NSString *className = NSStringFromClass([self class]);
-        if ([className containsString:@"Label"]) {
-            NSString *aType = [colorDic objectForKey:@"UILabel"];
-            if (aType.length && aType.integerValue == 1) {
-                self.layer.borderColor = DPRgba(290, 87, 47, 1).CGColor;
-                self.layer.borderWidth = 5;
-            }else if (self.idInfo == nil) {
-                self.layer.borderWidth = 0;
-            }
-            return;
-        }
-        
-        if ([className containsString:@"Button"]) {
-            NSString *aType = [colorDic objectForKey:@"UIButton"];
-            if (aType.length && aType.integerValue == 1) {
-                self.layer.borderColor = DPRgba(248, 231, 28, 1).CGColor;
-                self.layer.borderWidth = 5;
-            }else if (self.idInfo == nil) {
-                self.layer.borderWidth = 0;
-            }
-            return;
-        }
-        
-        if ([className containsString:@"TextView"]) {
-            NSString *aType = [colorDic objectForKey:@"UITextView"];
-            if (aType.length && aType.integerValue == 1) {
-                self.layer.borderColor = DPRgba(0, 255, 0, 1).CGColor;
-                self.layer.borderWidth = 5;
-            }else if (self.idInfo == nil) {
-                self.layer.borderWidth = 0;
-            }
-            return;
-        }
-        
-        if ([className containsString:@"TextField"]) {
-            NSString *aType = [colorDic objectForKey:@"UITextField"];
-            if (aType.length && aType.integerValue == 1) {
-                self.layer.borderColor = DPRgba(0, 0, 255, 1).CGColor;
-                self.layer.borderWidth = 5;
-            }else if (self.idInfo == nil) {
-                self.layer.borderWidth = 0;
-            }
-            return;
-        }
-    }
+//    NSDictionary *colorDic = [[DPAppDoctor shareInstance] valueForKey:@"colorSetDic"];
+//    if (colorDic != nil) {
+//        if (self.idInfo == nil && self.layer.borderWidth > 0 && self.layer.borderWidth != 5) {
+//
+//            self.idInfo = @{
+//                @"borderWidth" : [NSString stringWithFormat:@"%f",self.layer.borderWidth],
+//                @"borderColor" : [[UIColor colorWithCGColor:self.layer.borderColor] dpHexStringFromColor]
+//            };
+//        }
+//        if (self.idInfo != nil) {
+//            NSDictionary *aDic = self.idInfo;
+//            self.layer.borderWidth = [NSString stringWithFormat:@"%@",aDic[@"borderWidth"]].floatValue;
+//            self.layer.borderColor = [UIColor dpColorWithHexString:[NSString stringWithFormat:@"%@",aDic[@"borderColor"]]].CGColor;
+//        }
+//
+//        NSString *viewType = [colorDic objectForKey:@"UIView"];
+//        if (viewType.length && viewType.integerValue == 1) {
+//            self.layer.borderColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1].CGColor;
+//            self.layer.borderWidth = 5;
+//        }else if (self.idInfo == nil) {
+//            self.layer.borderWidth = 0;
+//        }
+//
+//        NSString *className = NSStringFromClass([self class]);
+//        if ([className containsString:@"Label"]) {
+//            NSString *aType = [colorDic objectForKey:@"UILabel"];
+//            if (aType.length && aType.integerValue == 1) {
+//                self.layer.borderColor = DPRgba(290, 87, 47, 1).CGColor;
+//                self.layer.borderWidth = 5;
+//            }else if (self.idInfo == nil) {
+//                self.layer.borderWidth = 0;
+//            }
+//            return;
+//        }
+//
+//        if ([className containsString:@"Button"]) {
+//            NSString *aType = [colorDic objectForKey:@"UIButton"];
+//            if (aType.length && aType.integerValue == 1) {
+//                self.layer.borderColor = DPRgba(248, 231, 28, 1).CGColor;
+//                self.layer.borderWidth = 5;
+//            }else if (self.idInfo == nil) {
+//                self.layer.borderWidth = 0;
+//            }
+//            return;
+//        }
+//
+//        if ([className containsString:@"TextView"]) {
+//            NSString *aType = [colorDic objectForKey:@"UITextView"];
+//            if (aType.length && aType.integerValue == 1) {
+//                self.layer.borderColor = DPRgba(0, 255, 0, 1).CGColor;
+//                self.layer.borderWidth = 5;
+//            }else if (self.idInfo == nil) {
+//                self.layer.borderWidth = 0;
+//            }
+//            return;
+//        }
+//
+//        if ([className containsString:@"TextField"]) {
+//            NSString *aType = [colorDic objectForKey:@"UITextField"];
+//            if (aType.length && aType.integerValue == 1) {
+//                self.layer.borderColor = DPRgba(0, 0, 255, 1).CGColor;
+//                self.layer.borderWidth = 5;
+//            }else if (self.idInfo == nil) {
+//                self.layer.borderWidth = 0;
+//            }
+//            return;
+//        }
+//    }
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
