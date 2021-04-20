@@ -14,16 +14,15 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "DPExtension.h"
 #import "DPNormal.h"
+#import "DPExtension.h"
 
 @interface DPAppDoctor : NSObject
-+ (instancetype)shareInstance;
+///DIY自定义block函数
+@property (nonatomic, copy) void(^DPdiyBlock)(BOOL isDiy);
 
 ///是否显示测试模块: YES 打开, NO 关闭, 默认 NO;
 @property (nonatomic, assign) BOOL isShowTest;
-///是否打开所有监测项: YES 打开, NO 关闭, 默认 NO;
-@property (nonatomic, assign) BOOL isOpenAll;
 
 ///日志打印开关: YES 打开, NO 关闭, 默认 NO;
 @property (nonatomic, assign) BOOL isLogOut;
@@ -35,6 +34,7 @@
 @property (nonatomic, assign) BOOL isViewColor;
 ///diy开关: YES 打开, NO 关闭, 默认 NO;
 @property (nonatomic, assign) BOOL isDiy;
-@end
 
++ (instancetype)shareInstance;
+@end
 #endif

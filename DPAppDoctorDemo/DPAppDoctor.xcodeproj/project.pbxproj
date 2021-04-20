@@ -10,7 +10,6 @@
 		01288423ED7C1197A1391E70 /* Pods_DPAppDoctor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686B1EA3FDC48E99470D190E /* Pods_DPAppDoctor.framework */; };
 		28BDAC40DD6608A25548AFD7 /* Pods_DPAppDoctorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12076195A923920AE7643892 /* Pods_DPAppDoctorTests.framework */; };
 		387CFEC125B084B9F29123C6 /* Pods_DPAppDoctorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595BE23A0488BA2F689518D2 /* Pods_DPAppDoctorUITests.framework */; };
-		FD0E104926283EB50096A39A /* NSString+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0E104826283EB50096A39A /* NSString+DPExtension.m */; };
 		FD225A582625822E00E89232 /* DPLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD225A562625822E00E89232 /* DPLogView.m */; };
 		FD3A507C217815A500E17385 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A507B217815A500E17385 /* AppDelegate.m */; };
 		FD3A507F217815A500E17385 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A507E217815A500E17385 /* ViewController.m */; };
@@ -21,8 +20,6 @@
 		FD3A5094217815A700E17385 /* DPAppDoctorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A5093217815A700E17385 /* DPAppDoctorDemoTests.m */; };
 		FD3A509F217815A700E17385 /* DPAppDoctorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A509E217815A700E17385 /* DPAppDoctorDemoUITests.m */; };
 		FD3A50B1217816F100E17385 /* Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3A50AE217816F100E17385 /* Launch.png */; };
-		FD3B9D3F2600814E00DE173F /* UIApplication+ZCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3B9D3E2600814E00DE173F /* UIApplication+ZCExtension.m */; };
-		FD3B9D54260081F700DE173F /* UIView+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3B9D53260081F700DE173F /* UIView+DPExtension.m */; };
 		FD539E70243585AC0085AAA7 /* UIPageViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E59243585AB0085AAA7 /* UIPageViewController+MemoryLeak.m */; };
 		FD539E71243585AC0085AAA7 /* UIView+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E5C243585AB0085AAA7 /* UIView+MemoryLeak.m */; };
 		FD539E72243585AC0085AAA7 /* DPLeakedObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E5D243585AB0085AAA7 /* DPLeakedObjectProxy.m */; };
@@ -40,7 +37,15 @@
 		FD539EE02435DECC0085AAA7 /* SMCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539ED92435DECC0085AAA7 /* SMCallStack.m */; };
 		FD539EE12435DECC0085AAA7 /* SMCallLib.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539EDB2435DECC0085AAA7 /* SMCallLib.m */; };
 		FD7EE774243888D2004AEAAA /* CheckNetWorkBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7EE773243888D2004AEAAA /* CheckNetWorkBytes.m */; };
+		FDB2CBA6262AAFE00066A854 /* DPViewColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB2CBA4262AAFE00066A854 /* DPViewColorView.m */; };
 		FDB65C3A2629585900CA01B6 /* DPMonitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB65C382629585900CA01B6 /* DPMonitorView.m */; };
+		FDD51A5A262D504E0002C1AF /* UIColor+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD51A4E262D504D0002C1AF /* UIColor+DPExtension.m */; };
+		FDD51A5B262D504E0002C1AF /* NSString+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD51A50262D504D0002C1AF /* NSString+DPExtension.m */; };
+		FDD51A5C262D504E0002C1AF /* UIResponder+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD51A53262D504E0002C1AF /* UIResponder+DPExtension.m */; };
+		FDD51A5D262D504E0002C1AF /* UIView+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD51A54262D504E0002C1AF /* UIView+DPExtension.m */; };
+		FDD51A5E262D504E0002C1AF /* UIApplication+ZCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD51A55262D504E0002C1AF /* UIApplication+ZCExtension.m */; };
+		FDD51A5F262D504E0002C1AF /* NSObject+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD51A59262D504E0002C1AF /* NSObject+DPExtension.m */; };
+		FDD51A65262D86110002C1AF /* UIButton+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD51A64262D86110002C1AF /* UIButton+DPExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +75,6 @@
 		686B1EA3FDC48E99470D190E /* Pods_DPAppDoctor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPAppDoctor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74EC040E74972BAF3ACBC39E /* Pods-DPAppDoctorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPAppDoctorTests.release.xcconfig"; path = "Target Support Files/Pods-DPAppDoctorTests/Pods-DPAppDoctorTests.release.xcconfig"; sourceTree = "<group>"; };
 		EEE2C6182DA2DBD0C4B022EC /* Pods-DPAppDoctor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPAppDoctor.release.xcconfig"; path = "Target Support Files/Pods-DPAppDoctor/Pods-DPAppDoctor.release.xcconfig"; sourceTree = "<group>"; };
-		FD0E104726283EB50096A39A /* NSString+DPExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DPExtension.h"; sourceTree = "<group>"; };
-		FD0E104826283EB50096A39A /* NSString+DPExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DPExtension.m"; sourceTree = "<group>"; };
 		FD225A402625783100E89232 /* DPNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPNormal.h; sourceTree = "<group>"; };
 		FD225A562625822E00E89232 /* DPLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLogView.m; sourceTree = "<group>"; };
 		FD225A572625822E00E89232 /* DPLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLogView.h; sourceTree = "<group>"; };
@@ -92,10 +95,6 @@
 		FD3A509E217815A700E17385 /* DPAppDoctorDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPAppDoctorDemoUITests.m; sourceTree = "<group>"; };
 		FD3A50A0217815A700E17385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD3A50AE217816F100E17385 /* Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch.png; sourceTree = "<group>"; };
-		FD3B9D3D2600814E00DE173F /* UIApplication+ZCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ZCExtension.h"; sourceTree = "<group>"; };
-		FD3B9D3E2600814E00DE173F /* UIApplication+ZCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ZCExtension.m"; sourceTree = "<group>"; };
-		FD3B9D52260081F700DE173F /* UIView+DPExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DPExtension.h"; sourceTree = "<group>"; };
-		FD3B9D53260081F700DE173F /* UIView+DPExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DPExtension.m"; sourceTree = "<group>"; };
 		FD539E59243585AB0085AAA7 /* UIPageViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageViewController+MemoryLeak.m"; sourceTree = "<group>"; };
 		FD539E5A243585AB0085AAA7 /* DPLeaksMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeaksMessenger.h; sourceTree = "<group>"; };
 		FD539E5B243585AB0085AAA7 /* UIViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MemoryLeak.h"; sourceTree = "<group>"; };
@@ -130,9 +129,25 @@
 		FD539EDB2435DECC0085AAA7 /* SMCallLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallLib.m; sourceTree = "<group>"; };
 		FD7EE772243888D2004AEAAA /* CheckNetWorkBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckNetWorkBytes.h; sourceTree = "<group>"; };
 		FD7EE773243888D2004AEAAA /* CheckNetWorkBytes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckNetWorkBytes.m; sourceTree = "<group>"; };
+		FDB2CBA4262AAFE00066A854 /* DPViewColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPViewColorView.m; sourceTree = "<group>"; };
+		FDB2CBA5262AAFE00066A854 /* DPViewColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPViewColorView.h; sourceTree = "<group>"; };
 		FDB65C382629585900CA01B6 /* DPMonitorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMonitorView.m; sourceTree = "<group>"; };
 		FDB65C392629585900CA01B6 /* DPMonitorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMonitorView.h; sourceTree = "<group>"; };
 		FDB65C40262959E800CA01B6 /* DPExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPExtension.h; sourceTree = "<group>"; };
+		FDD51A4E262D504D0002C1AF /* UIColor+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DPExtension.m"; sourceTree = "<group>"; };
+		FDD51A4F262D504D0002C1AF /* UIView+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DPExtension.h"; sourceTree = "<group>"; };
+		FDD51A50262D504D0002C1AF /* NSString+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DPExtension.m"; sourceTree = "<group>"; };
+		FDD51A51262D504D0002C1AF /* UIResponder+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+DPExtension.h"; sourceTree = "<group>"; };
+		FDD51A52262D504D0002C1AF /* UIApplication+ZCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ZCExtension.h"; sourceTree = "<group>"; };
+		FDD51A53262D504E0002C1AF /* UIResponder+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+DPExtension.m"; sourceTree = "<group>"; };
+		FDD51A54262D504E0002C1AF /* UIView+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DPExtension.m"; sourceTree = "<group>"; };
+		FDD51A55262D504E0002C1AF /* UIApplication+ZCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ZCExtension.m"; sourceTree = "<group>"; };
+		FDD51A56262D504E0002C1AF /* UIColor+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DPExtension.h"; sourceTree = "<group>"; };
+		FDD51A57262D504E0002C1AF /* NSObject+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DPExtension.h"; sourceTree = "<group>"; };
+		FDD51A58262D504E0002C1AF /* NSString+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DPExtension.h"; sourceTree = "<group>"; };
+		FDD51A59262D504E0002C1AF /* NSObject+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DPExtension.m"; sourceTree = "<group>"; };
+		FDD51A63262D86110002C1AF /* UIButton+DPExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+DPExtension.h"; sourceTree = "<group>"; };
+		FDD51A64262D86110002C1AF /* UIButton+DPExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DPExtension.m"; sourceTree = "<group>"; };
 		FDEC7176243730D800EFA1A3 /* DPLeakedHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeakedHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -264,6 +279,8 @@
 				FD225A562625822E00E89232 /* DPLogView.m */,
 				FDB65C392629585900CA01B6 /* DPMonitorView.h */,
 				FDB65C382629585900CA01B6 /* DPMonitorView.m */,
+				FDB2CBA5262AAFE00066A854 /* DPViewColorView.h */,
+				FDB2CBA4262AAFE00066A854 /* DPViewColorView.m */,
 				FDB65C3F2629597400CA01B6 /* Macros(宏) */,
 				FDB65C3E2629595C00CA01B6 /* ApiExtend(Api扩展) */,
 				FD539E7B243589680085AAA7 /* Leaked */,
@@ -321,13 +338,21 @@
 		FDB65C3E2629595C00CA01B6 /* ApiExtend(Api扩展) */ = {
 			isa = PBXGroup;
 			children = (
-				FD3B9D3D2600814E00DE173F /* UIApplication+ZCExtension.h */,
-				FD3B9D3E2600814E00DE173F /* UIApplication+ZCExtension.m */,
-				FD3B9D52260081F700DE173F /* UIView+DPExtension.h */,
-				FD3B9D53260081F700DE173F /* UIView+DPExtension.m */,
-				FD0E104726283EB50096A39A /* NSString+DPExtension.h */,
-				FD0E104826283EB50096A39A /* NSString+DPExtension.m */,
 				FDB65C40262959E800CA01B6 /* DPExtension.h */,
+				FDD51A57262D504E0002C1AF /* NSObject+DPExtension.h */,
+				FDD51A59262D504E0002C1AF /* NSObject+DPExtension.m */,
+				FDD51A63262D86110002C1AF /* UIButton+DPExtension.h */,
+				FDD51A64262D86110002C1AF /* UIButton+DPExtension.m */,
+				FDD51A58262D504E0002C1AF /* NSString+DPExtension.h */,
+				FDD51A50262D504D0002C1AF /* NSString+DPExtension.m */,
+				FDD51A52262D504D0002C1AF /* UIApplication+ZCExtension.h */,
+				FDD51A55262D504E0002C1AF /* UIApplication+ZCExtension.m */,
+				FDD51A56262D504E0002C1AF /* UIColor+DPExtension.h */,
+				FDD51A4E262D504D0002C1AF /* UIColor+DPExtension.m */,
+				FDD51A51262D504D0002C1AF /* UIResponder+DPExtension.h */,
+				FDD51A53262D504E0002C1AF /* UIResponder+DPExtension.m */,
+				FDD51A4F262D504D0002C1AF /* UIView+DPExtension.h */,
+				FDD51A54262D504E0002C1AF /* UIView+DPExtension.m */,
 			);
 			path = "ApiExtend(Api扩展)";
 			sourceTree = "<group>";
@@ -561,27 +586,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD51A5C262D504E0002C1AF /* UIResponder+DPExtension.m in Sources */,
 				FD539E71243585AC0085AAA7 /* UIView+MemoryLeak.m in Sources */,
 				FD539E7A243585AC0085AAA7 /* UINavigationController+MemoryLeak.m in Sources */,
 				FD539E75243585AC0085AAA7 /* NSObject+MemoryLeak.m in Sources */,
 				FD3A507F217815A500E17385 /* ViewController.m in Sources */,
 				FD539E78243585AC0085AAA7 /* UISplitViewController+MemoryLeak.m in Sources */,
+				FDD51A5F262D504E0002C1AF /* NSObject+DPExtension.m in Sources */,
 				FD539E70243585AC0085AAA7 /* UIPageViewController+MemoryLeak.m in Sources */,
 				FD539E72243585AC0085AAA7 /* DPLeakedObjectProxy.m in Sources */,
 				FD539E7E24358A2F0085AAA7 /* LeakedViewController.m in Sources */,
 				FD539EDF2435DECC0085AAA7 /* XLMonitorHandle.m in Sources */,
+				FDD51A5A262D504E0002C1AF /* UIColor+DPExtension.m in Sources */,
 				FDB65C3A2629585900CA01B6 /* DPMonitorView.m in Sources */,
+				FDD51A5D262D504E0002C1AF /* UIView+DPExtension.m in Sources */,
 				FD7EE774243888D2004AEAAA /* CheckNetWorkBytes.m in Sources */,
-				FD3B9D54260081F700DE173F /* UIView+DPExtension.m in Sources */,
-				FD3B9D3F2600814E00DE173F /* UIApplication+ZCExtension.m in Sources */,
+				FDB2CBA6262AAFE00066A854 /* DPViewColorView.m in Sources */,
 				FD225A582625822E00E89232 /* DPLogView.m in Sources */,
-				FD0E104926283EB50096A39A /* NSString+DPExtension.m in Sources */,
+				FDD51A65262D86110002C1AF /* UIButton+DPExtension.m in Sources */,
 				FD3A508A217815A700E17385 /* main.m in Sources */,
+				FDD51A5E262D504E0002C1AF /* UIApplication+ZCExtension.m in Sources */,
 				FD539E73243585AC0085AAA7 /* UIApplication+MemoryLeak.m in Sources */,
 				FD539E79243585AC0085AAA7 /* UITouch+MemoryLeak.m in Sources */,
 				FD539E74243585AC0085AAA7 /* UIViewController+MemoryLeak.m in Sources */,
 				FD539EE12435DECC0085AAA7 /* SMCallLib.m in Sources */,
 				FD539E77243585AC0085AAA7 /* DPLeaksMessenger.m in Sources */,
+				FDD51A5B262D504E0002C1AF /* NSString+DPExtension.m in Sources */,
 				FD3A507C217815A500E17385 /* AppDelegate.m in Sources */,
 				FD539E76243585AC0085AAA7 /* UITabBarController+MemoryLeak.m in Sources */,
 				FD539EE02435DECC0085AAA7 /* SMCallStack.m in Sources */,

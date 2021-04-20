@@ -8,7 +8,13 @@
 
 #pragma mark /******************Debug打印******************/
 #ifdef DEBUG
-#define NSLog(format, ...) [[[DPAppDoctor shareInstance] valueForKey:@"aLogView"] setValue:[NSString stringWithFormat:@"[%s] %s [第%d行] %@",[[NSString stringWithFormat:@"%@",[NSDate date]] UTF8String], __FUNCTION__, __LINE__, [NSString stringWithFormat:format, ## __VA_ARGS__]] forKey:@"logOutStr"];
+#define NSLog(format, ...)\
+if ([[DPAppDoctor shareInstance] valueForKey:@"aLogView"]) {\
+    printf("\n[%s] %s [第%d行] %s\n", [[NSString stringWithFormat:@"%@",[NSDate date]] UTF8String], __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);\
+    [[[DPAppDoctor shareInstance] valueForKey:@"aLogView"] setValue:[NSString stringWithFormat:@"[%s] %s [第%d行] %@",[[NSString stringWithFormat:@"%@",[NSDate date]] UTF8String], __FUNCTION__, __LINE__, [NSString stringWithFormat:format, ## __VA_ARGS__]] forKey:@"logOutStr"];\
+}else {\
+    printf("\n[%s] %s [第%d行] %s\n", [[NSString stringWithFormat:@"%@",[NSDate date]] UTF8String], __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);\
+};
 #else
 #define NSLog(format, ...)
 #endif
@@ -42,4 +48,4 @@
 #define DPStatusbarH        (CGRectIsEmpty([UIApplication sharedApplication].statusBarFrame)?(UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation)?20:(DPIS_iPhoneXAll ? 44 : 20)):CGRectGetHeight([UIApplication sharedApplication].statusBarFrame))
 #define DPNavibarHeight     (DPIS_iPhoneXAll ? 88 : 64)
 
-#define rgbadp(r,g,b,a)     [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define DPRgba(r,g,b,a)     [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]

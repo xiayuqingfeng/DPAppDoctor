@@ -24,6 +24,9 @@
     
     #ifdef DPAppDoctorDebug
     [DPAppDoctor shareInstance].isShowTest = YES;
+    [DPAppDoctor shareInstance].DPdiyBlock = ^(BOOL isDiy) {
+        
+    };
     #endif
     
     return YES;

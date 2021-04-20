@@ -40,6 +40,7 @@
         isLogOut = YES;
         
         superView = [UIApplication sharedApplication].keyWindowDP;
+        
         self.frame = superView.bounds;
         self.backgroundColor = [UIColor blackColor];
         [superView addSubview:self];
@@ -132,15 +133,39 @@
         [searchBtn addTarget:self action:@selector(searchBtnAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:searchBtn];
         
-        [self updateView];
+        [self openBtnAction:nil];
     }
     return self;
 }
 - (void)openBtnAction:(UIButton *)button {
     button.selected = !button.selected;
-    NSString *asdf = @"世纪世纪世纪世纪世纪世纪";
-    NSLog(@"234234234234234 阿斯蒂芬进阿里；时代峰峻拉色的交房啦世纪东方拉色的就分开啦时间点开冷风 %@", asdf);
-    [self updateView];
+    
+    countTextView.hidden = !openBtn.selected;
+    searchTextView.hidden = !openBtn.selected;
+    deleteCountBtn.hidden = !openBtn.selected;
+    deleteSearchBtn.hidden = !openBtn.selected;
+    nextBtn.hidden = !openBtn.selected;
+    searchBtn.hidden = !openBtn.selected;
+    
+    if (!openBtn.selected) {
+        self.frame = CGRectMake(superView.widthDP-openBtn.widthDP, viewMinY, openBtn.widthDP, openBtn.heightDP);
+        openBtn.frame = self.bounds;
+    }else {
+        self.frame = superView.bounds;
+        openBtn.frame = CGRectMake(superView.widthDP-openBtn.widthDP, viewMinY, openBtn.widthDP, openBtn.heightDP);
+        countTextView.frame = CGRectMake(0, DPStatusbarH, superView.widthDP-openBtn.widthDP, self.heightDP-DPStatusbarH-DPFrameHeight(140));
+        searchTextView.frame = CGRectMake(0, countTextView.yMaxDP+DPFrameHeight(5), countTextView.widthDP, DPFrameHeight(70));
+        
+        CGFloat minY = searchTextView.yMaxDP+DPFrameHeight(5);
+        CGFloat btnWidth = searchTextView.widthDP/5;
+        CGFloat btnHeight = DPFrameHeight(50);
+        deleteCountBtn.frame = CGRectMake(btnWidth*0, minY, btnWidth, btnHeight);
+        deleteSearchBtn.frame = CGRectMake(btnWidth*1, minY, btnWidth, btnHeight);
+        fontBtn.frame = CGRectMake(btnWidth*2, minY, btnWidth, btnHeight);
+        nextBtn.frame = CGRectMake(btnWidth*3, minY, btnWidth, btnHeight);
+        searchBtn.frame = CGRectMake(btnWidth*4, minY, btnWidth, btnHeight);
+    }
+    [self.superview bringSubviewToFront:self];
 }
 - (void)deleteCountBtnAction:(UIButton *)button {
     button.selected = !button.selected;
@@ -181,6 +206,9 @@
 }
 - (void)fontBtnAction:(UIButton *)button {
     button.selected = !button.selected;
+    
+    [UIApplication sharedApplication].keyWindow.tintColor = [UIColor purpleColor];
+    
     if (rangArray.count < 1) {
         return;
     }
@@ -219,35 +247,6 @@
     countTextView.attributedText = attr;
 }
 
-- (void)updateView {
-    countTextView.hidden = !openBtn.selected;
-    searchTextView.hidden = !openBtn.selected;
-    deleteCountBtn.hidden = !openBtn.selected;
-    deleteSearchBtn.hidden = !openBtn.selected;
-    nextBtn.hidden = !openBtn.selected;
-    searchBtn.hidden = !openBtn.selected;
-    
-    if (!openBtn.selected) {
-        self.frame = CGRectMake(superView.widthDP-openBtn.widthDP, viewMinY, openBtn.widthDP, openBtn.heightDP);
-        openBtn.frame = self.bounds;
-    }else {
-        self.frame = superView.bounds;
-        openBtn.frame = CGRectMake(superView.widthDP-openBtn.widthDP, viewMinY, openBtn.widthDP, openBtn.heightDP);
-        countTextView.frame = CGRectMake(0, DPStatusbarH, superView.widthDP-openBtn.widthDP, self.heightDP-DPStatusbarH-DPFrameHeight(140));
-        searchTextView.frame = CGRectMake(0, countTextView.yMaxDP+DPFrameHeight(5), countTextView.widthDP, DPFrameHeight(70));
-        
-        CGFloat minY = searchTextView.yMaxDP+DPFrameHeight(5);
-        CGFloat btnWidth = searchTextView.widthDP/5;
-        CGFloat btnHeight = DPFrameHeight(50);
-        deleteCountBtn.frame = CGRectMake(btnWidth*0, minY, btnWidth, btnHeight);
-        deleteSearchBtn.frame = CGRectMake(btnWidth*1, minY, btnWidth, btnHeight);
-        fontBtn.frame = CGRectMake(btnWidth*2, minY, btnWidth, btnHeight);
-        nextBtn.frame = CGRectMake(btnWidth*3, minY, btnWidth, btnHeight);
-        searchBtn.frame = CGRectMake(btnWidth*4, minY, btnWidth, btnHeight);
-    }
-    [self.superview bringSubviewToFront:self];
-}
-
 - (void)textViewDidBeginEditing:(UITextView *)textView {
     if (textView == searchTextView) {
         [countTextView resignFirstResponder];
@@ -255,7 +254,7 @@
 }
 
 - (void)setLogOutStr:(NSString *)logOutStr {
-    if (countTextView) {
+    if (countTextView && self.hidden == NO) {
         if (sumLogStr == nil) {
             sumLogStr = [NSMutableString stringWithCapacity:0];
         }

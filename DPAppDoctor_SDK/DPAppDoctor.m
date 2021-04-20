@@ -11,6 +11,7 @@
 
 #import "DPLogView.h"
 #import "DPMonitorView.h"
+#import "DPViewColorView.h"
 
 @interface DPAppDoctor (){
     
@@ -28,12 +29,16 @@
 @property (nonatomic, strong) DPLogView *aLogView;
 //性能检测View
 @property (nonatomic, strong) DPMonitorView *aMonitorView;
+//控件颜色View
+@property (nonatomic, strong) DPViewColorView *aViewColorView;
+
+///颜色设置
+@property (nonatomic, strong) NSDictionary *colorSetDic;
 @end
 
 static DPAppDoctor *_zhcwTool = nil;
-
 @implementation DPAppDoctor
-+ (instancetype)shareInstance{
++ (instancetype)shareInstance {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         if (_zhcwTool == nil) {
@@ -41,6 +46,14 @@ static DPAppDoctor *_zhcwTool = nil;
         }
     });
     return _zhcwTool;
+}
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        self.colorSetDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"colorSetDic"];
+    }
+    return self;
 }
 
 //测试项选择模块
@@ -52,10 +65,11 @@ static DPAppDoctor *_zhcwTool = nil;
         if (_testView == nil) {
             self.testView = [[UIView alloc] init];
             _testView.yDP = DPFrameHeight(100);
-            _testView.backgroundColor = rgbadp(0, 0, 0, 1);
+            _testView.backgroundColor = DPRgba(0, 0, 0, 1);
             _testView.clipsToBounds = YES;
             [aWindow addSubview:_testView];
             
+            //拖动
             UIPanGestureRecognizer *testViewTap = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(testViewTapAction:)];
             [_testView addGestureRecognizer:testViewTap];
             
@@ -138,11 +152,8 @@ static DPAppDoctor *_zhcwTool = nil;
     [self viewColorBtnAction:nil];
     [self otherBtnBtnAction:nil];
 }
+//拖动
 - (void)testViewTapAction:(UIPanGestureRecognizer *)panGestureRecognizer {
-    if (_titleBtn.selected) {
-        return;
-    }
-    
     if (panGestureRecognizer.state == UIGestureRecognizerStateChanged) {
         UIWindow *aWindow = [UIApplication sharedApplication].keyWindowDP;
         
@@ -248,18 +259,26 @@ static DPAppDoctor *_zhcwTool = nil;
     self.monitorBtn.selected = _isMonitor;
     
     if (_aMonitorView == nil) {
-        self.aMonitorView = [[DPMonitorView alloc] initWithBtnMinY:[UIApplication sharedApplication].keyWindowDP.heightDP/2+60];
+        self.aMonitorView = [[DPMonitorView alloc] initWithBtnMinY:[UIApplication sharedApplication].keyWindowDP.heightDP/2-120];
     }
     _aMonitorView.hidden = !_isMonitor;
 }
 - (void)setIsViewColor:(BOOL)isViewColor {
     _isViewColor = isViewColor;
     self.viewColorBtn.selected = _isViewColor;
+    
+    if (_aViewColorView == nil) {
+        self.aViewColorView = [[DPViewColorView alloc] initWithBtnMinY:[UIApplication sharedApplication].keyWindowDP.heightDP/2+60];
+    }
+    _aViewColorView.hidden = !_isViewColor;
 }
 - (void)setIsDiy:(BOOL)isDiy {
     _isDiy = isDiy;
     self.otherBtn.selected = _isDiy;
+    
+    if (self.DPdiyBlock) {
+        self.DPdiyBlock(_isDiy);
+    }
 }
 @end
-
 #endif

@@ -138,5 +138,4 @@
         [panGestureRecognizer setTranslation:CGPointZero inView:aWindow];
     }
 }
-
 @end
