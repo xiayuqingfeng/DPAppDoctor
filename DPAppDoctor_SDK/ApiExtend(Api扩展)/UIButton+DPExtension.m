@@ -7,7 +7,6 @@
 //
 
 #import "UIButton+DPExtension.h"
-#import "DPHeaderObject.h"
 
 @implementation UIButton (DPExtension)
 

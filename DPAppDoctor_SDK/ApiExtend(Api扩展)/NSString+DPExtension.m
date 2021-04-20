@@ -7,7 +7,6 @@
 //
 
 #import "NSString+DPExtension.h"
-#import "DPHeaderObject.h"
 
 @implementation NSString (DPExtension)
 ///获取字符串中多个相同字符串的所有range

@@ -7,7 +7,6 @@
 //
 
 #import "UIColor+DPExtension.h"
-#import "DPHeaderObject.h"
 
 @implementation UIColor (DPExtension)
 + (UIColor *)dpColorWithHexString:(NSString *)hexString {

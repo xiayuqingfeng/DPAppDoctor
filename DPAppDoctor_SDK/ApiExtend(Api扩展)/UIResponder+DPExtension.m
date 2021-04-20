@@ -7,7 +7,6 @@
 //
 
 #import "UIResponder+DPExtension.h"
-#import "DPHeaderObject.h"
 
 @implementation UIResponder (DPExtension)
 

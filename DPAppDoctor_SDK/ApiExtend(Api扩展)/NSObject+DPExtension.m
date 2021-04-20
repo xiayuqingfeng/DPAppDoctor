@@ -8,7 +8,6 @@
 
 #import "NSObject+DPExtension.h"
 #import <objc/runtime.h>
-#import "DPHeaderObject.h"
 
 @implementation NSObject (DPExtension)
 static void *idInfoKey;
