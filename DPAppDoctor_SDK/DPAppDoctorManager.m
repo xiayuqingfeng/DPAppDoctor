@@ -6,14 +6,14 @@
 //  Copyright © 2020 夏玉鹏. All rights reserved.
 //
 
-#import "DPAppDoctor.h"
+#import "DPAppDoctorManager.h"
 #ifdef DPAppDoctorDebug
 
 #import "DPLogView.h"
 #import "DPMonitorView.h"
 #import "DPViewColorView.h"
 
-@interface DPAppDoctor (){
+@interface DPAppDoctorManager (){
     
 }
 //测试项选择模块
@@ -36,8 +36,8 @@
 @property (nonatomic, strong) NSDictionary *colorSetDic;
 @end
 
-static DPAppDoctor *_zhcwTool = nil;
-@implementation DPAppDoctor
+static DPAppDoctorManager *_zhcwTool = nil;
+@implementation DPAppDoctorManager
 + (instancetype)shareInstance {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -281,4 +281,5 @@ static DPAppDoctor *_zhcwTool = nil;
     }
 }
 @end
+
 #endif

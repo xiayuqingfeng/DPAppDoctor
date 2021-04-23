@@ -7,6 +7,7 @@
 //
 
 #import "UIColor+DPExtension.h"
+#ifdef DPAppDoctorDebug
 
 @implementation UIColor (DPExtension)
 + (UIColor *)dpColorWithHexString:(NSString *)hexString {
@@ -41,3 +42,5 @@
             lroundf(b * 255)];
 }
 @end
+
+#endif

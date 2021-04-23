@@ -7,7 +7,10 @@
 //
 
 #import "UIButton+DPExtension.h"
+#ifdef DPAppDoctorDebug
 
 @implementation UIButton (DPExtension)
 
 @end
+
+#endif

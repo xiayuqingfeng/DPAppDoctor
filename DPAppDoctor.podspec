@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "DPAppDoctor"
-s.version      = "3.0.9"
+s.version      = "3.1.0"
 s.ios.deployment_target = '8.0'
 s.summary      = "A delightful setting interface framework."
 s.homepage     = "https://github.com/xiayuqingfeng/DPAppDoctor"

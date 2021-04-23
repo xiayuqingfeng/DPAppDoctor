@@ -7,6 +7,7 @@
 //
 
 #import "UIView+DPExtension.h"
+#ifdef DPAppDoctorDebug
 
 @implementation UIView (DPExtension)
 - (void)didAddSubview:(UIView *)subview {
@@ -20,7 +21,7 @@
     [self dpUpdateViewBackgroundColor];
 }
 - (void)dpUpdateViewBackgroundColor {
-//    NSDictionary *colorDic = [[DPAppDoctor shareInstance] valueForKey:@"colorSetDic"];
+//    NSDictionary *colorDic = [[DPAppDoctorManager shareInstance] valueForKey:@"colorSetDic"];
 //    if (colorDic != nil) {
 //        if (self.idInfo == nil && self.layer.borderWidth > 0 && self.layer.borderWidth != 5) {
 //
@@ -378,3 +379,5 @@
     }
 }
 @end
+
+#endif

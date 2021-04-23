@@ -7,6 +7,7 @@
 //
 
 #import "UIApplication+ZCExtension.h"
+#ifdef DPAppDoctorDebug
 
 @implementation UIApplication (DPExtension)
 ///获取keyWindow，iOS13废弃 [UIApplication sharedApplication].keyWindow
@@ -32,3 +33,5 @@
     return aWindow;
 }
 @end
+
+#endif

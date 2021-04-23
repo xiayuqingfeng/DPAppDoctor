@@ -20,32 +20,32 @@
 		FD3A509F217815A700E17385 /* DPAppDoctorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A509E217815A700E17385 /* DPAppDoctorDemoUITests.m */; };
 		FD3A50B1217816F100E17385 /* Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3A50AE217816F100E17385 /* Launch.png */; };
 		FD539E7E24358A2F0085AAA7 /* LeakedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E7C24358A2E0085AAA7 /* LeakedViewController.m */; };
-		FDC05034262EEE7300CCDBB5 /* CheckNetWorkBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC04FFD262EEE7200CCDBB5 /* CheckNetWorkBytes.m */; };
-		FDC05035262EEE7300CCDBB5 /* XLMonitorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC04FFE262EEE7200CCDBB5 /* XLMonitorHandle.m */; };
-		FDC05036262EEE7300CCDBB5 /* SMCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC04FFF262EEE7200CCDBB5 /* SMCallStack.m */; };
-		FDC05037262EEE7300CCDBB5 /* SMCallLib.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05000262EEE7200CCDBB5 /* SMCallLib.m */; };
-		FDC05038262EEE7300CCDBB5 /* DPViewColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05001262EEE7300CCDBB5 /* DPViewColorView.m */; };
-		FDC05039262EEE7300CCDBB5 /* DPAppDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05002262EEE7300CCDBB5 /* DPAppDoctor.m */; };
-		FDC0503A262EEE7300CCDBB5 /* UINavigationController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05004262EEE7300CCDBB5 /* UINavigationController+MemoryLeak.m */; };
-		FDC0503B262EEE7300CCDBB5 /* DPLeaksMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05007262EEE7300CCDBB5 /* DPLeaksMessenger.m */; };
-		FDC0503C262EEE7300CCDBB5 /* UIView+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05009262EEE7300CCDBB5 /* UIView+MemoryLeak.m */; };
-		FDC0503D262EEE7300CCDBB5 /* DPLeakedObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC0500B262EEE7300CCDBB5 /* DPLeakedObjectProxy.m */; };
-		FDC0503E262EEE7300CCDBB5 /* UITouch+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC0500D262EEE7300CCDBB5 /* UITouch+MemoryLeak.m */; };
-		FDC0503F262EEE7300CCDBB5 /* UISplitViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC0500E262EEE7300CCDBB5 /* UISplitViewController+MemoryLeak.m */; };
-		FDC05040262EEE7300CCDBB5 /* UIPageViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC0500F262EEE7300CCDBB5 /* UIPageViewController+MemoryLeak.m */; };
-		FDC05041262EEE7300CCDBB5 /* UITabBarController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05010262EEE7300CCDBB5 /* UITabBarController+MemoryLeak.m */; };
-		FDC05042262EEE7300CCDBB5 /* UIViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05013262EEE7300CCDBB5 /* UIViewController+MemoryLeak.m */; };
-		FDC05043262EEE7300CCDBB5 /* UIApplication+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05018262EEE7300CCDBB5 /* UIApplication+MemoryLeak.m */; };
-		FDC05044262EEE7300CCDBB5 /* NSObject+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05019262EEE7300CCDBB5 /* NSObject+MemoryLeak.m */; };
-		FDC05045262EEE7300CCDBB5 /* NSString+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC0501D262EEE7300CCDBB5 /* NSString+DPExtension.m */; };
-		FDC05046262EEE7300CCDBB5 /* NSObject+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05021262EEE7300CCDBB5 /* NSObject+DPExtension.m */; };
-		FDC05047262EEE7300CCDBB5 /* UIView+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05023262EEE7300CCDBB5 /* UIView+DPExtension.m */; };
-		FDC05048262EEE7300CCDBB5 /* UIApplication+ZCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05024262EEE7300CCDBB5 /* UIApplication+ZCExtension.m */; };
-		FDC05049262EEE7300CCDBB5 /* UIResponder+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05025262EEE7300CCDBB5 /* UIResponder+DPExtension.m */; };
-		FDC0504A262EEE7300CCDBB5 /* UIColor+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05027262EEE7300CCDBB5 /* UIColor+DPExtension.m */; };
-		FDC0504B262EEE7300CCDBB5 /* UIButton+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05029262EEE7300CCDBB5 /* UIButton+DPExtension.m */; };
-		FDC0504C262EEE7300CCDBB5 /* DPLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05032262EEE7300CCDBB5 /* DPLogView.m */; };
-		FDC0504D262EEE7300CCDBB5 /* DPMonitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC05033262EEE7300CCDBB5 /* DPMonitorView.m */; };
+		FDD34B432632C44D008BE590 /* DPLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B072632C44B008BE590 /* DPLogView.m */; };
+		FDD34B442632C44D008BE590 /* DPViewColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B092632C44B008BE590 /* DPViewColorView.m */; };
+		FDD34B452632C44D008BE590 /* CheckNetWorkBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B0F2632C44B008BE590 /* CheckNetWorkBytes.m */; };
+		FDD34B462632C44D008BE590 /* XLMonitorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B102632C44B008BE590 /* XLMonitorHandle.m */; };
+		FDD34B472632C44D008BE590 /* SMCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B112632C44B008BE590 /* SMCallStack.m */; };
+		FDD34B482632C44D008BE590 /* SMCallLib.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B122632C44B008BE590 /* SMCallLib.m */; };
+		FDD34B492632C44D008BE590 /* UINavigationController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B142632C44B008BE590 /* UINavigationController+MemoryLeak.m */; };
+		FDD34B4A2632C44D008BE590 /* DPLeaksMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B172632C44B008BE590 /* DPLeaksMessenger.m */; };
+		FDD34B4B2632C44D008BE590 /* UIView+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B192632C44B008BE590 /* UIView+MemoryLeak.m */; };
+		FDD34B4C2632C44D008BE590 /* DPLeakedObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B1B2632C44B008BE590 /* DPLeakedObjectProxy.m */; };
+		FDD34B4D2632C44D008BE590 /* UITouch+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B1D2632C44B008BE590 /* UITouch+MemoryLeak.m */; };
+		FDD34B4E2632C44D008BE590 /* UISplitViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B1E2632C44B008BE590 /* UISplitViewController+MemoryLeak.m */; };
+		FDD34B4F2632C44D008BE590 /* UIPageViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B1F2632C44B008BE590 /* UIPageViewController+MemoryLeak.m */; };
+		FDD34B502632C44D008BE590 /* UITabBarController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B202632C44B008BE590 /* UITabBarController+MemoryLeak.m */; };
+		FDD34B512632C44D008BE590 /* UIViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B232632C44B008BE590 /* UIViewController+MemoryLeak.m */; };
+		FDD34B522632C44D008BE590 /* UIApplication+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B282632C44C008BE590 /* UIApplication+MemoryLeak.m */; };
+		FDD34B532632C44D008BE590 /* NSObject+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B292632C44C008BE590 /* NSObject+MemoryLeak.m */; };
+		FDD34B542632C44D008BE590 /* DPMonitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B2B2632C44C008BE590 /* DPMonitorView.m */; };
+		FDD34B552632C44D008BE590 /* DPAppDoctorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B302632C44C008BE590 /* DPAppDoctorManager.m */; };
+		FDD34B562632C44D008BE590 /* NSString+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B322632C44D008BE590 /* NSString+DPExtension.m */; };
+		FDD34B572632C44D008BE590 /* NSObject+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B362632C44D008BE590 /* NSObject+DPExtension.m */; };
+		FDD34B582632C44D008BE590 /* UIView+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B382632C44D008BE590 /* UIView+DPExtension.m */; };
+		FDD34B592632C44D008BE590 /* UIApplication+ZCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B392632C44D008BE590 /* UIApplication+ZCExtension.m */; };
+		FDD34B5A2632C44D008BE590 /* UIResponder+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B3A2632C44D008BE590 /* UIResponder+DPExtension.m */; };
+		FDD34B5B2632C44D008BE590 /* UIColor+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B3C2632C44D008BE590 /* UIColor+DPExtension.m */; };
+		FDD34B5C2632C44D008BE590 /* UIButton+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B3E2632C44D008BE590 /* UIButton+DPExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,62 +94,62 @@
 		FD3A50AE217816F100E17385 /* Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch.png; sourceTree = "<group>"; };
 		FD539E7C24358A2E0085AAA7 /* LeakedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeakedViewController.m; path = DPAppDoctorDemo/LeakedViewController.m; sourceTree = SOURCE_ROOT; };
 		FD539E7D24358A2E0085AAA7 /* LeakedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeakedViewController.h; path = DPAppDoctorDemo/LeakedViewController.h; sourceTree = SOURCE_ROOT; };
-		FDC04FF9262EEE7200CCDBB5 /* CheckNetWorkBytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckNetWorkBytes.h; sourceTree = "<group>"; };
-		FDC04FFA262EEE7200CCDBB5 /* SMCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStack.h; sourceTree = "<group>"; };
-		FDC04FFB262EEE7200CCDBB5 /* XLMonitorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMonitorHandle.h; sourceTree = "<group>"; };
-		FDC04FFC262EEE7200CCDBB5 /* SMCallLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallLib.h; sourceTree = "<group>"; };
-		FDC04FFD262EEE7200CCDBB5 /* CheckNetWorkBytes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckNetWorkBytes.m; sourceTree = "<group>"; };
-		FDC04FFE262EEE7200CCDBB5 /* XLMonitorHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLMonitorHandle.m; sourceTree = "<group>"; };
-		FDC04FFF262EEE7200CCDBB5 /* SMCallStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStack.m; sourceTree = "<group>"; };
-		FDC05000262EEE7200CCDBB5 /* SMCallLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallLib.m; sourceTree = "<group>"; };
-		FDC05001262EEE7300CCDBB5 /* DPViewColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPViewColorView.m; sourceTree = "<group>"; };
-		FDC05002262EEE7300CCDBB5 /* DPAppDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAppDoctor.m; sourceTree = "<group>"; };
-		FDC05004262EEE7300CCDBB5 /* UINavigationController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+MemoryLeak.m"; sourceTree = "<group>"; };
-		FDC05005262EEE7300CCDBB5 /* UITabBarController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+MemoryLeak.h"; sourceTree = "<group>"; };
-		FDC05006262EEE7300CCDBB5 /* UIPageViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageViewController+MemoryLeak.h"; sourceTree = "<group>"; };
-		FDC05007262EEE7300CCDBB5 /* DPLeaksMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLeaksMessenger.m; sourceTree = "<group>"; };
-		FDC05008262EEE7300CCDBB5 /* UIViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MemoryLeak.h"; sourceTree = "<group>"; };
-		FDC05009262EEE7300CCDBB5 /* UIView+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MemoryLeak.m"; sourceTree = "<group>"; };
-		FDC0500A262EEE7300CCDBB5 /* NSObject+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MemoryLeak.h"; sourceTree = "<group>"; };
-		FDC0500B262EEE7300CCDBB5 /* DPLeakedObjectProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLeakedObjectProxy.m; sourceTree = "<group>"; };
-		FDC0500C262EEE7300CCDBB5 /* UIApplication+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+MemoryLeak.h"; sourceTree = "<group>"; };
-		FDC0500D262EEE7300CCDBB5 /* UITouch+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+MemoryLeak.m"; sourceTree = "<group>"; };
-		FDC0500E262EEE7300CCDBB5 /* UISplitViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+MemoryLeak.m"; sourceTree = "<group>"; };
-		FDC0500F262EEE7300CCDBB5 /* UIPageViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageViewController+MemoryLeak.m"; sourceTree = "<group>"; };
-		FDC05010262EEE7300CCDBB5 /* UITabBarController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+MemoryLeak.m"; sourceTree = "<group>"; };
-		FDC05011262EEE7300CCDBB5 /* DPLeakedHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeakedHeader.h; sourceTree = "<group>"; };
-		FDC05012262EEE7300CCDBB5 /* UINavigationController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MemoryLeak.h"; sourceTree = "<group>"; };
-		FDC05013262EEE7300CCDBB5 /* UIViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MemoryLeak.m"; sourceTree = "<group>"; };
-		FDC05014262EEE7300CCDBB5 /* DPLeaksMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeaksMessenger.h; sourceTree = "<group>"; };
-		FDC05015262EEE7300CCDBB5 /* UISplitViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+MemoryLeak.h"; sourceTree = "<group>"; };
-		FDC05016262EEE7300CCDBB5 /* UITouch+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+MemoryLeak.h"; sourceTree = "<group>"; };
-		FDC05017262EEE7300CCDBB5 /* DPLeakedObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeakedObjectProxy.h; sourceTree = "<group>"; };
-		FDC05018262EEE7300CCDBB5 /* UIApplication+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+MemoryLeak.m"; sourceTree = "<group>"; };
-		FDC05019262EEE7300CCDBB5 /* NSObject+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MemoryLeak.m"; sourceTree = "<group>"; };
-		FDC0501A262EEE7300CCDBB5 /* UIView+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MemoryLeak.h"; sourceTree = "<group>"; };
-		FDC0501B262EEE7300CCDBB5 /* DPHeaderObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHeaderObject.h; sourceTree = "<group>"; };
-		FDC0501D262EEE7300CCDBB5 /* NSString+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DPExtension.m"; sourceTree = "<group>"; };
-		FDC0501E262EEE7300CCDBB5 /* UIResponder+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+DPExtension.h"; sourceTree = "<group>"; };
-		FDC0501F262EEE7300CCDBB5 /* UIApplication+ZCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ZCExtension.h"; sourceTree = "<group>"; };
-		FDC05020262EEE7300CCDBB5 /* UIColor+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DPExtension.h"; sourceTree = "<group>"; };
-		FDC05021262EEE7300CCDBB5 /* NSObject+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DPExtension.m"; sourceTree = "<group>"; };
-		FDC05022262EEE7300CCDBB5 /* UIButton+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DPExtension.h"; sourceTree = "<group>"; };
-		FDC05023262EEE7300CCDBB5 /* UIView+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DPExtension.m"; sourceTree = "<group>"; };
-		FDC05024262EEE7300CCDBB5 /* UIApplication+ZCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ZCExtension.m"; sourceTree = "<group>"; };
-		FDC05025262EEE7300CCDBB5 /* UIResponder+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+DPExtension.m"; sourceTree = "<group>"; };
-		FDC05026262EEE7300CCDBB5 /* NSString+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DPExtension.h"; sourceTree = "<group>"; };
-		FDC05027262EEE7300CCDBB5 /* UIColor+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DPExtension.m"; sourceTree = "<group>"; };
-		FDC05028262EEE7300CCDBB5 /* UIView+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DPExtension.h"; sourceTree = "<group>"; };
-		FDC05029262EEE7300CCDBB5 /* UIButton+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DPExtension.m"; sourceTree = "<group>"; };
-		FDC0502A262EEE7300CCDBB5 /* NSObject+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DPExtension.h"; sourceTree = "<group>"; };
-		FDC0502B262EEE7300CCDBB5 /* DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPExtension.h; sourceTree = "<group>"; };
-		FDC0502C262EEE7300CCDBB5 /* DPLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLogView.h; sourceTree = "<group>"; };
-		FDC0502D262EEE7300CCDBB5 /* DPMonitorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMonitorView.h; sourceTree = "<group>"; };
-		FDC0502F262EEE7300CCDBB5 /* DPNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPNormal.h; sourceTree = "<group>"; };
-		FDC05030262EEE7300CCDBB5 /* DPAppDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAppDoctor.h; sourceTree = "<group>"; };
-		FDC05031262EEE7300CCDBB5 /* DPViewColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPViewColorView.h; sourceTree = "<group>"; };
-		FDC05032262EEE7300CCDBB5 /* DPLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLogView.m; sourceTree = "<group>"; };
-		FDC05033262EEE7300CCDBB5 /* DPMonitorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMonitorView.m; sourceTree = "<group>"; };
+		FDD34B072632C44B008BE590 /* DPLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLogView.m; sourceTree = "<group>"; };
+		FDD34B082632C44B008BE590 /* DPMonitorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMonitorView.h; sourceTree = "<group>"; };
+		FDD34B092632C44B008BE590 /* DPViewColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPViewColorView.m; sourceTree = "<group>"; };
+		FDD34B0B2632C44B008BE590 /* CheckNetWorkBytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckNetWorkBytes.h; sourceTree = "<group>"; };
+		FDD34B0C2632C44B008BE590 /* SMCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStack.h; sourceTree = "<group>"; };
+		FDD34B0D2632C44B008BE590 /* XLMonitorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMonitorHandle.h; sourceTree = "<group>"; };
+		FDD34B0E2632C44B008BE590 /* SMCallLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallLib.h; sourceTree = "<group>"; };
+		FDD34B0F2632C44B008BE590 /* CheckNetWorkBytes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckNetWorkBytes.m; sourceTree = "<group>"; };
+		FDD34B102632C44B008BE590 /* XLMonitorHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLMonitorHandle.m; sourceTree = "<group>"; };
+		FDD34B112632C44B008BE590 /* SMCallStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStack.m; sourceTree = "<group>"; };
+		FDD34B122632C44B008BE590 /* SMCallLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallLib.m; sourceTree = "<group>"; };
+		FDD34B142632C44B008BE590 /* UINavigationController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+MemoryLeak.m"; sourceTree = "<group>"; };
+		FDD34B152632C44B008BE590 /* UITabBarController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+MemoryLeak.h"; sourceTree = "<group>"; };
+		FDD34B162632C44B008BE590 /* UIPageViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		FDD34B172632C44B008BE590 /* DPLeaksMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLeaksMessenger.m; sourceTree = "<group>"; };
+		FDD34B182632C44B008BE590 /* UIViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		FDD34B192632C44B008BE590 /* UIView+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MemoryLeak.m"; sourceTree = "<group>"; };
+		FDD34B1A2632C44B008BE590 /* NSObject+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MemoryLeak.h"; sourceTree = "<group>"; };
+		FDD34B1B2632C44B008BE590 /* DPLeakedObjectProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLeakedObjectProxy.m; sourceTree = "<group>"; };
+		FDD34B1C2632C44B008BE590 /* UIApplication+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+MemoryLeak.h"; sourceTree = "<group>"; };
+		FDD34B1D2632C44B008BE590 /* UITouch+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+MemoryLeak.m"; sourceTree = "<group>"; };
+		FDD34B1E2632C44B008BE590 /* UISplitViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		FDD34B1F2632C44B008BE590 /* UIPageViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		FDD34B202632C44B008BE590 /* UITabBarController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+MemoryLeak.m"; sourceTree = "<group>"; };
+		FDD34B212632C44B008BE590 /* DPLeakedHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeakedHeader.h; sourceTree = "<group>"; };
+		FDD34B222632C44B008BE590 /* UINavigationController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MemoryLeak.h"; sourceTree = "<group>"; };
+		FDD34B232632C44B008BE590 /* UIViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		FDD34B242632C44C008BE590 /* DPLeaksMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeaksMessenger.h; sourceTree = "<group>"; };
+		FDD34B252632C44C008BE590 /* UISplitViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		FDD34B262632C44C008BE590 /* UITouch+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+MemoryLeak.h"; sourceTree = "<group>"; };
+		FDD34B272632C44C008BE590 /* DPLeakedObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLeakedObjectProxy.h; sourceTree = "<group>"; };
+		FDD34B282632C44C008BE590 /* UIApplication+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+MemoryLeak.m"; sourceTree = "<group>"; };
+		FDD34B292632C44C008BE590 /* NSObject+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MemoryLeak.m"; sourceTree = "<group>"; };
+		FDD34B2A2632C44C008BE590 /* UIView+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MemoryLeak.h"; sourceTree = "<group>"; };
+		FDD34B2B2632C44C008BE590 /* DPMonitorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMonitorView.m; sourceTree = "<group>"; };
+		FDD34B2C2632C44C008BE590 /* DPLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLogView.h; sourceTree = "<group>"; };
+		FDD34B2E2632C44C008BE590 /* DPAppDoctorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAppDoctorManager.h; sourceTree = "<group>"; };
+		FDD34B2F2632C44C008BE590 /* DPViewColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPViewColorView.h; sourceTree = "<group>"; };
+		FDD34B302632C44C008BE590 /* DPAppDoctorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAppDoctorManager.m; sourceTree = "<group>"; };
+		FDD34B322632C44D008BE590 /* NSString+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DPExtension.m"; sourceTree = "<group>"; };
+		FDD34B332632C44D008BE590 /* UIResponder+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+DPExtension.h"; sourceTree = "<group>"; };
+		FDD34B342632C44D008BE590 /* UIApplication+ZCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ZCExtension.h"; sourceTree = "<group>"; };
+		FDD34B352632C44D008BE590 /* UIColor+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DPExtension.h"; sourceTree = "<group>"; };
+		FDD34B362632C44D008BE590 /* NSObject+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DPExtension.m"; sourceTree = "<group>"; };
+		FDD34B372632C44D008BE590 /* UIButton+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DPExtension.h"; sourceTree = "<group>"; };
+		FDD34B382632C44D008BE590 /* UIView+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DPExtension.m"; sourceTree = "<group>"; };
+		FDD34B392632C44D008BE590 /* UIApplication+ZCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ZCExtension.m"; sourceTree = "<group>"; };
+		FDD34B3A2632C44D008BE590 /* UIResponder+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+DPExtension.m"; sourceTree = "<group>"; };
+		FDD34B3B2632C44D008BE590 /* NSString+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DPExtension.h"; sourceTree = "<group>"; };
+		FDD34B3C2632C44D008BE590 /* UIColor+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DPExtension.m"; sourceTree = "<group>"; };
+		FDD34B3D2632C44D008BE590 /* UIView+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DPExtension.h"; sourceTree = "<group>"; };
+		FDD34B3E2632C44D008BE590 /* UIButton+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DPExtension.m"; sourceTree = "<group>"; };
+		FDD34B3F2632C44D008BE590 /* NSObject+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DPExtension.h"; sourceTree = "<group>"; };
+		FDD34B402632C44D008BE590 /* DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPExtension.h; sourceTree = "<group>"; };
+		FDD34B422632C44D008BE590 /* DPNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPNormal.h; sourceTree = "<group>"; };
+		FDD34B6D2632C872008BE590 /* DPAppDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAppDoctor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,95 +274,95 @@
 		FDC04FF7262EEE7200CCDBB5 /* DPAppDoctor_SDK */ = {
 			isa = PBXGroup;
 			children = (
-				FDC05030262EEE7300CCDBB5 /* DPAppDoctor.h */,
-				FDC05002262EEE7300CCDBB5 /* DPAppDoctor.m */,
-				FDC0501B262EEE7300CCDBB5 /* DPHeaderObject.h */,
-				FDC0502C262EEE7300CCDBB5 /* DPLogView.h */,
-				FDC05032262EEE7300CCDBB5 /* DPLogView.m */,
-				FDC0502D262EEE7300CCDBB5 /* DPMonitorView.h */,
-				FDC05033262EEE7300CCDBB5 /* DPMonitorView.m */,
-				FDC05031262EEE7300CCDBB5 /* DPViewColorView.h */,
-				FDC05001262EEE7300CCDBB5 /* DPViewColorView.m */,
-				FDC0501C262EEE7300CCDBB5 /* ApiExtend(Api扩展) */,
-				FDC05003262EEE7300CCDBB5 /* Leaked */,
-				FDC0502E262EEE7300CCDBB5 /* Macros(宏) */,
-				FDC04FF8262EEE7200CCDBB5 /* Monitor */,
+				FDD34B6D2632C872008BE590 /* DPAppDoctor.h */,
+				FDD34B2E2632C44C008BE590 /* DPAppDoctorManager.h */,
+				FDD34B302632C44C008BE590 /* DPAppDoctorManager.m */,
+				FDD34B2C2632C44C008BE590 /* DPLogView.h */,
+				FDD34B072632C44B008BE590 /* DPLogView.m */,
+				FDD34B082632C44B008BE590 /* DPMonitorView.h */,
+				FDD34B2B2632C44C008BE590 /* DPMonitorView.m */,
+				FDD34B2F2632C44C008BE590 /* DPViewColorView.h */,
+				FDD34B092632C44B008BE590 /* DPViewColorView.m */,
+				FDD34B312632C44D008BE590 /* ApiExtend(Api扩展) */,
+				FDD34B132632C44B008BE590 /* Leaked */,
+				FDD34B412632C44D008BE590 /* Macros(宏) */,
+				FDD34B0A2632C44B008BE590 /* Monitor */,
 			);
 			name = DPAppDoctor_SDK;
 			path = ../../DPAppDoctor_SDK;
 			sourceTree = "<group>";
 		};
-		FDC04FF8262EEE7200CCDBB5 /* Monitor */ = {
+		FDD34B0A2632C44B008BE590 /* Monitor */ = {
 			isa = PBXGroup;
 			children = (
-				FDC04FF9262EEE7200CCDBB5 /* CheckNetWorkBytes.h */,
-				FDC04FFA262EEE7200CCDBB5 /* SMCallStack.h */,
-				FDC04FFB262EEE7200CCDBB5 /* XLMonitorHandle.h */,
-				FDC04FFC262EEE7200CCDBB5 /* SMCallLib.h */,
-				FDC04FFD262EEE7200CCDBB5 /* CheckNetWorkBytes.m */,
-				FDC04FFE262EEE7200CCDBB5 /* XLMonitorHandle.m */,
-				FDC04FFF262EEE7200CCDBB5 /* SMCallStack.m */,
-				FDC05000262EEE7200CCDBB5 /* SMCallLib.m */,
+				FDD34B0B2632C44B008BE590 /* CheckNetWorkBytes.h */,
+				FDD34B0C2632C44B008BE590 /* SMCallStack.h */,
+				FDD34B0D2632C44B008BE590 /* XLMonitorHandle.h */,
+				FDD34B0E2632C44B008BE590 /* SMCallLib.h */,
+				FDD34B0F2632C44B008BE590 /* CheckNetWorkBytes.m */,
+				FDD34B102632C44B008BE590 /* XLMonitorHandle.m */,
+				FDD34B112632C44B008BE590 /* SMCallStack.m */,
+				FDD34B122632C44B008BE590 /* SMCallLib.m */,
 			);
 			path = Monitor;
 			sourceTree = "<group>";
 		};
-		FDC05003262EEE7300CCDBB5 /* Leaked */ = {
+		FDD34B132632C44B008BE590 /* Leaked */ = {
 			isa = PBXGroup;
 			children = (
-				FDC05004262EEE7300CCDBB5 /* UINavigationController+MemoryLeak.m */,
-				FDC05005262EEE7300CCDBB5 /* UITabBarController+MemoryLeak.h */,
-				FDC05006262EEE7300CCDBB5 /* UIPageViewController+MemoryLeak.h */,
-				FDC05007262EEE7300CCDBB5 /* DPLeaksMessenger.m */,
-				FDC05008262EEE7300CCDBB5 /* UIViewController+MemoryLeak.h */,
-				FDC05009262EEE7300CCDBB5 /* UIView+MemoryLeak.m */,
-				FDC0500A262EEE7300CCDBB5 /* NSObject+MemoryLeak.h */,
-				FDC0500B262EEE7300CCDBB5 /* DPLeakedObjectProxy.m */,
-				FDC0500C262EEE7300CCDBB5 /* UIApplication+MemoryLeak.h */,
-				FDC0500D262EEE7300CCDBB5 /* UITouch+MemoryLeak.m */,
-				FDC0500E262EEE7300CCDBB5 /* UISplitViewController+MemoryLeak.m */,
-				FDC0500F262EEE7300CCDBB5 /* UIPageViewController+MemoryLeak.m */,
-				FDC05010262EEE7300CCDBB5 /* UITabBarController+MemoryLeak.m */,
-				FDC05011262EEE7300CCDBB5 /* DPLeakedHeader.h */,
-				FDC05012262EEE7300CCDBB5 /* UINavigationController+MemoryLeak.h */,
-				FDC05013262EEE7300CCDBB5 /* UIViewController+MemoryLeak.m */,
-				FDC05014262EEE7300CCDBB5 /* DPLeaksMessenger.h */,
-				FDC05015262EEE7300CCDBB5 /* UISplitViewController+MemoryLeak.h */,
-				FDC05016262EEE7300CCDBB5 /* UITouch+MemoryLeak.h */,
-				FDC05017262EEE7300CCDBB5 /* DPLeakedObjectProxy.h */,
-				FDC05018262EEE7300CCDBB5 /* UIApplication+MemoryLeak.m */,
-				FDC05019262EEE7300CCDBB5 /* NSObject+MemoryLeak.m */,
-				FDC0501A262EEE7300CCDBB5 /* UIView+MemoryLeak.h */,
+				FDD34B142632C44B008BE590 /* UINavigationController+MemoryLeak.m */,
+				FDD34B152632C44B008BE590 /* UITabBarController+MemoryLeak.h */,
+				FDD34B162632C44B008BE590 /* UIPageViewController+MemoryLeak.h */,
+				FDD34B172632C44B008BE590 /* DPLeaksMessenger.m */,
+				FDD34B182632C44B008BE590 /* UIViewController+MemoryLeak.h */,
+				FDD34B192632C44B008BE590 /* UIView+MemoryLeak.m */,
+				FDD34B1A2632C44B008BE590 /* NSObject+MemoryLeak.h */,
+				FDD34B1B2632C44B008BE590 /* DPLeakedObjectProxy.m */,
+				FDD34B1C2632C44B008BE590 /* UIApplication+MemoryLeak.h */,
+				FDD34B1D2632C44B008BE590 /* UITouch+MemoryLeak.m */,
+				FDD34B1E2632C44B008BE590 /* UISplitViewController+MemoryLeak.m */,
+				FDD34B1F2632C44B008BE590 /* UIPageViewController+MemoryLeak.m */,
+				FDD34B202632C44B008BE590 /* UITabBarController+MemoryLeak.m */,
+				FDD34B212632C44B008BE590 /* DPLeakedHeader.h */,
+				FDD34B222632C44B008BE590 /* UINavigationController+MemoryLeak.h */,
+				FDD34B232632C44B008BE590 /* UIViewController+MemoryLeak.m */,
+				FDD34B242632C44C008BE590 /* DPLeaksMessenger.h */,
+				FDD34B252632C44C008BE590 /* UISplitViewController+MemoryLeak.h */,
+				FDD34B262632C44C008BE590 /* UITouch+MemoryLeak.h */,
+				FDD34B272632C44C008BE590 /* DPLeakedObjectProxy.h */,
+				FDD34B282632C44C008BE590 /* UIApplication+MemoryLeak.m */,
+				FDD34B292632C44C008BE590 /* NSObject+MemoryLeak.m */,
+				FDD34B2A2632C44C008BE590 /* UIView+MemoryLeak.h */,
 			);
 			path = Leaked;
 			sourceTree = "<group>";
 		};
-		FDC0501C262EEE7300CCDBB5 /* ApiExtend(Api扩展) */ = {
+		FDD34B312632C44D008BE590 /* ApiExtend(Api扩展) */ = {
 			isa = PBXGroup;
 			children = (
-				FDC0501D262EEE7300CCDBB5 /* NSString+DPExtension.m */,
-				FDC0501E262EEE7300CCDBB5 /* UIResponder+DPExtension.h */,
-				FDC0501F262EEE7300CCDBB5 /* UIApplication+ZCExtension.h */,
-				FDC05020262EEE7300CCDBB5 /* UIColor+DPExtension.h */,
-				FDC05021262EEE7300CCDBB5 /* NSObject+DPExtension.m */,
-				FDC05022262EEE7300CCDBB5 /* UIButton+DPExtension.h */,
-				FDC05023262EEE7300CCDBB5 /* UIView+DPExtension.m */,
-				FDC05024262EEE7300CCDBB5 /* UIApplication+ZCExtension.m */,
-				FDC05025262EEE7300CCDBB5 /* UIResponder+DPExtension.m */,
-				FDC05026262EEE7300CCDBB5 /* NSString+DPExtension.h */,
-				FDC05027262EEE7300CCDBB5 /* UIColor+DPExtension.m */,
-				FDC05028262EEE7300CCDBB5 /* UIView+DPExtension.h */,
-				FDC05029262EEE7300CCDBB5 /* UIButton+DPExtension.m */,
-				FDC0502A262EEE7300CCDBB5 /* NSObject+DPExtension.h */,
-				FDC0502B262EEE7300CCDBB5 /* DPExtension.h */,
+				FDD34B322632C44D008BE590 /* NSString+DPExtension.m */,
+				FDD34B332632C44D008BE590 /* UIResponder+DPExtension.h */,
+				FDD34B342632C44D008BE590 /* UIApplication+ZCExtension.h */,
+				FDD34B352632C44D008BE590 /* UIColor+DPExtension.h */,
+				FDD34B362632C44D008BE590 /* NSObject+DPExtension.m */,
+				FDD34B372632C44D008BE590 /* UIButton+DPExtension.h */,
+				FDD34B382632C44D008BE590 /* UIView+DPExtension.m */,
+				FDD34B392632C44D008BE590 /* UIApplication+ZCExtension.m */,
+				FDD34B3A2632C44D008BE590 /* UIResponder+DPExtension.m */,
+				FDD34B3B2632C44D008BE590 /* NSString+DPExtension.h */,
+				FDD34B3C2632C44D008BE590 /* UIColor+DPExtension.m */,
+				FDD34B3D2632C44D008BE590 /* UIView+DPExtension.h */,
+				FDD34B3E2632C44D008BE590 /* UIButton+DPExtension.m */,
+				FDD34B3F2632C44D008BE590 /* NSObject+DPExtension.h */,
+				FDD34B402632C44D008BE590 /* DPExtension.h */,
 			);
 			path = "ApiExtend(Api扩展)";
 			sourceTree = "<group>";
 		};
-		FDC0502E262EEE7300CCDBB5 /* Macros(宏) */ = {
+		FDD34B412632C44D008BE590 /* Macros(宏) */ = {
 			isa = PBXGroup;
 			children = (
-				FDC0502F262EEE7300CCDBB5 /* DPNormal.h */,
+				FDD34B422632C44D008BE590 /* DPNormal.h */,
 			);
 			path = "Macros(宏)";
 			sourceTree = "<group>";
@@ -588,36 +588,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC05049262EEE7300CCDBB5 /* UIResponder+DPExtension.m in Sources */,
-				FDC05038262EEE7300CCDBB5 /* DPViewColorView.m in Sources */,
-				FDC05042262EEE7300CCDBB5 /* UIViewController+MemoryLeak.m in Sources */,
-				FDC0504A262EEE7300CCDBB5 /* UIColor+DPExtension.m in Sources */,
-				FDC05046262EEE7300CCDBB5 /* NSObject+DPExtension.m in Sources */,
-				FDC05041262EEE7300CCDBB5 /* UITabBarController+MemoryLeak.m in Sources */,
-				FDC05034262EEE7300CCDBB5 /* CheckNetWorkBytes.m in Sources */,
-				FDC05043262EEE7300CCDBB5 /* UIApplication+MemoryLeak.m in Sources */,
-				FDC0503A262EEE7300CCDBB5 /* UINavigationController+MemoryLeak.m in Sources */,
-				FDC0503F262EEE7300CCDBB5 /* UISplitViewController+MemoryLeak.m in Sources */,
-				FDC0503D262EEE7300CCDBB5 /* DPLeakedObjectProxy.m in Sources */,
-				FDC0504B262EEE7300CCDBB5 /* UIButton+DPExtension.m in Sources */,
-				FDC05037262EEE7300CCDBB5 /* SMCallLib.m in Sources */,
-				FDC0503C262EEE7300CCDBB5 /* UIView+MemoryLeak.m in Sources */,
-				FDC05040262EEE7300CCDBB5 /* UIPageViewController+MemoryLeak.m in Sources */,
-				FDC05047262EEE7300CCDBB5 /* UIView+DPExtension.m in Sources */,
-				FDC05036262EEE7300CCDBB5 /* SMCallStack.m in Sources */,
-				FDC05039262EEE7300CCDBB5 /* DPAppDoctor.m in Sources */,
-				FDC05044262EEE7300CCDBB5 /* NSObject+MemoryLeak.m in Sources */,
-				FDC0503E262EEE7300CCDBB5 /* UITouch+MemoryLeak.m in Sources */,
-				FDC05048262EEE7300CCDBB5 /* UIApplication+ZCExtension.m in Sources */,
-				FDC0504C262EEE7300CCDBB5 /* DPLogView.m in Sources */,
-				FDC0503B262EEE7300CCDBB5 /* DPLeaksMessenger.m in Sources */,
+				FDD34B5A2632C44D008BE590 /* UIResponder+DPExtension.m in Sources */,
 				FD3A507F217815A500E17385 /* ViewController.m in Sources */,
+				FDD34B512632C44D008BE590 /* UIViewController+MemoryLeak.m in Sources */,
+				FDD34B502632C44D008BE590 /* UITabBarController+MemoryLeak.m in Sources */,
+				FDD34B5B2632C44D008BE590 /* UIColor+DPExtension.m in Sources */,
 				FD539E7E24358A2F0085AAA7 /* LeakedViewController.m in Sources */,
+				FDD34B522632C44D008BE590 /* UIApplication+MemoryLeak.m in Sources */,
+				FDD34B542632C44D008BE590 /* DPMonitorView.m in Sources */,
+				FDD34B492632C44D008BE590 /* UINavigationController+MemoryLeak.m in Sources */,
+				FDD34B4E2632C44D008BE590 /* UISplitViewController+MemoryLeak.m in Sources */,
+				FDD34B4C2632C44D008BE590 /* DPLeakedObjectProxy.m in Sources */,
 				FD3A508A217815A700E17385 /* main.m in Sources */,
-				FDC05045262EEE7300CCDBB5 /* NSString+DPExtension.m in Sources */,
-				FDC05035262EEE7300CCDBB5 /* XLMonitorHandle.m in Sources */,
+				FDD34B4B2632C44D008BE590 /* UIView+MemoryLeak.m in Sources */,
+				FDD34B552632C44D008BE590 /* DPAppDoctorManager.m in Sources */,
+				FDD34B4F2632C44D008BE590 /* UIPageViewController+MemoryLeak.m in Sources */,
+				FDD34B562632C44D008BE590 /* NSString+DPExtension.m in Sources */,
+				FDD34B482632C44D008BE590 /* SMCallLib.m in Sources */,
+				FDD34B5C2632C44D008BE590 /* UIButton+DPExtension.m in Sources */,
+				FDD34B442632C44D008BE590 /* DPViewColorView.m in Sources */,
+				FDD34B532632C44D008BE590 /* NSObject+MemoryLeak.m in Sources */,
+				FDD34B4D2632C44D008BE590 /* UITouch+MemoryLeak.m in Sources */,
+				FDD34B4A2632C44D008BE590 /* DPLeaksMessenger.m in Sources */,
+				FDD34B572632C44D008BE590 /* NSObject+DPExtension.m in Sources */,
+				FDD34B582632C44D008BE590 /* UIView+DPExtension.m in Sources */,
+				FDD34B462632C44D008BE590 /* XLMonitorHandle.m in Sources */,
+				FDD34B592632C44D008BE590 /* UIApplication+ZCExtension.m in Sources */,
+				FDD34B432632C44D008BE590 /* DPLogView.m in Sources */,
+				FDD34B472632C44D008BE590 /* SMCallStack.m in Sources */,
 				FD3A507C217815A500E17385 /* AppDelegate.m in Sources */,
-				FDC0504D262EEE7300CCDBB5 /* DPMonitorView.m in Sources */,
+				FDD34B452632C44D008BE590 /* CheckNetWorkBytes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

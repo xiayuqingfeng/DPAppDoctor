@@ -6,10 +6,13 @@
 //  Copyright © 2021 yupeng xia. All rights reserved.
 //
 
-#import "DPHeaderObject.h"
+#import "DPAppDoctor.h"
+#ifdef DPAppDoctorDebug
 
 @interface UIColor (DPExtension)
 + (UIColor *)dpColorWithHexString:(NSString *)hexString;
 
 - (NSString *)dpHexStringFromColor;
 @end
+
+#endif

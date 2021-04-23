@@ -7,7 +7,9 @@
 //
 
 #import "DPViewColorView.h"
-#import "DPHeaderObject.h"
+#ifdef DPAppDoctorDebug
+
+#import "DPAppDoctor.h"
 
 @interface DPViewColorView () {
     CGFloat viewMinY;
@@ -150,7 +152,7 @@
 }
 
 - (void)setButtonSelect {
-//    NSDictionary *colorDic = [[DPAppDoctor shareInstance] valueForKey:@"colorSetDic"];
+//    NSDictionary *colorDic = [[DPAppDoctorManager shareInstance] valueForKey:@"colorSetDic"];
 //    if (colorDic != nil) {
 //        viewBtn.selected = ((NSString *)[colorDic objectForKey:@"UIView"]).integerValue;
 //        labelBtn.selected = ((NSString *)[colorDic objectForKey:@"UILabel"]).integerValue;
@@ -172,7 +174,7 @@
     [aMutaDic setValue:textViewBtn.selected ? @"1" : @"0" forKey:@"UITextView"];
     [aMutaDic setValue:textFieldBtn.selected ? @"1" : @"0" forKey:@"UITextField"];
     
-//    [[DPAppDoctor shareInstance] setValue:aMutaDic forKey:@"colorSetDic"];
+//    [[DPAppDoctorManager shareInstance] setValue:aMutaDic forKey:@"colorSetDic"];
     
     [[NSUserDefaults standardUserDefaults] setValue:aMutaDic forKey:@"colorSetDic"];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -180,3 +182,5 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"dpChangeViewColor" object:nil];
 }
 @end
+
+#endif

@@ -6,9 +6,12 @@
 //  Copyright © 2021 yupeng xia. All rights reserved.
 //
 
-#import "DPHeaderObject.h"
+#import "DPAppDoctor.h"
+#ifdef DPAppDoctorDebug
 
 @interface NSString (DPExtension)
 ///获取字符串中多个相同字符串的所有range
 - (NSArray <NSValue *>*)dpRangeOfSubString:(NSString*)subStr;
 @end
+
+#endif

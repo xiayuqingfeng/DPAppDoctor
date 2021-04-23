@@ -66,7 +66,6 @@ const void *const kHasBeenPoppedKey = &kHasBeenPoppedKey;
     
     return YES;
 }
-
 @end
 
 #endif

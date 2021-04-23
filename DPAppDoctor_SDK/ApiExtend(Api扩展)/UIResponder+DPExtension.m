@@ -7,7 +7,10 @@
 //
 
 #import "UIResponder+DPExtension.h"
+#ifdef DPAppDoctorDebug
 
 @implementation UIResponder (DPExtension)
 
 @end
+
+#endif

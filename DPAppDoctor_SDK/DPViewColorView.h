@@ -6,9 +6,13 @@
 //  Copyright © 2021 yupeng xia. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "DPAppDoctor.h"
+#ifdef DPAppDoctorDebug
+
+#import <UIKit/UIKit.h>
 
 @interface DPViewColorView : UIView
 - (id)initWithBtnMinY:(CGFloat)aBtnMinY;
 @end
+
+#endif

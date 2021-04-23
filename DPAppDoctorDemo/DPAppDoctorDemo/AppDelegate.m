@@ -10,6 +10,7 @@
 
 #ifdef DEBUG
 #import "DPAppDoctor.h"
+#import "DPAppDoctorManager.h"
 #endif
 
 @interface AppDelegate ()
@@ -18,13 +19,12 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
     #ifdef DPAppDoctorDebug
-    [DPAppDoctor shareInstance].isShowTest = YES;
-    [DPAppDoctor shareInstance].DPdiyBlock = ^(BOOL isDiy) {
+    [DPAppDoctorManager shareInstance].isShowTest = YES;
+    [DPAppDoctorManager shareInstance].DPdiyBlock = ^(BOOL isDiy) {
         
     };
     #endif

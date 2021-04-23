@@ -19,7 +19,7 @@ static __weak UIAlertView *alertView;
 
 + (void)alertWithTitle:(NSString *)title message:(NSString *)message delegate:(id<UIAlertViewDelegate>)delegate additionalButtonTitle:(NSString *)additionalButtonTitle {
   
-    if ([DPAppDoctor shareInstance].isLeaked == NO) {
+    if ([DPAppDoctorManager shareInstance].isLeaked == NO) {
         return;
     }
     
@@ -32,7 +32,6 @@ static __weak UIAlertView *alertView;
     [alertViewTemp show];
     alertView = alertViewTemp;
 }
-
 @end
 
 #endif

@@ -7,7 +7,9 @@
 //
 
 #import "DPMonitorView.h"
-#import "DPHeaderObject.h"
+#ifdef DPAppDoctorDebug
+
+#import "DPAppDoctor.h"
 #import "XLMonitorHandle.h"
 
 @interface DPMonitorView () {
@@ -139,3 +141,5 @@
 //    }
 //}
 @end
+
+#endif

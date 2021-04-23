@@ -6,8 +6,11 @@
 //  Copyright © 2021 yupeng xia. All rights reserved.
 //
 
-#import "DPHeaderObject.h"
+#import "DPAppDoctor.h"
+#ifdef DPAppDoctorDebug
 
 @interface UIResponder (DPExtension)
 
 @end
+
+#endif

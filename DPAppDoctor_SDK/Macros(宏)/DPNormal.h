@@ -9,9 +9,9 @@
 #pragma mark /******************Debug打印******************/
 #ifdef DEBUG
 #define NSLog(format, ...)\
-if ([[DPAppDoctor shareInstance] valueForKey:@"aLogView"]) {\
+if ([[DPAppDoctorManager shareInstance] valueForKey:@"aLogView"]) {\
     printf("\n[%s] %s [第%d行] %s\n", [[NSString stringWithFormat:@"%@",[NSDate date]] UTF8String], __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);\
-    [[[DPAppDoctor shareInstance] valueForKey:@"aLogView"] setValue:[NSString stringWithFormat:@"[%s] %s [第%d行] %@",[[NSString stringWithFormat:@"%@",[NSDate date]] UTF8String], __FUNCTION__, __LINE__, [NSString stringWithFormat:format, ## __VA_ARGS__]] forKey:@"logOutStr"];\
+    [[[DPAppDoctorManager shareInstance] valueForKey:@"aLogView"] setValue:[NSString stringWithFormat:@"[%s] %s [第%d行] %@",[[NSString stringWithFormat:@"%@",[NSDate date]] UTF8String], __FUNCTION__, __LINE__, [NSString stringWithFormat:format, ## __VA_ARGS__]] forKey:@"logOutStr"];\
 }else {\
     printf("\n[%s] %s [第%d行] %s\n", [[NSString stringWithFormat:@"%@",[NSDate date]] UTF8String], __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);\
 };

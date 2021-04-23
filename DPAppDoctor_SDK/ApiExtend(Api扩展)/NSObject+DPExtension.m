@@ -7,6 +7,8 @@
 //
 
 #import "NSObject+DPExtension.h"
+#ifdef DPAppDoctorDebug
+
 #import <objc/runtime.h>
 
 @implementation NSObject (DPExtension)
@@ -18,3 +20,5 @@ static void *idInfoKey;
     return objc_setAssociatedObject(self, &idInfoKey, idInfo, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 @end
+
+#endif

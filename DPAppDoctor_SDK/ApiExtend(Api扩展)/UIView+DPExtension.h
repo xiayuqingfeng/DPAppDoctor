@@ -6,7 +6,8 @@
 //  Copyright © 2021 yupeng xia. All rights reserved.
 //
 
-#import "DPHeaderObject.h"
+#import "DPAppDoctor.h"
+#ifdef DPAppDoctorDebug
 
 typedef NS_OPTIONS(NSUInteger, DPBorderDirection) {//需要显示的边框方向
     DPBorderDirectionTop          = 1 << 0,
@@ -118,3 +119,5 @@ typedef NS_OPTIONS(NSUInteger, DPBorderDirection) {//需要显示的边框方向
 ///自定义圆角,边框; aRoundingCorners:枚举值,圆角位置; aRadius:圆角半径; aBorderCorners:枚举值,边框位置; aBorderWidth:边框宽度; aBorderColor:边框颜色;
 - (void)setDPRoundingCorners:(UIRectCorner)aRoundingCorners radius:(CGFloat)aRadius borderCorners:(DPBorderDirection)aBorderCorners borderWidth:(CGFloat)aBorderWidth borderColor:(UIColor *)aBorderColor;
 @end
+
+#endif

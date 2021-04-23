@@ -1,10 +1,16 @@
 //
-//  ZhcwCollegeSDK.h
-//  ZhcwCollegeSDK
+//  DPHeaderObject.h
+//  DPAppDoctor
 //
-//  Created by 夏玉鹏 on 20/04/02.
-//  Copyright © 2020 夏玉鹏. All rights reserved.
+//  Created by yupeng xia on 2021/4/20.
+//  Copyright © 2021 yupeng xia. All rights reserved.
 //
+
+#ifndef DPAppDoctor_h
+#define DPAppDoctor_h
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #ifdef DEBUG
 #define DPAppDoctorDebug 1
@@ -12,26 +18,10 @@
 
 #ifdef DPAppDoctorDebug
 
-#import "DPHeaderObject.h"
+#import "DPNormal.h"
+#import "DPExtension.h"
+#import "DPAppDoctorManager.h"
 
-@interface DPAppDoctor : NSObject
-///DIY自定义block函数
-@property (nonatomic, copy) void(^DPdiyBlock)(BOOL isDiy);
-
-///是否显示测试模块: YES 打开, NO 关闭, 默认 NO;
-@property (nonatomic, assign) BOOL isShowTest;
-
-///日志打印开关: YES 打开, NO 关闭, 默认 NO;
-@property (nonatomic, assign) BOOL isLogOut;
-///内存泄露监测开关: YES 打开, NO 关闭, 默认 NO;
-@property (nonatomic, assign) BOOL isLeaked;
-///CPU、GPU、FPS监测开关: YES 打开, NO 关闭, 默认 NO;
-@property (nonatomic, assign) BOOL isMonitor;
-///UI布局开关: YES 打开, NO 关闭, 默认 NO;
-@property (nonatomic, assign) BOOL isViewColor;
-///diy开关: YES 打开, NO 关闭, 默认 NO;
-@property (nonatomic, assign) BOOL isDiy;
-
-+ (instancetype)shareInstance;
-@end
 #endif
+
+#endif /* DPAppDoctor_h */
