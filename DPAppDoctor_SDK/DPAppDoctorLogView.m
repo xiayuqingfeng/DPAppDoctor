@@ -36,6 +36,10 @@
 - (id)initWithBtnMinY:(CGFloat)aBtnMinY {
     self = [super init];
     if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+        
         viewMinY = aBtnMinY;
         isLogOut = YES;
         
@@ -43,8 +47,9 @@
         
         self.frame = superView.bounds;
         self.backgroundColor = [UIColor blackColor];
+        self.hidden = YES;
         [superView addSubview:self];
-
+        
         openBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         openBtn.titleLabel.numberOfLines = 0;
         [openBtn setTitle:@"打\n开\n日\n志" forState:UIControlStateNormal];
@@ -55,13 +60,16 @@
         [self addSubview:openBtn];
         
         countTextView = [[UITextView alloc] init];
+        countTextView.delegate = self;
         countTextView.backgroundColor = [UIColor clearColor];
         countTextView.layer.borderWidth = 1;
         countTextView.layer.borderColor = [UIColor greenColor].CGColor;
         countTextView.layer.cornerRadius = 4;
         countTextView.layoutManager.allowsNonContiguousLayout = YES;
         countTextView.textColor = [UIColor whiteColor];
-        [countTextView becomeFirstResponder];
+        if (self.hidden == NO) {
+            [countTextView becomeFirstResponder];
+        }
         [self addSubview:countTextView];
         
         searchTextView = [[UITextView alloc] init];
@@ -148,6 +156,9 @@
     searchBtn.hidden = !openBtn.selected;
     
     if (!openBtn.selected) {
+        [countTextView resignFirstResponder];
+        [searchTextView resignFirstResponder];
+        
         self.frame = CGRectMake(superView.widthDP-openBtn.widthDP, viewMinY, openBtn.widthDP, openBtn.heightDP);
         openBtn.frame = self.bounds;
     }else {
@@ -172,7 +183,9 @@
     isLogOut = YES;
     sumLogStr = [@"" mutableCopy];
     countTextView.attributedText = nil;
-    [countTextView becomeFirstResponder];
+    if (self.hidden == NO) {
+        [countTextView becomeFirstResponder];
+    }
     rangArray = nil;
     searchIndex = 0;
     [searchBtn setTitle:@"搜索" forState:UIControlStateNormal];
@@ -180,7 +193,9 @@
 - (void)deleteSearchBtnAction:(UIButton *)button {
     button.selected = !button.selected;
     isLogOut = YES;
-    [countTextView becomeFirstResponder];
+    if (self.hidden == NO) {
+        [countTextView becomeFirstResponder];
+    }
     searchTextView.text = @"";
     rangArray = nil;
     searchIndex = 0;
@@ -191,12 +206,14 @@
     if (rangArray.count < 1) {
         return;
     }
-
+    
     if (searchIndex >= rangArray.count) {
         searchIndex = 0;
     }
     NSRange aRange = rangArray[searchIndex].rangeValue;
-    [countTextView becomeFirstResponder];
+    if (self.hidden == NO) {
+        [countTextView becomeFirstResponder];
+    }
     countTextView.selectedRange = aRange;
     [countTextView scrollRangeToVisible:aRange];
     
@@ -217,7 +234,9 @@
         searchIndex = rangArray.count-1;
     }
     NSRange aRange = rangArray[searchIndex].rangeValue;
-    [countTextView becomeFirstResponder];
+    if (self.hidden == NO) {
+        [countTextView becomeFirstResponder];
+    }
     countTextView.selectedRange = aRange;
     [countTextView scrollRangeToVisible:aRange];
     
@@ -247,10 +266,47 @@
     countTextView.attributedText = attr;
 }
 
+#pragma mark <-------------Setter_methods------------->
+- (void)setHidden:(BOOL)hidden {
+    [super setHidden:hidden];
+    if (hidden) {
+        [countTextView resignFirstResponder];
+        [searchTextView resignFirstResponder];
+    }
+}
+
+#pragma mark <-------------键盘遮罩处理------------->
+- (void)keyboardWillShow:(NSNotification *)note{
+    //获取键盘高度
+    NSDictionary* info = [note userInfo];
+    CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+    if (kbSize.height > 0.01) {
+        arc_block_dp(self);
+        [UIView animateWithDuration:0.1 animations:^{
+            weak_self.yDP = -kbSize.height;
+        }];
+    }
+}
+- (void)keyboardWillHide:(NSNotification *)note{
+    arc_block_dp(self);
+    [UIView animateWithDuration:0.1 animations:^{
+        weak_self.yDP = 0;
+    }];
+}
+
+
+#pragma mark <-------------UITextViewDelegate------------->
 - (void)textViewDidBeginEditing:(UITextView *)textView {
     if (textView == searchTextView) {
         [countTextView resignFirstResponder];
     }
+}
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
+    if ([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    return YES;
 }
 
 - (void)setLogOutStr:(NSString *)logOutStr {
@@ -260,7 +316,7 @@
         }
         NSString *aStr = [NSString stringWithFormat:@"%@\n\n",logOutStr];
         [sumLogStr appendString:aStr];
-    
+        
         if (isLogOut) {
             NSDictionary *aAttrDic = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
             NSAttributedString *aAttr = [[NSAttributedString alloc]initWithString:sumLogStr attributes:aAttrDic];
