@@ -20,8 +20,8 @@
 		FD3A509F217815A700E17385 /* DPAppDoctorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A509E217815A700E17385 /* DPAppDoctorDemoUITests.m */; };
 		FD3A50B1217816F100E17385 /* Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = FD3A50AE217816F100E17385 /* Launch.png */; };
 		FD539E7E24358A2F0085AAA7 /* LeakedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD539E7C24358A2E0085AAA7 /* LeakedViewController.m */; };
-		FDD34B432632C44D008BE590 /* DPLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B072632C44B008BE590 /* DPLogView.m */; };
-		FDD34B442632C44D008BE590 /* DPViewColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B092632C44B008BE590 /* DPViewColorView.m */; };
+		FDD34B432632C44D008BE590 /* DPAppDoctorLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B072632C44B008BE590 /* DPAppDoctorLogView.m */; };
+		FDD34B442632C44D008BE590 /* DPAppDoctorViewColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B092632C44B008BE590 /* DPAppDoctorViewColorView.m */; };
 		FDD34B452632C44D008BE590 /* CheckNetWorkBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B0F2632C44B008BE590 /* CheckNetWorkBytes.m */; };
 		FDD34B462632C44D008BE590 /* XLMonitorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B102632C44B008BE590 /* XLMonitorHandle.m */; };
 		FDD34B472632C44D008BE590 /* SMCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B112632C44B008BE590 /* SMCallStack.m */; };
@@ -37,7 +37,7 @@
 		FDD34B512632C44D008BE590 /* UIViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B232632C44B008BE590 /* UIViewController+MemoryLeak.m */; };
 		FDD34B522632C44D008BE590 /* UIApplication+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B282632C44C008BE590 /* UIApplication+MemoryLeak.m */; };
 		FDD34B532632C44D008BE590 /* NSObject+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B292632C44C008BE590 /* NSObject+MemoryLeak.m */; };
-		FDD34B542632C44D008BE590 /* DPMonitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B2B2632C44C008BE590 /* DPMonitorView.m */; };
+		FDD34B542632C44D008BE590 /* DPAppDoctorMonitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B2B2632C44C008BE590 /* DPAppDoctorMonitorView.m */; };
 		FDD34B552632C44D008BE590 /* DPAppDoctorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B302632C44C008BE590 /* DPAppDoctorManager.m */; };
 		FDD34B562632C44D008BE590 /* NSString+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B322632C44D008BE590 /* NSString+DPExtension.m */; };
 		FDD34B572632C44D008BE590 /* NSObject+DPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD34B362632C44D008BE590 /* NSObject+DPExtension.m */; };
@@ -94,9 +94,9 @@
 		FD3A50AE217816F100E17385 /* Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch.png; sourceTree = "<group>"; };
 		FD539E7C24358A2E0085AAA7 /* LeakedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeakedViewController.m; path = DPAppDoctorDemo/LeakedViewController.m; sourceTree = SOURCE_ROOT; };
 		FD539E7D24358A2E0085AAA7 /* LeakedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeakedViewController.h; path = DPAppDoctorDemo/LeakedViewController.h; sourceTree = SOURCE_ROOT; };
-		FDD34B072632C44B008BE590 /* DPLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLogView.m; sourceTree = "<group>"; };
-		FDD34B082632C44B008BE590 /* DPMonitorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMonitorView.h; sourceTree = "<group>"; };
-		FDD34B092632C44B008BE590 /* DPViewColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPViewColorView.m; sourceTree = "<group>"; };
+		FDD34B072632C44B008BE590 /* DPAppDoctorLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAppDoctorLogView.m; sourceTree = "<group>"; };
+		FDD34B082632C44B008BE590 /* DPAppDoctorMonitorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAppDoctorMonitorView.h; sourceTree = "<group>"; };
+		FDD34B092632C44B008BE590 /* DPAppDoctorViewColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAppDoctorViewColorView.m; sourceTree = "<group>"; };
 		FDD34B0B2632C44B008BE590 /* CheckNetWorkBytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckNetWorkBytes.h; sourceTree = "<group>"; };
 		FDD34B0C2632C44B008BE590 /* SMCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStack.h; sourceTree = "<group>"; };
 		FDD34B0D2632C44B008BE590 /* XLMonitorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMonitorHandle.h; sourceTree = "<group>"; };
@@ -128,10 +128,10 @@
 		FDD34B282632C44C008BE590 /* UIApplication+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+MemoryLeak.m"; sourceTree = "<group>"; };
 		FDD34B292632C44C008BE590 /* NSObject+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MemoryLeak.m"; sourceTree = "<group>"; };
 		FDD34B2A2632C44C008BE590 /* UIView+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MemoryLeak.h"; sourceTree = "<group>"; };
-		FDD34B2B2632C44C008BE590 /* DPMonitorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMonitorView.m; sourceTree = "<group>"; };
-		FDD34B2C2632C44C008BE590 /* DPLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLogView.h; sourceTree = "<group>"; };
+		FDD34B2B2632C44C008BE590 /* DPAppDoctorMonitorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAppDoctorMonitorView.m; sourceTree = "<group>"; };
+		FDD34B2C2632C44C008BE590 /* DPAppDoctorLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAppDoctorLogView.h; sourceTree = "<group>"; };
 		FDD34B2E2632C44C008BE590 /* DPAppDoctorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAppDoctorManager.h; sourceTree = "<group>"; };
-		FDD34B2F2632C44C008BE590 /* DPViewColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPViewColorView.h; sourceTree = "<group>"; };
+		FDD34B2F2632C44C008BE590 /* DPAppDoctorViewColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAppDoctorViewColorView.h; sourceTree = "<group>"; };
 		FDD34B302632C44C008BE590 /* DPAppDoctorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAppDoctorManager.m; sourceTree = "<group>"; };
 		FDD34B322632C44D008BE590 /* NSString+DPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DPExtension.m"; sourceTree = "<group>"; };
 		FDD34B332632C44D008BE590 /* UIResponder+DPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+DPExtension.h"; sourceTree = "<group>"; };
@@ -277,12 +277,12 @@
 				FDD34B6D2632C872008BE590 /* DPAppDoctor.h */,
 				FDD34B2E2632C44C008BE590 /* DPAppDoctorManager.h */,
 				FDD34B302632C44C008BE590 /* DPAppDoctorManager.m */,
-				FDD34B2C2632C44C008BE590 /* DPLogView.h */,
-				FDD34B072632C44B008BE590 /* DPLogView.m */,
-				FDD34B082632C44B008BE590 /* DPMonitorView.h */,
-				FDD34B2B2632C44C008BE590 /* DPMonitorView.m */,
-				FDD34B2F2632C44C008BE590 /* DPViewColorView.h */,
-				FDD34B092632C44B008BE590 /* DPViewColorView.m */,
+				FDD34B2C2632C44C008BE590 /* DPAppDoctorLogView.h */,
+				FDD34B072632C44B008BE590 /* DPAppDoctorLogView.m */,
+				FDD34B082632C44B008BE590 /* DPAppDoctorMonitorView.h */,
+				FDD34B2B2632C44C008BE590 /* DPAppDoctorMonitorView.m */,
+				FDD34B2F2632C44C008BE590 /* DPAppDoctorViewColorView.h */,
+				FDD34B092632C44B008BE590 /* DPAppDoctorViewColorView.m */,
 				FDD34B312632C44D008BE590 /* ApiExtend(Api扩展) */,
 				FDD34B132632C44B008BE590 /* Leaked */,
 				FDD34B412632C44D008BE590 /* Macros(宏) */,
@@ -595,7 +595,7 @@
 				FDD34B5B2632C44D008BE590 /* UIColor+DPExtension.m in Sources */,
 				FD539E7E24358A2F0085AAA7 /* LeakedViewController.m in Sources */,
 				FDD34B522632C44D008BE590 /* UIApplication+MemoryLeak.m in Sources */,
-				FDD34B542632C44D008BE590 /* DPMonitorView.m in Sources */,
+				FDD34B542632C44D008BE590 /* DPAppDoctorMonitorView.m in Sources */,
 				FDD34B492632C44D008BE590 /* UINavigationController+MemoryLeak.m in Sources */,
 				FDD34B4E2632C44D008BE590 /* UISplitViewController+MemoryLeak.m in Sources */,
 				FDD34B4C2632C44D008BE590 /* DPLeakedObjectProxy.m in Sources */,
@@ -606,7 +606,7 @@
 				FDD34B562632C44D008BE590 /* NSString+DPExtension.m in Sources */,
 				FDD34B482632C44D008BE590 /* SMCallLib.m in Sources */,
 				FDD34B5C2632C44D008BE590 /* UIButton+DPExtension.m in Sources */,
-				FDD34B442632C44D008BE590 /* DPViewColorView.m in Sources */,
+				FDD34B442632C44D008BE590 /* DPAppDoctorViewColorView.m in Sources */,
 				FDD34B532632C44D008BE590 /* NSObject+MemoryLeak.m in Sources */,
 				FDD34B4D2632C44D008BE590 /* UITouch+MemoryLeak.m in Sources */,
 				FDD34B4A2632C44D008BE590 /* DPLeaksMessenger.m in Sources */,
@@ -614,7 +614,7 @@
 				FDD34B582632C44D008BE590 /* UIView+DPExtension.m in Sources */,
 				FDD34B462632C44D008BE590 /* XLMonitorHandle.m in Sources */,
 				FDD34B592632C44D008BE590 /* UIApplication+ZCExtension.m in Sources */,
-				FDD34B432632C44D008BE590 /* DPLogView.m in Sources */,
+				FDD34B432632C44D008BE590 /* DPAppDoctorLogView.m in Sources */,
 				FDD34B472632C44D008BE590 /* SMCallStack.m in Sources */,
 				FD3A507C217815A500E17385 /* AppDelegate.m in Sources */,
 				FDD34B452632C44D008BE590 /* CheckNetWorkBytes.m in Sources */,

@@ -1,15 +1,15 @@
 //
-//  DPLogView.m
-//  DPLogView
+//  DPAppDoctorLogView.m
+//  DPAppDoctorLogView
 //
 //  Created by yupeng xia on 2021/4/13.
 //  Copyright © 2021 yupeng xia. All rights reserved.
 //
 
-#import "DPLogView.h"
+#import "DPAppDoctorLogView.h"
 #ifdef DPAppDoctorDebug
 
-@interface DPLogView () <UITextViewDelegate>{
+@interface DPAppDoctorLogView () <UITextViewDelegate>{
     CGFloat viewMinY;
     
     UIView *superView;
@@ -32,7 +32,7 @@
 @property (nonatomic, strong) NSString *logOutStr;
 @end
 
-@implementation DPLogView
+@implementation DPAppDoctorLogView
 - (id)initWithBtnMinY:(CGFloat)aBtnMinY {
     self = [super init];
     if (self) {

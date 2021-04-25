@@ -1,17 +1,17 @@
 //
-//  DPViewColorView.m
-//  DPViewColorView
+//  DPAppDoctorViewColorView.m
+//  DPAppDoctorViewColorView
 //
 //  Created by yupeng xia on 2021/4/13.
 //  Copyright © 2021 yupeng xia. All rights reserved.
 //
 
-#import "DPViewColorView.h"
+#import "DPAppDoctorViewColorView.h"
 #ifdef DPAppDoctorDebug
 
 #import "DPAppDoctor.h"
 
-@interface DPViewColorView () {
+@interface DPAppDoctorViewColorView () {
     CGFloat viewMinY;
     
     UIView *superView;
@@ -24,7 +24,7 @@
 }
 @end
 
-@implementation DPViewColorView
+@implementation DPAppDoctorViewColorView
 - (id)initWithBtnMinY:(CGFloat)aBtnMinY {
     self = [super init];
     if (self) {
@@ -152,14 +152,14 @@
 }
 
 - (void)setButtonSelect {
-//    NSDictionary *colorDic = [[DPAppDoctorManager shareInstance] valueForKey:@"colorSetDic"];
-//    if (colorDic != nil) {
-//        viewBtn.selected = ((NSString *)[colorDic objectForKey:@"UIView"]).integerValue;
-//        labelBtn.selected = ((NSString *)[colorDic objectForKey:@"UILabel"]).integerValue;
-//        buttonBtn.selected = ((NSString *)[colorDic objectForKey:@"UIButton"]).integerValue;
-//        textViewBtn.selected = ((NSString *)[colorDic objectForKey:@"UITextView"]).integerValue;
-//        textFieldBtn.selected = ((NSString *)[colorDic objectForKey:@"UITextField"]).integerValue;
-//    }
+    NSDictionary *colorDic = [[DPAppDoctorManager shareInstance] valueForKey:@"colorSetDic"];
+    if (colorDic != nil) {
+        viewBtn.selected = ((NSString *)[colorDic objectForKey:@"UIView"]).integerValue;
+        labelBtn.selected = ((NSString *)[colorDic objectForKey:@"UILabel"]).integerValue;
+        buttonBtn.selected = ((NSString *)[colorDic objectForKey:@"UIButton"]).integerValue;
+        textViewBtn.selected = ((NSString *)[colorDic objectForKey:@"UITextView"]).integerValue;
+        textFieldBtn.selected = ((NSString *)[colorDic objectForKey:@"UITextField"]).integerValue;
+    }
 }
 
 - (void)setColorSetDic {
@@ -174,7 +174,7 @@
     [aMutaDic setValue:textViewBtn.selected ? @"1" : @"0" forKey:@"UITextView"];
     [aMutaDic setValue:textFieldBtn.selected ? @"1" : @"0" forKey:@"UITextField"];
     
-//    [[DPAppDoctorManager shareInstance] setValue:aMutaDic forKey:@"colorSetDic"];
+    [[DPAppDoctorManager shareInstance] setValue:aMutaDic forKey:@"colorSetDic"];
     
     [[NSUserDefaults standardUserDefaults] setValue:aMutaDic forKey:@"colorSetDic"];
     [[NSUserDefaults standardUserDefaults] synchronize];

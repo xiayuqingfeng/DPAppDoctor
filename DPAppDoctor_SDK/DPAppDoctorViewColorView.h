@@ -1,6 +1,6 @@
 //
-//  DPLogView.h
-//  DPLogView
+//  DPAppDoctorViewColorView.h
+//  DPAppDoctorViewColorView
 //
 //  Created by yupeng xia on 2021/4/13.
 //  Copyright © 2021 yupeng xia. All rights reserved.
@@ -10,9 +10,8 @@
 #ifdef DPAppDoctorDebug
 
 #import <UIKit/UIKit.h>
-#import "DPAppDoctor.h"
 
-@interface DPLogView : UIView
+@interface DPAppDoctorViewColorView : UIView
 - (id)initWithBtnMinY:(CGFloat)aBtnMinY;
 @end
 

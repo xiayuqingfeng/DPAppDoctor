@@ -1,6 +1,6 @@
 //
-//  ZhcwCollegeSDK.m
-//  ZhcwCollegeSDK
+//  DPAppDoctorManager.m
+//  DPAppDoctorManager
 //
 //  Created by 夏玉鹏 on 20/04/02.
 //  Copyright © 2020 夏玉鹏. All rights reserved.
@@ -9,9 +9,9 @@
 #import "DPAppDoctorManager.h"
 #ifdef DPAppDoctorDebug
 
-#import "DPLogView.h"
-#import "DPMonitorView.h"
-#import "DPViewColorView.h"
+#import "DPAppDoctorLogView.h"
+#import "DPAppDoctorMonitorView.h"
+#import "DPAppDoctorViewColorView.h"
 
 @interface DPAppDoctorManager (){
     
@@ -26,11 +26,11 @@
 @property (nonatomic, strong) UIButton *otherBtn;
 
 //日志View
-@property (nonatomic, strong) DPLogView *aLogView;
+@property (nonatomic, strong) DPAppDoctorLogView *aLogView;
 //性能检测View
-@property (nonatomic, strong) DPMonitorView *aMonitorView;
+@property (nonatomic, strong) DPAppDoctorMonitorView *aMonitorView;
 //控件颜色View
-@property (nonatomic, strong) DPViewColorView *aViewColorView;
+@property (nonatomic, strong) DPAppDoctorViewColorView *aViewColorView;
 
 ///颜色设置
 @property (nonatomic, strong) NSDictionary *colorSetDic;
@@ -246,7 +246,7 @@ static DPAppDoctorManager *_zhcwTool = nil;
     self.logBtn.selected = _isLogOut;
     
     if (_aLogView == nil) {
-        self.aLogView = [[DPLogView alloc] initWithBtnMinY:[UIApplication sharedApplication].keyWindowDP.heightDP/2];
+        self.aLogView = [[DPAppDoctorLogView alloc] initWithBtnMinY:[UIApplication sharedApplication].keyWindowDP.heightDP/2];
     }
     _aLogView.hidden = !_isLogOut;
 }
@@ -259,7 +259,7 @@ static DPAppDoctorManager *_zhcwTool = nil;
     self.monitorBtn.selected = _isMonitor;
     
     if (_aMonitorView == nil) {
-        self.aMonitorView = [[DPMonitorView alloc] initWithBtnMinY:[UIApplication sharedApplication].keyWindowDP.heightDP/2-120];
+        self.aMonitorView = [[DPAppDoctorMonitorView alloc] initWithBtnMinY:[UIApplication sharedApplication].keyWindowDP.heightDP/2-120];
     }
     _aMonitorView.hidden = !_isMonitor;
 }
@@ -268,7 +268,7 @@ static DPAppDoctorManager *_zhcwTool = nil;
     self.viewColorBtn.selected = _isViewColor;
     
     if (_aViewColorView == nil) {
-        self.aViewColorView = [[DPViewColorView alloc] initWithBtnMinY:[UIApplication sharedApplication].keyWindowDP.heightDP/2+60];
+        self.aViewColorView = [[DPAppDoctorViewColorView alloc] initWithBtnMinY:[UIApplication sharedApplication].keyWindowDP.heightDP/2+60];
     }
     _aViewColorView.hidden = !_isViewColor;
 }
