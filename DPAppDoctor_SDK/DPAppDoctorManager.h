@@ -10,8 +10,10 @@
 #ifdef DPAppDoctorDebug
 
 @interface DPAppDoctorManager : NSObject
-///DIY自定义block函数
+///DIY1自定义block函数
 @property (nonatomic, copy) void(^DPdiyBlock)(BOOL isDiy);
+///DIY2自定义block函数
+@property (nonatomic, copy) void(^DPdiyBlockOne)(BOOL isDiy);
 
 ///是否显示测试模块: YES 打开, NO 关闭, 默认 NO;
 @property (nonatomic, assign) BOOL isShowTest;
@@ -24,8 +26,10 @@
 @property (nonatomic, assign) BOOL isMonitor;
 ///UI布局开关: YES 打开, NO 关闭, 默认 NO;
 @property (nonatomic, assign) BOOL isViewColor;
-///diy开关: YES 打开, NO 关闭, 默认 NO;
+///diy1开关: YES 打开, NO 关闭, 默认 NO;
 @property (nonatomic, assign) BOOL isDiy;
+///diy2开关: YES 打开, NO 关闭, 默认 NO;
+@property (nonatomic, assign) BOOL isDiyOne;
 
 + (instancetype)shareInstance;
 @end

@@ -24,6 +24,7 @@
 @property (nonatomic, strong) UIButton *monitorBtn;
 @property (nonatomic, strong) UIButton *viewColorBtn;
 @property (nonatomic, strong) UIButton *otherBtn;
+@property (nonatomic, strong) UIButton *otherBtnOne;
 
 //日志View
 @property (nonatomic, strong) DPAppDoctorLogView *aLogView;
@@ -123,23 +124,33 @@ static DPAppDoctorManager *_zhcwTool = nil;
             _otherBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
             [_otherBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
             [_otherBtn setTitleColor:[UIColor greenColor] forState:UIControlStateSelected];
-            [_otherBtn setTitle:@"DIY(打开)" forState:UIControlStateNormal];
-            [_otherBtn setTitle:@"DIY(关闭)" forState:UIControlStateSelected];
+            [_otherBtn setTitle:@"DIY1(打开)" forState:UIControlStateNormal];
+            [_otherBtn setTitle:@"DIY1(关闭)" forState:UIControlStateSelected];
             [_otherBtn addTarget:self action:@selector(otherBtnBtnAction:) forControlEvents:UIControlEventTouchUpInside];
             [_testView addSubview:_otherBtn];
+            
+            self.otherBtnOne = [UIButton buttonWithType:UIButtonTypeCustom];
+            _otherBtnOne.titleLabel.adjustsFontSizeToFitWidth = YES;
+            [_otherBtnOne setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+            [_otherBtnOne setTitleColor:[UIColor greenColor] forState:UIControlStateSelected];
+            [_otherBtnOne setTitle:@"DIY2(打开)" forState:UIControlStateNormal];
+            [_otherBtnOne setTitle:@"DIY2(关闭)" forState:UIControlStateSelected];
+            [_otherBtnOne addTarget:self action:@selector(otherBtnBtnOneAction:) forControlEvents:UIControlEventTouchUpInside];
+            [_testView addSubview:_otherBtnOne];
         }
         
         if (_titleBtn.selected == NO) {
             _testView.frame = CGRectMake(_testView.superview.widthDP-DPFrameWidth(50), _testView.yDP, DPFrameWidth(50), DPFrameHeight(30));
             _titleBtn.frame = _testView.bounds;
         }else {
-            _testView.frame = CGRectMake(_testView.superview.widthDP-DPFrameWidth(150), _testView.yDP, DPFrameWidth(150), DPFrameHeight(30)*6);
+            _testView.frame = CGRectMake(_testView.superview.widthDP-DPFrameWidth(150), _testView.yDP, DPFrameWidth(150), DPFrameHeight(30)*7);
             _titleBtn.frame = CGRectMake(0, DPFrameHeight(30)*0, _testView.widthDP, DPFrameHeight(30));
             _logBtn.frame = CGRectMake(0, DPFrameHeight(30)*1, _testView.widthDP, DPFrameHeight(30));
             _leakedBtn.frame = CGRectMake(0, DPFrameHeight(30)*2, _testView.widthDP, DPFrameHeight(30));
             _monitorBtn.frame = CGRectMake(0, DPFrameHeight(30)*3, _testView.widthDP, DPFrameHeight(30));
             _viewColorBtn.frame = CGRectMake(0, DPFrameHeight(30)*4, _testView.widthDP, DPFrameHeight(30));
             _otherBtn.frame = CGRectMake(0, DPFrameHeight(30)*5, _testView.widthDP, DPFrameHeight(30));
+            _otherBtnOne.frame = CGRectMake(0, DPFrameHeight(30)*6, _testView.widthDP, DPFrameHeight(30));
         }
         [_testView setDPRoundingCorners:UIRectCornerTopLeft|UIRectCornerBottomLeft radius:5 borderCorners:DPBorderDirectionAllCorners borderWidth:0 borderColor:nil];
     }else {
@@ -151,6 +162,7 @@ static DPAppDoctorManager *_zhcwTool = nil;
     [self monitorBtnAction:nil];
     [self viewColorBtnAction:nil];
     [self otherBtnBtnAction:nil];
+    [self otherBtnBtnOneAction:nil];
 }
 //拖动
 - (void)testViewTapAction:(UIPanGestureRecognizer *)panGestureRecognizer {
@@ -233,6 +245,18 @@ static DPAppDoctorManager *_zhcwTool = nil;
     }
     self.isDiy = bol;
 }
+- (void)otherBtnBtnOneAction:(UIButton *)button {
+    BOOL bol = NO;
+    if (button == nil) {
+        bol = [[NSUserDefaults standardUserDefaults] boolForKey:@"otherBtnOne"];
+    }else {
+        button.selected = !button.selected;
+        bol = button.selected;
+        [[NSUserDefaults standardUserDefaults] setBool:bol forKey:@"otherBtnOne"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    self.isDiyOne = bol;
+}
 
 #pragma mark <-------------Setter_methods------------->
 - (void)setIsShowTest:(BOOL)isShowTest {
@@ -278,6 +302,14 @@ static DPAppDoctorManager *_zhcwTool = nil;
     
     if (self.DPdiyBlock) {
         self.DPdiyBlock(_isDiy);
+    }
+}
+- (void)setIsDiyOne:(BOOL)isDiy {
+    _isDiyOne = isDiy;
+    self.otherBtnOne.selected = _isDiyOne;
+    
+    if (self.DPdiyBlockOne) {
+        self.DPdiyBlockOne(_isDiyOne);
     }
 }
 @end

@@ -80,6 +80,7 @@
         searchTextView.layer.borderColor = [UIColor orangeColor].CGColor;
         searchTextView.layer.cornerRadius = 4;
         searchTextView.textColor = [UIColor whiteColor];
+        searchTextView.font = [UIFont systemFontOfSize:16];
         [self addSubview:searchTextView];
         
         deleteCountBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -259,9 +260,17 @@
     [searchBtn setTitle:[NSString stringWithFormat:@"搜索\n(%ld)",(long)rangArray.count] forState:UIControlStateNormal];
     searchIndex = 0;
     NSMutableAttributedString *attr = [[NSMutableAttributedString alloc] initWithString:sumLogStr];
-    [attr setAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]} range:NSMakeRange(0, attr.string.length)];
+    [attr setAttributes:@{
+        NSForegroundColorAttributeName:[UIColor whiteColor],
+        NSFontAttributeName:[UIFont systemFontOfSize:16]
+    }
+                  range:NSMakeRange(0, attr.string.length)];
     for (NSValue *aRange in rangArray) {
-        [attr setAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} range:aRange.rangeValue];
+        [attr setAttributes:@{
+            NSForegroundColorAttributeName:[UIColor redColor],
+            NSFontAttributeName:[UIFont systemFontOfSize:16]
+        }
+                      range:aRange.rangeValue];
     }
     countTextView.attributedText = attr;
 }
@@ -282,15 +291,47 @@
     CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
     if (kbSize.height > 0.01) {
         arc_block_dp(self);
+        arc_block_dp(countTextView);
+        arc_block_dp(searchTextView);
+        arc_block_dp(deleteCountBtn);
+        arc_block_dp(deleteSearchBtn);
+        arc_block_dp(fontBtn);
+        arc_block_dp(nextBtn);
+        arc_block_dp(searchBtn);
         [UIView animateWithDuration:0.1 animations:^{
-            weak_self.yDP = -kbSize.height;
+            weak_self.heightDP = [weak_self superview].heightDP-kbSize.height;
+            weak_countTextView.heightDP = weak_self.heightDP-DPStatusbarH-DPFrameHeight(140);
+            weak_searchTextView.yDP = weak_countTextView.yMaxDP+DPFrameHeight(5);
+            
+            CGFloat minY = weak_searchTextView.yMaxDP+DPFrameHeight(5);
+            weak_deleteCountBtn.yDP = minY;
+            weak_deleteSearchBtn.yDP = minY;
+            weak_fontBtn.yDP = minY;
+            weak_nextBtn.yDP = minY;
+            weak_searchBtn.yDP = minY;
         }];
     }
 }
 - (void)keyboardWillHide:(NSNotification *)note{
     arc_block_dp(self);
+    arc_block_dp(countTextView);
+    arc_block_dp(searchTextView);
+    arc_block_dp(deleteCountBtn);
+    arc_block_dp(deleteSearchBtn);
+    arc_block_dp(fontBtn);
+    arc_block_dp(nextBtn);
+    arc_block_dp(searchBtn);
     [UIView animateWithDuration:0.1 animations:^{
-        weak_self.yDP = 0;
+        weak_self.heightDP = [weak_self superview].heightDP;
+        weak_countTextView.heightDP = weak_self.heightDP-DPStatusbarH-DPFrameHeight(140);
+        weak_searchTextView.yDP = weak_countTextView.yMaxDP+DPFrameHeight(5);
+        
+        CGFloat minY = weak_searchTextView.yMaxDP+DPFrameHeight(5);
+        weak_deleteCountBtn.yDP = minY;
+        weak_deleteSearchBtn.yDP = minY;
+        weak_fontBtn.yDP = minY;
+        weak_nextBtn.yDP = minY;
+        weak_searchBtn.yDP = minY;
     }];
 }
 
@@ -318,7 +359,10 @@
         [sumLogStr appendString:aStr];
         
         if (isLogOut) {
-            NSDictionary *aAttrDic = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
+            NSDictionary *aAttrDic = @{
+                NSForegroundColorAttributeName:[UIColor whiteColor],
+                NSFontAttributeName:[UIFont systemFontOfSize:16]
+            };
             NSAttributedString *aAttr = [[NSAttributedString alloc]initWithString:sumLogStr attributes:aAttrDic];
             countTextView.attributedText = aAttr;
         }
