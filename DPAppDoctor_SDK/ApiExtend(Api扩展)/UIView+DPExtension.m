@@ -8,18 +8,42 @@
 
 #import "UIView+DPExtension.h"
 #ifdef DPAppDoctorDebug
+#import <objc/runtime.h>
 
 @implementation UIView (DPExtension)
-- (void)didAddSubview:(UIView *)subview {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dpUpdateViewBackgroundColor) name:@"dpChangeViewColor" object:nil];
-    
-    [self dpUpdateViewBackgroundColor];
++ (void)load {
+    [super load];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+
+        SEL originalSelector = @selector(didAddSubview:);
+        SEL swizzledSelector = @selector(CFdidAddSubview:);
+        
+        Method originalMethod = class_getInstanceMethod(class, originalSelector);
+        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+        
+        BOOL didAddMethod =
+        class_addMethod(class,
+                        originalSelector,
+                        method_getImplementation(swizzledMethod),
+                        method_getTypeEncoding(swizzledMethod));
+        if (didAddMethod) {
+            class_replaceMethod(class,
+                                swizzledSelector,
+                                method_getImplementation(originalMethod),
+                                method_getTypeEncoding(originalMethod));
+        }else {
+            method_exchangeImplementations(originalMethod, swizzledMethod);
+        }
+    });
 }
-- (void)layoutSubviews {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dpUpdateViewBackgroundColor) name:@"dpChangeViewColor" object:nil];
+- (void)CFdidAddSubview:(UIView *)view{
+    [[NSNotificationCenter defaultCenter] addObserver:view selector:@selector(dpUpdateViewBackgroundColor) name:@"dpChangeViewColor" object:nil];
     
-    [self dpUpdateViewBackgroundColor];
+    [view dpUpdateViewBackgroundColor];
 }
+
 - (void)dpUpdateViewBackgroundColor {
     NSDictionary *colorDic = [[DPAppDoctorManager shareInstance] valueForKey:@"colorSetDic"];
     if (colorDic != nil) {
